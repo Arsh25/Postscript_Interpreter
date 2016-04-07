@@ -1,4 +1,4 @@
-/*
+/**
  * shape.h
  * 4/3/2016
  * 
@@ -12,9 +12,6 @@
 #include <utility>
 using std::pair;
 
-//used by ShapeDecorator class
-#include <initializer_list>
-using std::initializer_list;
 
 class Shape
 {
@@ -28,14 +25,31 @@ public:
 	virtual void draw() = 0;
 
 protected:
-	//x,y coordinates tracking center of shape
+	/**
+	 * Point at center of bounds
+	 */
 	pair<int,int> center_;
 
-	//x,y coordinates tracking corners of bounds
+	/**
+	 * Point at top left corner of bounds
+	 */
 	pair<int,int> topL_;
+
+	/**
+	 * Point at bottom left corner of bounds
+	 */
 	pair<int,int> botL_;
+
+	/**
+	 * Point at top right corner of bounds
+	 */
 	pair<int,int> topR_;
+
+	/**
+	 * Point at bottom right corner of bounds
+	 */
 	pair<int,int> botR_;
+
 
 }; //end of class Shape
 

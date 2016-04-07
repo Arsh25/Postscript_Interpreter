@@ -9,6 +9,9 @@
 #ifndef SHAPE_DECORATOR_H_INCLUDED
 #define SHAPE_DECORATOR_H_INCLUDED
 
+#include <initializer_list>
+using std::initializer_list;
+
 #include "shape.h"
 
 class ShapeDecorator: public Shape

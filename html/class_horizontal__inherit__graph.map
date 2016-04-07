@@ -1,0 +1,5 @@
+<map id="Horizontal" name="Horizontal">
+<area shape="rect" id="node2" href="$class_layered.html" title="Layered" alt="" coords="29,155,100,181"/>
+<area shape="rect" id="node3" href="$class_shape_decorator.html" title="ShapeDecorator" alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node4" href="$class_shape.html" title="Shape" alt="" coords="35,5,95,32"/>
+</map>
