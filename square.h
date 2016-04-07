@@ -11,15 +11,16 @@
 
 #include "rectangle.h"
 
-class Square: public Rectangle
+class Square: public Polygon
 {
 public:
-	Square(): Rectangle() {};
-	Square(double side): Rectangle(side,side) {};
-	Square(int x, int y, double side): Rectangle(x,y,side,side) {};
-	Square(pair<int,int> center, double side): Rectangle(center,side,side) {};
+	Square(): Polygon() {};
+	Square(double side): Polygon(4,side) {};
+	Square(int x, int y, double side): Polygon(x,y,4,side) {};
+	Square(pair<int,int> center, double side): Polygon(center,4,side) {};
 
 private:
+
 
 };
 

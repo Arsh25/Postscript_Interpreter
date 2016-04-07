@@ -7,11 +7,25 @@
  */
 
 #include "shape.h"
+
 #include "circle.h"
+
 #include "polygon.h"
-#include "rectangle.h"
 #include "triangle.h"
+#include "square.h"
+
+#include "rectangle.h"
+#include "spacer.h"
+
 #include "shape_decorator.h"
+
+#include "layered.h"
+#include "horizontal.h"
+#include "vertical.h"
+
+#include "rotate.h"
+#include "scaled.h"
+
 
 
 int main(){
