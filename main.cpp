@@ -26,9 +26,15 @@
 #include "rotate.h"
 #include "scaled.h"
 
+#include "utils.h"
 
+
+#include <iostream>
 
 int main(){
+
+	std::cout << "Hello world! " << stringify(3.141592) << std::endl;
+	std::cout << psLine(1,1,6,9) << std::endl;
 
 	return 0;
 }
