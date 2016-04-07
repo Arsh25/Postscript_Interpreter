@@ -22,7 +22,11 @@ public:
 	Shape(int x, int y);
 	Shape(pair<int,int> center);
 
+	virtual ~Shape(){};
+	Shape (const Shape & other){};
+
 	virtual void draw() = 0;
+
 
 protected:
 	/**

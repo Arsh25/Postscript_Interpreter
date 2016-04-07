@@ -24,7 +24,7 @@ using std::stringstream;
  * @return string version of variable
  */
 template<typename T>
-string stringify(T& var){
+string stringify(const T& var){
 	stringstream ss;
 	ss << var;
 	return ss.str();
@@ -40,7 +40,7 @@ string stringify(T& var){
  * @param y1 Point 2 y value
  * @return string with ps code
  */
-string line(int x0, int y0, int x1, int y1){
+string psLine(int x0, int y0, int x1, int y1){
 	return stringify(x0) + " " + stringify(y0) + " move " + stringify(x1) + " " + stringify(y1) + " rlineto";
 };
 
