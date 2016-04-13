@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>My Project: shape.h Source File</title>
+<title>Postscript Interpreter: shape.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Postscript Interpreter
    </div>
   </td>
  </tr>
@@ -124,38 +124,44 @@ $(document).ready(function(){initNavTree('shape_8h_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_shape.html#aaa8d87171e65e0d8ba3c5459978992a7">Shape</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_shape.html#aaa8d87171e65e0d8ba3c5459978992a7">Shape</a>(pair&lt;int,int&gt; center);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_shape.html#afacc5aad8e37308c3ce8fef768199b05">draw</a>() = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_shape.html#aa9aa9714f7d04cb1b8a8b2a3f72a53be">   31</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#aa9aa9714f7d04cb1b8a8b2a3f72a53be">center_</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_shape.html#ab88d7c08e311e86a19b08145b46f3336">   36</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#ab88d7c08e311e86a19b08145b46f3336">topL_</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_shape.html#a4eb27d9692c47bd631466a56ad978b74">   41</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#a4eb27d9692c47bd631466a56ad978b74">botL_</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_shape.html#a90c38fe62f24ce729c75e82d206af433">   46</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#a90c38fe62f24ce729c75e82d206af433">topR_</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_shape.html#a13c9282f9ed31dced9e592c4de1a6238">   51</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#a13c9282f9ed31dced9e592c4de1a6238">botR_</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}; <span class="comment">//end of class Shape</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_shape_html_a4eb27d9692c47bd631466a56ad978b74"><div class="ttname"><a href="class_shape.html#a4eb27d9692c47bd631466a56ad978b74">Shape::botL_</a></div><div class="ttdeci">pair&lt; int, int &gt; botL_</div><div class="ttdef"><b>Definition:</b> shape.h:41</div></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_shape.html#ac3b9fc48965274893f25b18aa14ba665">   25</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_shape.html#ac3b9fc48965274893f25b18aa14ba665">~Shape</a>(){};</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_shape.html#af929eaa4d0cbd6b2fe2e9026796b9cae">   26</a></span>&#160;    <a class="code" href="class_shape.html#af929eaa4d0cbd6b2fe2e9026796b9cae">Shape</a> (<span class="keyword">const</span> <a class="code" href="class_shape.html">Shape</a> &amp; other){};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_shape.html#afacc5aad8e37308c3ce8fef768199b05">draw</a>() = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_shape.html#aa9aa9714f7d04cb1b8a8b2a3f72a53be">   35</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#aa9aa9714f7d04cb1b8a8b2a3f72a53be">center_</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_shape.html#ab88d7c08e311e86a19b08145b46f3336">   40</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#ab88d7c08e311e86a19b08145b46f3336">topL_</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_shape.html#a4eb27d9692c47bd631466a56ad978b74">   45</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#a4eb27d9692c47bd631466a56ad978b74">botL_</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_shape.html#a90c38fe62f24ce729c75e82d206af433">   50</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#a90c38fe62f24ce729c75e82d206af433">topR_</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_shape.html#a13c9282f9ed31dced9e592c4de1a6238">   55</a></span>&#160;    pair&lt;int,int&gt; <a class="code" href="class_shape.html#a13c9282f9ed31dced9e592c4de1a6238">botR_</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}; <span class="comment">//end of class Shape</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_shape_html_a4eb27d9692c47bd631466a56ad978b74"><div class="ttname"><a href="class_shape.html#a4eb27d9692c47bd631466a56ad978b74">Shape::botL_</a></div><div class="ttdeci">pair&lt; int, int &gt; botL_</div><div class="ttdef"><b>Definition:</b> shape.h:45</div></div>
 <div class="ttc" id="class_shape_html_aaa8d87171e65e0d8ba3c5459978992a7"><div class="ttname"><a href="class_shape.html#aaa8d87171e65e0d8ba3c5459978992a7">Shape::Shape</a></div><div class="ttdeci">Shape()</div><div class="ttdef"><b>Definition:</b> shape.cpp:13</div></div>
-<div class="ttc" id="class_shape_html_a13c9282f9ed31dced9e592c4de1a6238"><div class="ttname"><a href="class_shape.html#a13c9282f9ed31dced9e592c4de1a6238">Shape::botR_</a></div><div class="ttdeci">pair&lt; int, int &gt; botR_</div><div class="ttdef"><b>Definition:</b> shape.h:51</div></div>
+<div class="ttc" id="class_shape_html_ac3b9fc48965274893f25b18aa14ba665"><div class="ttname"><a href="class_shape.html#ac3b9fc48965274893f25b18aa14ba665">Shape::~Shape</a></div><div class="ttdeci">virtual ~Shape()</div><div class="ttdef"><b>Definition:</b> shape.h:25</div></div>
+<div class="ttc" id="class_shape_html_a13c9282f9ed31dced9e592c4de1a6238"><div class="ttname"><a href="class_shape.html#a13c9282f9ed31dced9e592c4de1a6238">Shape::botR_</a></div><div class="ttdeci">pair&lt; int, int &gt; botR_</div><div class="ttdef"><b>Definition:</b> shape.h:55</div></div>
+<div class="ttc" id="class_shape_html_af929eaa4d0cbd6b2fe2e9026796b9cae"><div class="ttname"><a href="class_shape.html#af929eaa4d0cbd6b2fe2e9026796b9cae">Shape::Shape</a></div><div class="ttdeci">Shape(const Shape &amp;other)</div><div class="ttdef"><b>Definition:</b> shape.h:26</div></div>
 <div class="ttc" id="class_shape_html_afacc5aad8e37308c3ce8fef768199b05"><div class="ttname"><a href="class_shape.html#afacc5aad8e37308c3ce8fef768199b05">Shape::draw</a></div><div class="ttdeci">virtual void draw()=0</div></div>
 <div class="ttc" id="class_shape_html"><div class="ttname"><a href="class_shape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> shape.h:16</div></div>
-<div class="ttc" id="class_shape_html_a90c38fe62f24ce729c75e82d206af433"><div class="ttname"><a href="class_shape.html#a90c38fe62f24ce729c75e82d206af433">Shape::topR_</a></div><div class="ttdeci">pair&lt; int, int &gt; topR_</div><div class="ttdef"><b>Definition:</b> shape.h:46</div></div>
-<div class="ttc" id="class_shape_html_aa9aa9714f7d04cb1b8a8b2a3f72a53be"><div class="ttname"><a href="class_shape.html#aa9aa9714f7d04cb1b8a8b2a3f72a53be">Shape::center_</a></div><div class="ttdeci">pair&lt; int, int &gt; center_</div><div class="ttdef"><b>Definition:</b> shape.h:31</div></div>
-<div class="ttc" id="class_shape_html_ab88d7c08e311e86a19b08145b46f3336"><div class="ttname"><a href="class_shape.html#ab88d7c08e311e86a19b08145b46f3336">Shape::topL_</a></div><div class="ttdeci">pair&lt; int, int &gt; topL_</div><div class="ttdef"><b>Definition:</b> shape.h:36</div></div>
+<div class="ttc" id="class_shape_html_a90c38fe62f24ce729c75e82d206af433"><div class="ttname"><a href="class_shape.html#a90c38fe62f24ce729c75e82d206af433">Shape::topR_</a></div><div class="ttdeci">pair&lt; int, int &gt; topR_</div><div class="ttdef"><b>Definition:</b> shape.h:50</div></div>
+<div class="ttc" id="class_shape_html_aa9aa9714f7d04cb1b8a8b2a3f72a53be"><div class="ttname"><a href="class_shape.html#aa9aa9714f7d04cb1b8a8b2a3f72a53be">Shape::center_</a></div><div class="ttdeci">pair&lt; int, int &gt; center_</div><div class="ttdef"><b>Definition:</b> shape.h:35</div></div>
+<div class="ttc" id="class_shape_html_ab88d7c08e311e86a19b08145b46f3336"><div class="ttname"><a href="class_shape.html#ab88d7c08e311e86a19b08145b46f3336">Shape::topL_</a></div><div class="ttdeci">pair&lt; int, int &gt; topL_</div><div class="ttdef"><b>Definition:</b> shape.h:40</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="shape_8h.html">shape.h</a></li>
-    <li class="footer">Generated on Wed Apr 6 2016 16:13:54 for My Project by
+    <li class="footer">Generated on Tue Apr 12 2016 16:59:13 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

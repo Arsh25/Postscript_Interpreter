@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['polygon',['Polygon',['../class_polygon.html#ac183e712f8be1e13f1c9d5b4d4512ead',1,'Polygon::Polygon()'],['../class_polygon.html#a8cb36a982609ea22b8722b76cfa9d6fa',1,'Polygon::Polygon(int sides, double length)'],['../class_polygon.html#a295d10cfffd80d67f603642d82f62279',1,'Polygon::Polygon(int x, int y, int sides, double length)'],['../class_polygon.html#aeaf7a82f06bb8b260ec3f7763473e20f',1,'Polygon::Polygon(pair&lt; int, int &gt; center, int sides, double length)']]]
+  ['rectangle',['Rectangle',['../class_rectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../class_rectangle.html#a361b04e1812db6a4774273d18198f65d',1,'Rectangle::Rectangle(double w, double h)'],['../class_rectangle.html#a1dc8d8db9c867aa80616837bd980fd78',1,'Rectangle::Rectangle(int x, int y, double w, double h)'],['../class_rectangle.html#afe86286ce9e845ca93cf32781a1dfb68',1,'Rectangle::Rectangle(pair&lt; int, int &gt; center, double w, double h)']]]
 ];

@@ -13,3 +13,10 @@
 Shape::Shape() : center_(0,0) {}
 Shape::Shape(int x, int y) : center_(x,y) {}
 Shape::Shape(pair<int,int> center) : center_(center) {}
+
+Shape * Shape::make_shape(string shape, double w, double h){
+	if(shape == "circle"){
+		return new Circle(w/2);
+	}
+	//write more stuff
+}
