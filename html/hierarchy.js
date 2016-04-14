@@ -111,15 +111,15 @@ var hierarchy =
       ] ],
       [ "Rectangle", "class_rectangle.html", [
         [ "Spacer", "class_spacer.html", null ]
-      ] ],
-      [ "ShapeDecorator", "class_shape_decorator.html", [
-        [ "Layered", "class_layered.html", [
-          [ "Horizontal", "class_horizontal.html", null ],
-          [ "Vertical", "class_vertical.html", null ]
-        ] ],
-        [ "Rotate", "class_rotate.html", null ],
-        [ "Scaled", "class_scaled.html", null ]
       ] ]
+    ] ],
+    [ "ShapeDecorator", "class_shape_decorator.html", [
+      [ "Layered", "class_layered.html", [
+        [ "Horizontal", "class_horizontal.html", null ],
+        [ "Vertical", "class_vertical.html", null ]
+      ] ],
+      [ "Rotated", "class_rotated.html", null ],
+      [ "Scaled", "class_scaled.html", null ]
     ] ],
     [ "Catch::SourceLineInfo", "struct_catch_1_1_source_line_info.html", null ],
     [ "Catch::StreamEndStop", "struct_catch_1_1_stream_end_stop.html", null ],
