@@ -15,14 +15,14 @@ using std::pair;
 using std::string;
 #include <sstream>
 using std::stringstream;
+#include <cmath>
 
 #include "utils.h"
 
 class Shape
 {
 public:
-	//moved Shape constructor declarations to shape.cpp 
-	//because derived classes couldn't find them otherwise
+
 	Shape() {};
 
 	virtual ~Shape() {};

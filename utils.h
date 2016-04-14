@@ -13,7 +13,12 @@
 using std::string;
 #include <sstream>
 using std::stringstream;
+#include <utility>
+using std::pair;
+#include <cmath>
 
+
+const double PI = 3.14159;
 
 /**
  * @brief turns a variable into a string
@@ -31,6 +36,7 @@ string stringify(const T& var){
 
 string psLine(int,int,int,int);
 string psArc(int,int,double,int,int);
+pair<double,double> getPoint(int,int,double);
 
 
 #endif
