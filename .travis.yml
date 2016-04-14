@@ -12,5 +12,5 @@ install:
     https://raw.github.com/philsquared/Catch/master/single_include/catch.hpp
 
 script:
-- ( mkdir build && cd build && make )
+- ( mkdir build && cd build && make test)
 
