@@ -15,5 +15,5 @@ before_install:
 
 script:
 - make clean test 
-- ./test
+- ./test -s
 
