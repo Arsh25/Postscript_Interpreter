@@ -4,5 +4,5 @@ language: cpp
 compiler: g++
 
 script:
-- make clean test 
+- make clean travis
 
