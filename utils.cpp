@@ -20,7 +20,7 @@
  */
 string psLine(int x0, int y0, int x1, int y1){
 	return "newpath " + stringify(x0) + " " + stringify(y0) + " moveto " + stringify(x1) + " " + stringify(y1) + " lineto";
-};
+}
 
 /**
  * @brief generates ps code for drawing an arc
