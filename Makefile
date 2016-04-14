@@ -9,7 +9,7 @@ STD=c++11
 FLAGS = -std=$(STD) -Wall -pedantic -Wno-deprecated-declarations 
 
 # Add new source files here
-FILES = utils.cpp shape.cpp circle.cpp polygon.cpp rectangle.cpp
+FILES = utils.cpp shape.cpp circle.cpp polygon.cpp rectangle.cpp scaled.cpp shape_decorator.cpp
 
 main: main.cpp $(FILES) 
 	$(COMPILER)  $^ $(FLAGS) -o $@
