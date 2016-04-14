@@ -5,12 +5,14 @@ env:
 	global:
 		- PREFIX=$HOME/prefix
 
-compiler: gcc
+compiler: g++
 
 install:
  - wget --directory-prefix $PREFIX/include
     https://raw.github.com/philsquared/Catch/master/single_include/catch.hpp
 
 script:
-- ( mkdir build && cd build && make test)
+- mkdir build 
+- cd build
+- make test 
 
