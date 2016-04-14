@@ -11,6 +11,8 @@
 
 #include <utility>
 using std::pair;
+#include <string>
+using std::string;
 
 
 class Shape
