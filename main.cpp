@@ -39,6 +39,7 @@ int main(){
 	Rectangle rect(100.0, 50.0);
 
 	Scaled scaled(&triangle,0.5,1.5);
+	Rotated rotated(&square,45);
 
 	std::cout << "%!\n" << std::endl;
 
@@ -52,6 +53,8 @@ int main(){
 	std::cout << triangle.draw(100,250) << std::endl;
 
 	std::cout << scaled.draw(100,300) << std::endl;
+
+	std::cout << rotated.draw(300,150) << std::endl;
 
 	std::cout << rect.draw(300,300) << std::endl;
 
