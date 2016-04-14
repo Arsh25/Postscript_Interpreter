@@ -37,6 +37,8 @@ int main(){
 	Square square(40);
 	Triangle triangle(40);
 	Rectangle rect(100.0, 50.0);
+	Polygon poly6(6,55.5);
+	Polygon poly10(10,16);
 
 	Scaled scaled(&triangle,0.5,1.5);
 	Rotated rotated(&square,45);
@@ -54,7 +56,10 @@ int main(){
 	std::cout << rotated.draw(300,150) << std::endl;
 
 	std::cout << rect.draw(300,300) << std::endl;
-	cout << "" << endl;
+
+	std::cout << poly6.draw(100,300) << std::endl;
+
+	std::cout << poly10.draw(100,400) << std::endl;
 
 	// std::cout << "showpage\n" << std::endl;
 	return 0;

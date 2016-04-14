@@ -36,3 +36,19 @@ string psLine(int x0, int y0, int x1, int y1){
 string psArc(int x, int y, double r, int startAngle, int endAngle){
 	return stringify(x) + " " + stringify(y) + " " + stringify(r) + " " + stringify(startAngle) + " " + stringify(endAngle) + " arc";
 }
+
+/**
+ * @brief calculates a point
+ * @details calculates the position of the nth vertice of a polygon
+ * 
+ * @param k vetrice number, 0 through n-1
+ * @param n number of sides
+ * @param l side length
+ * 
+ * @return the location of the vertice
+ */
+pair<double,double> getPoint(int k, int n, double l){
+	double x = (l/2)*( sin( (2*k+1)*PI/n ) / sin(PI/n) );
+	double y = (-l/2)*( cos( (2*k+1)*PI/n ) / sin(PI/n) );
+	return pair<double,double>(x,y);
+}

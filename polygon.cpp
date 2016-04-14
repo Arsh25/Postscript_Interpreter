@@ -9,7 +9,25 @@
 #include "polygon.h"
 
 string Polygon::draw(int x,int y){
-	return "";
+	stringstream ss;
+
+	ss << "gsave\n";
+	ss << "newpath\n";
+	ss << x << " " << y << " translate\n";
+
+	pair<double,double> vertex = getPoint(0,numOfSides_,sideLength_);
+	ss << vertex.first << " " << vertex.second << " moveto\n";
+
+	for(int i = 1; i < numOfSides_; i++){
+		vertex = getPoint(i,numOfSides_,sideLength_);
+		ss << vertex.first << " " << vertex.second << " lineto\n";
+	}
+
+	ss << "closepath\n";
+	ss << "stroke\n";
+	ss << "grestore\n";
+
+	return ss.str();
 }
 
 /**
