@@ -1,5 +1,11 @@
 var NAVTREEINDEX2 =
 {
+"functions_func_~.html":[2,3,1,19],
+"functions_g.html":[2,3,0,6],
+"functions_h.html":[2,3,0,7],
+"functions_i.html":[2,3,0,8],
+"functions_l.html":[2,3,0,9],
+"functions_m.html":[2,3,0,10],
 "functions_n.html":[2,3,0,11],
 "functions_o.html":[2,3,0,12],
 "functions_p.html":[2,3,0,13],
@@ -16,8 +22,9 @@ var NAVTREEINDEX2 =
 "functions_y.html":[2,3,0,21],
 "functions_~.html":[2,3,0,22],
 "globals.html":[3,1,0],
-"globals_defs.html":[3,1,2],
+"globals_defs.html":[3,1,3],
 "globals_func.html":[3,1,1],
+"globals_vars.html":[3,1,2],
 "hierarchy.html":[2,2],
 "horizontal_8h.html":[3,0,3],
 "horizontal_8h_source.html":[3,0,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX2 =
 "struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with.html#a5526cb587632e7e46253d6f60ae01098":[2,0,0,2,0,1,4,1],
 "struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with.html#accaace83106244c635d251addb028125":[2,0,0,2,0,1,4,5],
 "struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with.html#ad22a0d01b6c29bd4784ffff988e99992":[2,0,0,2,0,1,4,2],
-"struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with.html#ae9c893adbacc853171a488aea5355653":[2,0,0,2,0,1,4,3],
-"struct_catch_1_1_message_builder.html":[2,0,0,29],
-"struct_catch_1_1_message_builder.html#a20fa48d069b20dddcc2d3df8abb123c1":[2,0,0,29,1],
-"struct_catch_1_1_message_builder.html#a6488ab0cc4ea52affc9c0612c7c5df6b":[2,0,0,29,3],
-"struct_catch_1_1_message_builder.html#a979f1c2b36d78f80ee275bfa5ba0209f":[2,0,0,29,2],
-"struct_catch_1_1_message_builder.html#ab0c6378e722680bf58852c6ee2b6e724":[2,0,0,29,0],
-"struct_catch_1_1_message_info.html":[2,0,0,30],
-"struct_catch_1_1_message_info.html#a156ade4b3cc731f6ec7b542ae47ba8e3":[2,0,0,30,4]
+"struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with.html#ae9c893adbacc853171a488aea5355653":[2,0,0,2,0,1,4,3]
 };

@@ -41,6 +41,7 @@ var files =
     [ "spacer.h", "spacer_8h.html", [
       [ "Spacer", "class_spacer.html", "class_spacer" ]
     ] ],
+    [ "test.cpp", "test_8cpp.html", "test_8cpp" ],
     [ "utils.cpp", "utils_8cpp.html", "utils_8cpp" ],
     [ "utils.h", "utils_8h.html", "utils_8h" ],
     [ "vertical.h", "vertical_8h.html", [

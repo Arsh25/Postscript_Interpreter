@@ -52,3 +52,30 @@ pair<double,double> getPoint(int k, int n, double l){
 	double y = (-l/2)*( cos( (2*k+1)*PI/n ) / sin(PI/n) );
 	return pair<double,double>(x,y);
 }
+
+/**
+ * @brief cacluate width of polygon
+ * @details calculate the width of any equlateral polygon
+ * 
+ * @param n number of sides
+ * @param l length of sides
+ * 
+ * @return width of polygon
+ */
+double getWidth(int n, double l){
+	return n%2 ? (l*(sin(PI*(n-1)))/sin(PI/n)) : ( n%4 ? (l / sin(PI/2)) : (l*cos(PI/n)/sin(PI/n)) );
+}
+
+/**
+ * @brief cacluate height of polygon
+ * @details calculate the height of any equlateral polygon
+ * 
+ * @param n number of sides
+ * @param l length of sides
+ * 
+ * @return height of polygon
+ */
+double getHeight(int n, double l){
+	return n%2 ? (l * (1+cos(PI/n)) / (2*sin(PI/n))) : (l * (cos(PI/n)) / (sin(PI/n)));
+}
+

@@ -61,6 +61,7 @@ int main(){
 
 	std::cout << poly10.draw(100,400) << std::endl;
 
+
 	// std::cout << "showpage\n" << std::endl;
 	return 0;
 }

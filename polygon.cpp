@@ -8,6 +8,15 @@
 
 #include "polygon.h"
 
+/**
+ * @brief generates ps code for drawing a polygon
+ * @details returns a string containing the ps code for drawing any equilateral polygon
+ * 
+ * @param x x position of center
+ * @param y y position of center
+ * 
+ * @return string containing ps code
+ */
 string Polygon::draw(int x,int y){
 	stringstream ss;
 

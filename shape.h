@@ -23,12 +23,16 @@ class Shape
 {
 public:
 
-	Shape() {};
+	Shape(): boundsWidth_(0), boundsHeight_(0) {};
+	Shape(double width, double height): boundsWidth_(width), boundsHeight_(height) {};
 
 	virtual ~Shape() {};
 	Shape (const Shape & other){};
 
 	virtual string draw(int,int) = 0;
+	string bounds();
+	double width();
+	double height();
 
 
 protected:
@@ -52,6 +56,18 @@ protected:
 	 * Point at bottom right corner of bounds
 	 */
 	pair<int,int> botR_;
+
+	/**
+	 * width of boundary box
+	 */
+	double boundsWidth_;	
+
+	/**
+	 * height of boundary box
+	 */
+	double boundsHeight_;
+
+	
 
 
 }; //end of class Shape
