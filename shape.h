@@ -21,20 +21,14 @@ public:
 	//moved Shape constructor declarations to shape.cpp 
 	//because derived classes couldn't find them otherwise
 	Shape();
-	Shape(int x, int y);
-	Shape(pair<int,int> center);
 
 	virtual ~Shape(){};
 	Shape (const Shape & other){};
 
-	virtual void draw() = 0;
+	virtual void draw(int,int) = 0;
 
 
 protected:
-	/**
-	 * Point at center of bounds
-	 */
-	pair<int,int> center_;
 
 	/**
 	 * Point at top left corner of bounds

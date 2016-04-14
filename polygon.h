@@ -16,8 +16,6 @@ class Polygon: public Shape
 public:
 	Polygon() : Shape(), numOfSides_(0), sideLength_(0) {};
 	Polygon(int sides, double length) : Shape(), numOfSides_(sides), sideLength_(length) {};
-	Polygon(int x, int y, int sides, double length) : Shape(x,y), numOfSides_(sides), sideLength_(length) {};
-	Polygon(pair<int,int> center, int sides, double length) : Shape(center), numOfSides_(sides), sideLength_(length) {};
 
 private:
 	int numOfSides_;

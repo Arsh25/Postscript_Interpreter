@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -103,18 +104,140 @@ $(document).ready(function(){initNavTree('utils_8cpp.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">utils.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a36454f5ea3743d5678425f8a55f17a7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#a36454f5ea3743d5678425f8a55f17a7f">psLine</a> (int x0, int y0, int x1, int y1)</td></tr>
+<tr class="memdesc:a36454f5ea3743d5678425f8a55f17a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for drawing a line  <a href="#a36454f5ea3743d5678425f8a55f17a7f">More...</a><br /></td></tr>
+<tr class="separator:a36454f5ea3743d5678425f8a55f17a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc859810986c6e81e120c970d0339b3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#aabc859810986c6e81e120c970d0339b3">psArc</a> (int x, int y, int r, int startAngle, int endAngle)</td></tr>
+<tr class="memdesc:aabc859810986c6e81e120c970d0339b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for drawing an arc  <a href="#aabc859810986c6e81e120c970d0339b3">More...</a><br /></td></tr>
+<tr class="separator:aabc859810986c6e81e120c970d0339b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aabc859810986c6e81e120c970d0339b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string psArc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>generates ps code for drawing an arc </p>
+<p>returns a string containing the ps code for drawing an arc, in the form 'x y r angle1 angle2 arc'</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>c position of the center </td></tr>
+    <tr><td class="paramname">y</td><td>y position of the center </td></tr>
+    <tr><td class="paramname">r</td><td>radius of the arc </td></tr>
+    <tr><td class="paramname">startAngle</td><td>start angle for the arc, from 0 to 360 degrees </td></tr>
+    <tr><td class="paramname">endAngle</td><td>end angle for the arc, from 0 to 360 degrees </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string containing ps code </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a36454f5ea3743d5678425f8a55f17a7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string psLine </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>generates ps code for drawing a line </p>
+<p>returns a string containing the ps code for drawing a line, in the form 'x0 y0 move x1 y1 rlineto'</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x0</td><td>Point 1 x value </td></tr>
+    <tr><td class="paramname">y0</td><td>Point 1 y value </td></tr>
+    <tr><td class="paramname">x1</td><td>Point 2 x value </td></tr>
+    <tr><td class="paramname">y1</td><td>Point 2 y value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string with ps code </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="utils_8cpp.html">utils.cpp</a></li>
-    <li class="footer">Generated on Tue Apr 12 2016 16:59:13 for Postscript Interpreter by
+    <li class="footer">Generated on Wed Apr 13 2016 17:15:43 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

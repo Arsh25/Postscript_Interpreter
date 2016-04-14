@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['radius_5f',['radius_',['../class_circle.html#a7daf9293b23457177dbc0fadb960e07e',1,'Circle']]],
-  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['rectangle',['Rectangle',['../class_rectangle.html',1,'Rectangle'],['../class_rectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../class_rectangle.html#a361b04e1812db6a4774273d18198f65d',1,'Rectangle::Rectangle(double w, double h)'],['../class_rectangle.html#a1dc8d8db9c867aa80616837bd980fd78',1,'Rectangle::Rectangle(int x, int y, double w, double h)'],['../class_rectangle.html#afe86286ce9e845ca93cf32781a1dfb68',1,'Rectangle::Rectangle(pair&lt; int, int &gt; center, double w, double h)']]],
-  ['rectangle_2eh',['rectangle.h',['../rectangle_8h.html',1,'']]],
-  ['rotate',['Rotate',['../class_rotate.html',1,'']]],
-  ['rotate_2eh',['rotate.h',['../rotate_8h.html',1,'']]]
+  ['handlefatalerrorcondition',['handleFatalErrorCondition',['../struct_catch_1_1_i_result_capture.html#a7d995222301e6605f26549726b30c3ee',1,'Catch::IResultCapture']]],
+  ['handleresult',['handleResult',['../class_catch_1_1_result_builder.html#ad8bb17e4ac590b75bf8630d8f3502f4e',1,'Catch::ResultBuilder']]],
+  ['hasexpandedexpression',['hasExpandedExpression',['../class_catch_1_1_assertion_result.html#a122c369bd49430a304e3eaebdf184f36',1,'Catch::AssertionResult']]],
+  ['hasexpression',['hasExpression',['../class_catch_1_1_assertion_result.html#a45551f4f092c640ffce0cdd8a94f4b62',1,'Catch::AssertionResult']]],
+  ['hasmessage',['hasMessage',['../class_catch_1_1_assertion_result.html#ab22a1c9baa182aeb2549fffeb8294d9e',1,'Catch::AssertionResult']]],
+  ['height_5f',['height_',['../class_rectangle.html#a3d08f9a12635131e76c4d73a586150d3',1,'Rectangle']]],
+  ['horizontal',['Horizontal',['../class_horizontal.html',1,'']]],
+  ['horizontal_2eh',['horizontal.h',['../horizontal_8h.html',1,'']]]
 ];
