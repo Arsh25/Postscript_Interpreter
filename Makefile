@@ -3,7 +3,7 @@
 #Usage: make main to compile wit our test main
 #		make test to compile with catch 
 
-COMPILER=g++-4.9
+COMPILER=g++
 STD=c++11
 
 FLAGS = -std=$(STD)  -Wall -pedantic -Wno-deprecated-declarations 
