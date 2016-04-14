@@ -33,9 +33,6 @@ public:
 	Triangle() : Polygon(3,0) {};
 	Triangle(double side) : Polygon(3,side) {};
 
-	string draw(int x,int y) override;
-
-
 private:
 
 
@@ -48,9 +45,6 @@ class Square: public Polygon
 public:
 	Square(): Polygon(4,0) {};
 	Square(double side): Polygon(4,side) {};
-
-	string draw(int x,int y) override;
-
 
 private:
 
