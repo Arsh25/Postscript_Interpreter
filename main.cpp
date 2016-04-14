@@ -54,6 +54,7 @@ int main(){
 	std::cout << rotated.draw(300,150) << std::endl;
 
 	std::cout << rect.draw(300,300) << std::endl;
+	cout << "" << endl;
 
 	// std::cout << "showpage\n" << std::endl;
 	return 0;
