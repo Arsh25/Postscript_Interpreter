@@ -1,3 +1,11 @@
+/*
+ * scaled.cpp
+ * 4/13/2016
+ * 
+ * CS 372 Sp16
+ * Group Project 2: Postscript Generator
+ */
+
 #include "scaled.h"
 
 string Scaled::draw(int x, int y){
