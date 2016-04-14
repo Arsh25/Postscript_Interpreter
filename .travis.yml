@@ -1,10 +1,6 @@
 sudo: false
 language: cpp
 
-env:
-	global:
-		- PREFIX=$HOME/prefix
-
 compiler: g++
 
 install:
