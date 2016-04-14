@@ -17,7 +17,7 @@ public:
 	Circle(): Shape(), radius_(0) {};
 	Circle(double radius) : Shape(), radius_(radius) {};
 
-	draw()
+	string draw(int x, int y) override;
 
 protected:
 	double radius_;
