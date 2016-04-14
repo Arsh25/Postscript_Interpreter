@@ -9,5 +9,5 @@
 #include "circle.h"
 
 string Circle::draw(int x, int y){
-	return psArc(0,0,radius_,0,360);
+	return psArc(x,y,radius_,0,360);
 }

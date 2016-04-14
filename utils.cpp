@@ -19,7 +19,7 @@
  * @return string with ps code
  */
 string psLine(int x0, int y0, int x1, int y1){
-	return "newpath " + stringify(x0) + " " + stringify(y0) + " moveto " + stringify(x1) + " " + stringify(y1) + " lineto";
+	return "newpath " + stringify(x0) + " " + stringify(y0) + " moveto " + stringify(x1) + " " + stringify(y1) + " lineto stroke";
 }
 
 /**
@@ -34,5 +34,5 @@ string psLine(int x0, int y0, int x1, int y1){
  * @return string containing ps code
  */
 string psArc(int x, int y, double r, int startAngle, int endAngle){
-	return stringify(x) + " " + stringify(y) + " " + stringify(r) + " " + stringify(startAngle) + " " + stringify(endAngle) + " arc";
+	return "newpath " + stringify(x) + " " + stringify(y) + " " + stringify(r) + " " + stringify(startAngle) + " " + stringify(endAngle) + " arc stroke";
 }
