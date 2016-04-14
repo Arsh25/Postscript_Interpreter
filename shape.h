@@ -14,6 +14,7 @@ using std::pair;
 #include <string>
 using std::string;
 
+#include "utils.h"
 
 class Shape
 {
@@ -25,7 +26,7 @@ public:
 	virtual ~Shape(){};
 	Shape (const Shape & other){};
 
-	virtual void draw(int,int) = 0;
+	virtual string draw(int,int) = 0;
 
 
 protected:

@@ -33,6 +33,6 @@ string psLine(int x0, int y0, int x1, int y1){
  * @param endAngle end angle for the arc, from 0 to 360 degrees
  * @return string containing ps code
  */
-string psArc(int x, int y, int r, int startAngle, int endAngle){
+string psArc(int x, int y, double r, int startAngle, int endAngle){
 	return stringify(x) + " " + stringify(y) + " " + stringify(r) + " " + stringify(startAngle) + " " + stringify(endAngle) + " arc";
 }
