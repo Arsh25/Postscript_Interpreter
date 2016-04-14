@@ -36,8 +36,12 @@ int main(){
 	Circle circle(20);
 	Square square(40);
 	Triangle triangle(40);
+	Rectangle rect(100.0, 50.0);
+
+	Scaled scaled(&triangle,0.5,1.5);
 
 	std::cout << "%!\n" << std::endl;
+
 	std::cout << circle.draw(100,100) << std::endl;
 	std::cout << circle.draw(150,150) << std::endl;
 
@@ -47,10 +51,10 @@ int main(){
 	std::cout << triangle.draw(100,200) << std::endl;
 	std::cout << triangle.draw(100,250) << std::endl;
 
+	std::cout << scaled.draw(100,300) << std::endl;
 
-	Rectangle r(100.0, 50.0);
-	cout << r.draw(300,300) << endl;
+	std::cout << rect.draw(300,300) << std::endl;
 
-	std::cout << "showpage\n" << std::endl;
+	// std::cout << "showpage\n" << std::endl;
 	return 0;
 }

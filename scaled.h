@@ -14,13 +14,13 @@
 class Scaled : public ShapeDecorator
 {
 public:
-	Scaled()
-	Scaled(Shape& shape, double sx, double sy): shape_(shape), sx_(sx), sy_(sy) {}
+	Scaled() {};
+	Scaled(Shape* shape, double sx, double sy): shape_(shape), sx_(sx), sy_(sy) {}
 
-	string draw(int x, int y) override;
+	string draw(int x, int y);
 
 private:
-	Shape shape_;
+	Shape * shape_;
 	double sx_;
 	double sy_;
 
