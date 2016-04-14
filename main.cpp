@@ -31,11 +31,20 @@
 
 int main(){
 
-	Circle c(16);
+	Circle circle(20);
+	Square square(40);
+	Triangle triangle(40);
 
 	std::cout << "%!\n" << std::endl;
-	std::cout << c.draw(100,100) << std::endl;
-	std::cout << c.draw(150,150) << std::endl;
+	std::cout << circle.draw(100,100) << std::endl;
+	std::cout << circle.draw(150,150) << std::endl;
+
+	std::cout << square.draw(200,150) << std::endl;
+	std::cout << square.draw(200,200) << std::endl;
+
+	std::cout << triangle.draw(100,200) << std::endl;
+	std::cout << triangle.draw(100,250) << std::endl;
+
 
 	return 0;
 }
