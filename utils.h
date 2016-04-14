@@ -27,7 +27,7 @@ string stringify(const T& var){
 	stringstream ss;
 	ss << var;
 	return ss.str();
-};
+}
 
 string psLine(int,int,int,int);
 string psArc(int,int,double,int,int);
