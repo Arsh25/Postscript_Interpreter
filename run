@@ -1,0 +1,1 @@
+./main > out.ps ; open out.ps 

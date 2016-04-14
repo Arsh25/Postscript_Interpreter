@@ -7,7 +7,8 @@ var searchData=
   ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['reconstructedexpression',['reconstructedExpression',['../struct_catch_1_1_assertion_result_data.html#a9e809d36fffbeb1c7d0cbe7382dd9595',1,'Catch::AssertionResultData']]],
   ['reconstructexpression',['reconstructExpression',['../class_catch_1_1_result_builder.html#ad34bc9b83d5cbd5d960903e5a3c6c96c',1,'Catch::ResultBuilder']]],
-  ['rectangle',['Rectangle',['../class_rectangle.html',1,'Rectangle'],['../class_rectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../class_rectangle.html#a361b04e1812db6a4774273d18198f65d',1,'Rectangle::Rectangle(double w, double h)'],['../class_rectangle.html#a1dc8d8db9c867aa80616837bd980fd78',1,'Rectangle::Rectangle(int x, int y, double w, double h)'],['../class_rectangle.html#afe86286ce9e845ca93cf32781a1dfb68',1,'Rectangle::Rectangle(pair&lt; int, int &gt; center, double w, double h)']]],
+  ['rectangle',['Rectangle',['../class_rectangle.html',1,'Rectangle'],['../class_rectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../class_rectangle.html#a361b04e1812db6a4774273d18198f65d',1,'Rectangle::Rectangle(double w, double h)']]],
+  ['rectangle_2ecpp',['rectangle.cpp',['../rectangle_8cpp.html',1,'']]],
   ['rectangle_2eh',['rectangle.h',['../rectangle_8h.html',1,'']]],
   ['register_5flegacy_5freporter',['REGISTER_LEGACY_REPORTER',['../catch_8hpp.html#a1adc4854d9c6a32af14aa1ddee5b87ef',1,'catch.hpp']]],
   ['register_5freporter',['REGISTER_REPORTER',['../catch_8hpp.html#acadc9d11edc5137e12476268d11cbb23',1,'catch.hpp']]],
@@ -30,13 +31,14 @@ var searchData=
   ['require_5fthrows_5fas',['REQUIRE_THROWS_AS',['../catch_8hpp.html#ae24a059e3c28ff3eea69be48282f5f81',1,'catch.hpp']]],
   ['require_5fthrows_5fwith',['REQUIRE_THROWS_WITH',['../catch_8hpp.html#aa39a017db507132071d2819f087b2f28',1,'catch.hpp']]],
   ['reset',['reset',['../class_catch_1_1_ptr.html#af8d0fa7a2cd20842830b354ac31dfe5c',1,'Catch::Ptr::reset()'],['../class_catch_1_1_option.html#a37b4e0e5d4d56296adacd267a616f4e0',1,'Catch::Option::reset()']]],
-  ['resultbuilder',['ResultBuilder',['../class_catch_1_1_result_builder.html#a8579c3056f64f9324cf1181532828376',1,'Catch::ResultBuilder']]],
   ['resultbuilder',['ResultBuilder',['../class_catch_1_1_result_builder.html',1,'Catch']]],
-  ['resultdisposition',['resultDisposition',['../struct_catch_1_1_assertion_info.html#a60353b3632ab2f827162f2b2d6911073',1,'Catch::AssertionInfo']]],
+  ['resultbuilder',['ResultBuilder',['../class_catch_1_1_result_builder.html#a8579c3056f64f9324cf1181532828376',1,'Catch::ResultBuilder']]],
   ['resultdisposition',['ResultDisposition',['../struct_catch_1_1_result_disposition.html',1,'Catch']]],
+  ['resultdisposition',['resultDisposition',['../struct_catch_1_1_assertion_info.html#a60353b3632ab2f827162f2b2d6911073',1,'Catch::AssertionInfo']]],
   ['resulttype',['resultType',['../struct_catch_1_1_assertion_result_data.html#a7ceab4a7ff722aec5587e3748caf66b7',1,'Catch::AssertionResultData']]],
   ['resultwas',['ResultWas',['../struct_catch_1_1_result_was.html',1,'Catch']]],
   ['rngseed',['rngSeed',['../namespace_catch.html#acf5ea05e942d2d7fe79111e12754ed76',1,'Catch']]],
-  ['rotate',['Rotate',['../class_rotate.html',1,'']]],
-  ['rotate_2eh',['rotate.h',['../rotate_8h.html',1,'']]]
+  ['rotate_2ecpp',['rotate.cpp',['../rotate_8cpp.html',1,'']]],
+  ['rotate_2eh',['rotate.h',['../rotate_8h.html',1,'']]],
+  ['rotated',['Rotated',['../class_rotated.html',1,'Rotated'],['../class_rotated.html#aee5f88769baea78d5d2fb8f72ac818cf',1,'Rotated::Rotated()']]]
 ];

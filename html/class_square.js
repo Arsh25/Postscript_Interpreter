@@ -2,6 +2,5 @@ var class_square =
 [
     [ "Square", "class_square.html#a3dc7ff9aefc2725172b5d3153973d243", null ],
     [ "Square", "class_square.html#a8e4034d486f24636febfaf2235b40834", null ],
-    [ "Square", "class_square.html#aa8d8831ed45f154396848ef38b99e389", null ],
-    [ "Square", "class_square.html#a06800694750f64c34adc9db2605a6bfe", null ]
+    [ "draw", "class_square.html#a6803f99575df5a4e532dbb70f317eb05", null ]
 ];
