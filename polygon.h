@@ -17,6 +17,8 @@ public:
 	Polygon() : Shape(), numOfSides_(0), sideLength_(0) {};
 	Polygon(int sides, double length) : Shape(), numOfSides_(sides), sideLength_(length) {};
 
+	string draw(int x,int y) override;
+
 private:
 	int numOfSides_;
 	double sideLength_;
@@ -31,7 +33,11 @@ public:
 	Triangle() : Polygon() {};
 	Triangle(double side) : Polygon(3,side) {};
 
+	string draw(int x,int y) override;
+
+
 private:
+
 
 }; //end of class Triangle
 
@@ -42,6 +48,9 @@ class Square: public Polygon
 public:
 	Square(): Polygon() {};
 	Square(double side): Polygon(4,side) {};
+
+	string draw(int x,int y) override;
+	
 
 private:
 
