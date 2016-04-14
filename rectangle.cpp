@@ -22,7 +22,6 @@ string Rectangle::draw(int x, int y)
 	ss << (llx) << " " << (lly + height_) << " lineto\n";
 	ss << "closepath\n";
 	ss << "stroke\n";
-	ss << "showpage\n";
 
 	return ss.str();
 }

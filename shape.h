@@ -13,6 +13,8 @@
 using std::pair;
 #include <string>
 using std::string;
+#include <sstream>
+using std::stringstream;
 
 #include "utils.h"
 
