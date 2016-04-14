@@ -1,8 +1,9 @@
-sudo: false
+sudo: true
 language: cpp
 
 compiler: g++
 
 script:
+- sudo apt-get install g++-4.9
 - make clean test 
 
