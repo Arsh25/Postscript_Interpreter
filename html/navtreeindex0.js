@@ -231,8 +231,9 @@ var NAVTREEINDEX0 =
 "catch_8hpp.html#aff0ca0f561ad8053654ab27d54486197":[3,0,0,284],
 "catch_8hpp.html#aff60c1de6ac6cea30175d70e33d83c8e":[3,0,0,254],
 "catch_8hpp_source.html":[3,0,0],
-"circle_8h.html":[3,0,1],
-"circle_8h_source.html":[3,0,1],
+"circle_8cpp.html":[3,0,1],
+"circle_8h.html":[3,0,2],
+"circle_8h_source.html":[3,0,2],
 "class_catch_1_1_assertion_result.html":[2,0,0,4],
 "class_catch_1_1_assertion_result.html#a122c369bd49430a304e3eaebdf184f36":[2,0,0,4,10],
 "class_catch_1_1_assertion_result.html#a2901d41b199258ff6a44571b147169dd":[2,0,0,4,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "class_catch_1_1_assertion_result.html#aa90bec8064879a62fcdc8e1079bcdba1":[2,0,0,4,7],
 "class_catch_1_1_assertion_result.html#ab22a1c9baa182aeb2549fffeb8294d9e":[2,0,0,4,12],
 "class_catch_1_1_assertion_result.html#ab58aeec27052ba400633ed0e36cea692":[2,0,0,4,1],
-"class_catch_1_1_assertion_result.html#abf90f5abd04d38b2fb4f5d575bdc4f1e":[2,0,0,4,2],
-"class_catch_1_1_assertion_result.html#ac368a7490af7669decd58efea7d7dc54":[2,0,0,4,5]
+"class_catch_1_1_assertion_result.html#abf90f5abd04d38b2fb4f5d575bdc4f1e":[2,0,0,4,2]
 };
