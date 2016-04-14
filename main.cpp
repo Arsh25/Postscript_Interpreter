@@ -11,8 +11,6 @@
 #include "circle.h"
 
 #include "polygon.h"
-#include "triangle.h"
-#include "square.h"
 
 #include "rectangle.h"
 #include "spacer.h"
