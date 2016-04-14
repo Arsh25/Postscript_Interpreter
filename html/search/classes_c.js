@@ -5,5 +5,5 @@ var searchData=
   ['resultbuilder',['ResultBuilder',['../class_catch_1_1_result_builder.html',1,'Catch']]],
   ['resultdisposition',['ResultDisposition',['../struct_catch_1_1_result_disposition.html',1,'Catch']]],
   ['resultwas',['ResultWas',['../struct_catch_1_1_result_was.html',1,'Catch']]],
-  ['rotate',['Rotate',['../class_rotate.html',1,'']]]
+  ['rotated',['Rotated',['../class_rotated.html',1,'']]]
 ];

@@ -4,7 +4,7 @@ var searchData=
   ['captureexpression',['captureExpression',['../class_catch_1_1_result_builder.html#af2ae2343965802eeeb0abbd4ea9d2d36',1,'Catch::ResultBuilder']]],
   ['captureresult',['captureResult',['../class_catch_1_1_result_builder.html#a10e467f7b7a4976e5d148b4d5066e8fd',1,'Catch::ResultBuilder']]],
   ['casedstring',['CasedString',['../struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_cased_string.html#aebd017c88423d8a11c62cff85754a22d',1,'Catch::Matchers::Impl::StdString::CasedString']]],
-  ['circle',['Circle',['../class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe',1,'Circle::Circle()'],['../class_circle.html#a05c707753451188c26b43508b610ff8e',1,'Circle::Circle(double radius)'],['../class_circle.html#ace551ce2e85abb8660f74ee34f5761a1',1,'Circle::Circle(int x, int y, double radius)'],['../class_circle.html#a336a4fc87b6e76b072f1c3da19a29c89',1,'Circle::Circle(pair&lt; int, int &gt; center, double radius)']]],
+  ['circle',['Circle',['../class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe',1,'Circle::Circle()'],['../class_circle.html#a05c707753451188c26b43508b610ff8e',1,'Circle::Circle(double radius)']]],
   ['cleanup',['cleanUp',['../namespace_catch.html#a0f78e9afdebc6d4512d18e76fbf54b8c',1,'Catch']]],
   ['cleanupcontext',['cleanUpContext',['../namespace_catch.html#ae50508f10ffc4ed873a31a4db4caea16',1,'Catch']]],
   ['clone',['clone',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher.html#a9d31e5018fea24efa08c3cbf5aa4475d',1,'Catch::Matchers::Impl::Matcher::clone()'],['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_impl.html#afe2e10779f91394f80ff5c894fb1bfab',1,'Catch::Matchers::Impl::MatcherImpl::clone()']]],

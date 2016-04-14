@@ -16,6 +16,6 @@ var searchData=
   ['total',['total',['../struct_catch_1_1_counts.html#a9125c662e30114e5c5cc94729b1e9e84',1,'Catch::Counts']]],
   ['translate',['translate',['../struct_catch_1_1_i_exception_translator.html#a2a554b96ed5ed411e7c796b6b42837a5',1,'Catch::IExceptionTranslator']]],
   ['translateactiveexception',['translateActiveException',['../struct_catch_1_1_i_exception_translator_registry.html#af76ae8c331a17f2a94c9720bc0d686bb',1,'Catch::IExceptionTranslatorRegistry::translateActiveException()'],['../namespace_catch.html#adafff91485eeeeb9e9333f317cc0e3b1',1,'Catch::translateActiveException()']]],
-  ['triangle',['Triangle',['../class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5',1,'Triangle::Triangle()'],['../class_triangle.html#a55a9c6195c3f384f3b21b90a80ddc5c3',1,'Triangle::Triangle(double side)'],['../class_triangle.html#a026fe60b6825f39eb8c582ab13032582',1,'Triangle::Triangle(int x, int y, double side)'],['../class_triangle.html#a7c07d4206a9469486b4969086a20afa8',1,'Triangle::Triangle(pair&lt; int, int &gt; center, double side)']]],
+  ['triangle',['Triangle',['../class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5',1,'Triangle::Triangle()'],['../class_triangle.html#a55a9c6195c3f384f3b21b90a80ddc5c3',1,'Triangle::Triangle(double side)']]],
   ['trim',['trim',['../namespace_catch.html#a084108b47f37d8bfd5db51c50c7451b3',1,'Catch']]]
 ];

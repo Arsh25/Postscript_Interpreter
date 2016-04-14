@@ -11,12 +11,15 @@
 
 #include "shape_decorator.h"
 
-class Rotate : public ShapeDecorator 
+class Rotated: public ShapeDecorator 
 {
 public:
+	Rotated(Shape * shape, int angle):shape_(shape), angle_(angle) {}
 
+	string draw(int x, int y);
 
 private:
+	Shape * shape_;
 	int angle_;
 
 };
