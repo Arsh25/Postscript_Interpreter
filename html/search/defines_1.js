@@ -3,6 +3,7 @@ var searchData=
   ['capture',['CAPTURE',['../catch_8hpp.html#a88df55a964a20b22fec4d74235ed7651',1,'catch.hpp']]],
   ['catch_5fauto_5fptr',['CATCH_AUTO_PTR',['../catch_8hpp.html#afebdae626caac99de5b11b63fbd41d90',1,'catch.hpp']]],
   ['catch_5fbreak_5finto_5fdebugger',['CATCH_BREAK_INTO_DEBUGGER',['../catch_8hpp.html#a89636e916d8b61c85c63ea5a75b1e6fd',1,'catch.hpp']]],
+  ['catch_5fconfig_5fmain',['CATCH_CONFIG_MAIN',['../test_8cpp.html#a656eb5868e824d59f489f910db438420',1,'test.cpp']]],
   ['catch_5finternal_5ferror',['CATCH_INTERNAL_ERROR',['../catch_8hpp.html#a05b6c8a530fa2e5b397add8966522777',1,'catch.hpp']]],
   ['catch_5finternal_5flineinfo',['CATCH_INTERNAL_LINEINFO',['../catch_8hpp.html#abc0b2405454c51748a31e0393d9ad5d1',1,'catch.hpp']]],
   ['catch_5finternal_5fsuppress_5fparentheses_5fwarnings',['CATCH_INTERNAL_SUPPRESS_PARENTHESES_WARNINGS',['../catch_8hpp.html#a89c1608a68775aca1bb7c265f7ba923a',1,'catch.hpp']]],

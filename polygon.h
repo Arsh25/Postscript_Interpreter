@@ -15,7 +15,7 @@ class Polygon: public Shape
 {
 public:
 	Polygon() : Shape(), numOfSides_(0), sideLength_(0) {};
-	Polygon(int sides, double length) : Shape(), numOfSides_(sides), sideLength_(length) {};
+	Polygon(int sides, double length) : Shape(getWidth(sides,length),getHeight(sides,length)), numOfSides_(sides), sideLength_(length) {};
 
 	string draw(int x,int y) override;
 

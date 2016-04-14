@@ -37,6 +37,8 @@ string stringify(const T& var){
 string psLine(int,int,int,int);
 string psArc(int,int,double,int,int);
 pair<double,double> getPoint(int,int,double);
+double getWidth(int,double);
+double getHeight(int,double);
 
 
 #endif

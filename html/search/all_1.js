@@ -7,5 +7,8 @@ var searchData=
   ['borgtype',['BorgType',['../struct_catch_1_1_detail_1_1_borg_type.html',1,'Catch::Detail']]],
   ['botl_5f',['botL_',['../class_shape.html#a4eb27d9692c47bd631466a56ad978b74',1,'Shape']]],
   ['botr_5f',['botR_',['../class_shape.html#a13c9282f9ed31dced9e592c4de1a6238',1,'Shape']]],
+  ['bounds',['bounds',['../class_shape.html#a8b66fe7fe3e0e3ad883eb5d487d8d442',1,'Shape']]],
+  ['boundsheight_5f',['boundsHeight_',['../class_shape.html#a99e0e92930da8380eedae20255347b50',1,'Shape']]],
+  ['boundswidth_5f',['boundsWidth_',['../class_shape.html#a8d608b3645ea020c08eaabfd112bd5d4',1,'Shape']]],
   ['build',['build',['../class_catch_1_1_result_builder.html#a31eba48feb02817d2151e31bd8331eeb',1,'Catch::ResultBuilder']]]
 ];
