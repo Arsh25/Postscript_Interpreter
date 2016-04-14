@@ -14,7 +14,7 @@ using std::initializer_list;
 
 #include "shape.h"
 
-class ShapeDecorator: public Shape
+class ShapeDecorator
 {
 public:
 	

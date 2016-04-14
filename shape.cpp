@@ -7,7 +7,3 @@
  */
 
 #include "shape.h"
-
-//moved Shape constructor declarations to shape.cpp 
-//because derived classes couldn't find them otherwise
-Shape::Shape() : center_(0,0) {}
