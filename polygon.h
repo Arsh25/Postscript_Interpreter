@@ -23,4 +23,30 @@ private:
 
 }; //end of class Polygon
 
+
+
+class Triangle : public Polygon
+{
+public:
+	Triangle() : Polygon() {};
+	Triangle(double side) : Polygon(3,side) {};
+
+private:
+
+}; //end of class Triangle
+
+
+
+class Square: public Polygon
+{
+public:
+	Square(): Polygon() {};
+	Square(double side): Polygon(4,side) {};
+
+private:
+
+
+}; //end of class Square
+
+
 #endif

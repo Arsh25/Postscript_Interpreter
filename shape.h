@@ -23,7 +23,7 @@ public:
 	//because derived classes couldn't find them otherwise
 	Shape();
 
-	virtual ~Shape(){};
+	virtual ~Shape() {};
 	Shape (const Shape & other){};
 
 	virtual string draw(int,int) = 0;
