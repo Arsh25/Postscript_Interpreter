@@ -14,7 +14,7 @@ FILES = utils.cpp shape.cpp circle.cpp polygon.cpp rectangle.cpp
 main: main.cpp $(FILES) 
 	$(COMPILER)  $^ $(FLAGS) -o $@
 
-test: test.cpp 4(FILES)
+test: test.cpp $(FILES)
 	$(COMPILER)  $^ $(FLAGS) -o $@
 
 clean:
