@@ -31,8 +31,11 @@
 
 int main(){
 
-	std::cout << "Hello world! " << stringify(3.141592) << std::endl;
-	std::cout << psLine(1,1,6,9) << std::endl;
+	Circle c(16);
+
+	std::cout << "%!\n" << std::endl;
+	std::cout << c.draw(100,100) << std::endl;
+	std::cout << c.draw(150,150) << std::endl;
 
 	return 0;
 }

@@ -21,7 +21,7 @@ class Shape
 public:
 	//moved Shape constructor declarations to shape.cpp 
 	//because derived classes couldn't find them otherwise
-	Shape();
+	Shape() {};
 
 	virtual ~Shape() {};
 	Shape (const Shape & other){};
