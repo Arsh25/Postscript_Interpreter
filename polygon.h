@@ -19,7 +19,7 @@ public:
 
 	string draw(int x,int y) override;
 
-private:
+protected:
 	int numOfSides_;
 	double sideLength_;
 
@@ -50,7 +50,7 @@ public:
 	Square(double side): Polygon(4,side) {};
 
 	string draw(int x,int y) override;
-	
+
 
 private:
 
