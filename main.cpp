@@ -28,6 +28,8 @@
 
 
 #include <iostream>
+using std::cout;
+using std::endl;
 
 int main(){
 
@@ -37,5 +39,9 @@ int main(){
 	std::cout << c.draw(100,100) << std::endl;
 	std::cout << c.draw(150,150) << std::endl;
 
+	Rectangle r(100.0, 50.0);
+	cout << r.draw(300,300) << endl;
+
+	std::cout << "showpage\n" << std::endl;
 	return 0;
 }

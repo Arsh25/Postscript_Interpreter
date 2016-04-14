@@ -8,10 +8,10 @@ STD=c++11
 
 FLAGS = -std=$(STD) -Wall -pedantic -Wno-deprecated-declarations 
 
-main: main.cpp utils.cpp shape.cpp circle.cpp polygon.cpp
+main: main.cpp utils.cpp shape.cpp circle.cpp polygon.cpp rectangle.cpp
 	$(COMPILER)  $^ $(FLAGS) -o $@
 
-test: test.cpp utils.cpp shape.cpp circle.cpp polygon.cpp
+test: test.cpp utils.cpp shape.cpp circle.cpp polygon.cpp rectangle.cpp
 	$(COMPILER)  $^ $(FLAGS) -o $@
 
 clean:
