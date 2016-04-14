@@ -11,5 +11,3 @@
 //moved Shape constructor declarations to shape.cpp 
 //because derived classes couldn't find them otherwise
 Shape::Shape() : center_(0,0) {}
-Shape::Shape(int x, int y) : center_(x,y) {}
-Shape::Shape(pair<int,int> center) : center_(center) {}

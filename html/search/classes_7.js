@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertical',['Vertical',['../class_vertical.html',1,'']]]
+  ['layered',['Layered',['../class_layered.html',1,'']]]
 ];

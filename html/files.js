@@ -1,5 +1,6 @@
 var files =
 [
+    [ "catch.hpp", "catch_8hpp.html", "catch_8hpp" ],
     [ "circle.h", "circle_8h.html", [
       [ "Circle", "class_circle.html", "class_circle" ]
     ] ],
@@ -38,7 +39,7 @@ var files =
     [ "triangle.h", "triangle_8h.html", [
       [ "Triangle", "class_triangle.html", "class_triangle" ]
     ] ],
-    [ "utils.cpp", "utils_8cpp.html", null ],
+    [ "utils.cpp", "utils_8cpp.html", "utils_8cpp" ],
     [ "utils.h", "utils_8h.html", "utils_8h" ],
     [ "vertical.h", "vertical_8h.html", [
       [ "Vertical", "class_vertical.html", null ]

@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['center_5f',['center_',['../class_shape.html#aa9aa9714f7d04cb1b8a8b2a3f72a53be',1,'Shape']]],
-  ['circle',['Circle',['../class_circle.html',1,'Circle'],['../class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe',1,'Circle::Circle()'],['../class_circle.html#a05c707753451188c26b43508b610ff8e',1,'Circle::Circle(double radius)'],['../class_circle.html#ace551ce2e85abb8660f74ee34f5761a1',1,'Circle::Circle(int x, int y, double radius)'],['../class_circle.html#a336a4fc87b6e76b072f1c3da19a29c89',1,'Circle::Circle(pair&lt; int, int &gt; center, double radius)']]],
-  ['circle_2eh',['circle.h',['../circle_8h.html',1,'']]]
+  ['between',['between',['../namespace_catch_1_1_generators.html#a030abfa7ee3c58d909cf6a6aa0405265',1,'Catch::Generators']]],
+  ['betweengenerator',['BetweenGenerator',['../class_catch_1_1_between_generator.html',1,'Catch']]],
+  ['betweengenerator',['BetweenGenerator',['../class_catch_1_1_between_generator.html#a835a057d691ae37caef660624099b51c',1,'Catch::BetweenGenerator']]],
+  ['borgtype',['BorgType',['../struct_catch_1_1_detail_1_1_borg_type.html#a780a9946ed0d654f0bfc043c8fc505d8',1,'Catch::Detail::BorgType']]],
+  ['borgtype',['BorgType',['../struct_catch_1_1_detail_1_1_borg_type.html',1,'Catch::Detail']]],
+  ['botl_5f',['botL_',['../class_shape.html#a4eb27d9692c47bd631466a56ad978b74',1,'Shape']]],
+  ['botr_5f',['botR_',['../class_shape.html#a13c9282f9ed31dced9e592c4de1a6238',1,'Shape']]],
+  ['build',['build',['../class_catch_1_1_result_builder.html#a31eba48feb02817d2151e31bd8331eeb',1,'Catch::ResultBuilder']]]
 ];
