@@ -91,7 +91,7 @@ TEST_CASE("Polygon Draw","[Polygon]")
 
 	REQUIRE(poly1.draw(72,72) == testPolyDraw(72,72,1,1));
 	REQUIRE(poly2.draw(72,144) == testPolyDraw(72,144,1,1));
-	REQUIRE(poly3.draw(72,72) == testPolyDraw(144,144,4,1));
+	REQUIRE(poly3.draw(72,72) == testPolyDraw(72,72,4,1));
 
 
 }
