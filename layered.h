@@ -17,8 +17,6 @@ public:
 	
 
 protected:
-	int x_;
-	int y_;
 
 };
 

@@ -9,11 +9,15 @@
 #ifndef SPACER_H_INCLUDED
 #define SPACER_H_INCLUDED
 
+#include "rectangle.h"
+
 class Spacer : public Rectangle
 {
 public:
 	Spacer(): Rectangle() {};
 	Spacer(int x, int y, double w, double h): Rectangle(x,y,w,h) {};
+
+	string draw(int x, int y) const;
 
 private:
 
