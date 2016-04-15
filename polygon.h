@@ -15,9 +15,9 @@ class Polygon: public Shape
 {
 public:
 	Polygon() : Shape(), numOfSides_(0), sideLength_(0) {};
-	Polygon(int sides, double length) : Shape(getWidth(sides,length),getHeight(sides,length)), numOfSides_(sides), sideLength_(length) {};
+	Polygon(int x, int y, int sides, double length) : Shape(x, y, getWidth(sides,length),getHeight(sides,length)), numOfSides_(sides), sideLength_(length) {};
 
-	string draw(int x,int y) override;
+	string draw(int x,int y) const;
 
 protected:
 	int numOfSides_;
@@ -30,8 +30,8 @@ protected:
 class Triangle : public Polygon
 {
 public:
-	Triangle() : Polygon(3,0) {};
-	Triangle(double side) : Polygon(3,side) {};
+	Triangle() : Polygon(0,0,3,0) {};
+	Triangle(int x, int y, double side) : Polygon(x,y,3,side) {};
 
 private:
 
@@ -43,8 +43,8 @@ private:
 class Square: public Polygon
 {
 public:
-	Square(): Polygon(4,0) {};
-	Square(double side): Polygon(4,side) {};
+	Square(): Polygon(0,0,4,0) {};
+	Square(int x, int y, double side): Polygon(x,y,4,side) {};
 
 private:
 

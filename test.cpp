@@ -84,7 +84,7 @@ TEST_CASE ("Rectangle Construction","[Rectangle]")
 	x=y=72; //Draw 1 inch from left edge
 	llx = x - (width/2);
 	lly = y - (height/2);
-	Rectangle rect(width,height);
+	Rectangle rect(0,0,width,height);
 
 	stringstream expectedPS;
 
@@ -103,12 +103,12 @@ TEST_CASE ("Rectangle Construction","[Rectangle]")
 TEST_CASE("Polygon Draw","[Polygon]")
 {
     //numOfSides, sidelength
-	Polygon poly1(1,1); 
-	Polygon poly2(1,1);
-	Polygon poly3(4,1); //Square
-	Polygon poly4(3,10); //Triangle 
-	Polygon poly5(10,10);
-	Polygon poly6(10,23.6);
+	Polygon poly1(0,0,1,1); 
+	Polygon poly2(0,0,1,1);
+	Polygon poly3(0,0,4,1); //Square
+	Polygon poly4(0,0,3,10); //Triangle 
+	Polygon poly5(0,0,10,10);
+	Polygon poly6(0,0,10,23.6);
 
 	REQUIRE(poly1.draw(72,72) == testPolyDraw(72,72,1,1));
 	REQUIRE(poly2.draw(72,144) == testPolyDraw(72,144,1,1));

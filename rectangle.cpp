@@ -8,7 +8,7 @@
 
  #include "rectangle.h"
 
-string Rectangle::draw(int x, int y)
+string Rectangle::draw(int x, int y) const
 {
 	stringstream ss;
 
