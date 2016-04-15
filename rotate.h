@@ -14,8 +14,10 @@
 class Rotated: public ShapeDecorator 
 {
 public:
-	Rotated(Shape * shape, int angle):shape_(shape), angle_(angle) {}
+	Rotated() : ShapeDecorator() {};
+	Rotated(Shape * shape, int angle): ShapeDecorator(), shape_(shape), angle_(angle) {};
 
+	string draw() const;
 	string draw(int x, int y) const;
 
 private:

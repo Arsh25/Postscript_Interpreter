@@ -14,9 +14,10 @@
 class Scaled : public ShapeDecorator
 {
 public:
-	Scaled() {};
-	Scaled(Shape* shape, double sx, double sy): shape_(shape), sx_(sx), sy_(sy) {}
+	Scaled() : ShapeDecorator() {};
+	Scaled(Shape* shape, double sx, double sy) : ShapeDecorator(), shape_(shape), sx_(sx), sy_(sy) {};
 
+	string draw() const;
 	string draw(int x, int y) const;
 
 private:

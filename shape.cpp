@@ -71,6 +71,13 @@ double Shape::height(){
 	return boundsHeight_;
 }
 
+int Shape::x(){
+	return x_;
+}
+int Shape::y(){
+	return y_;
+}
+
 void Shape::print(ostream & os) const{
 	os << this->draw();
 }

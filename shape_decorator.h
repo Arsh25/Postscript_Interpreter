@@ -17,6 +17,8 @@ using std::initializer_list;
 class ShapeDecorator
 {
 public:
+	ShapeDecorator(): x_(0), y_(0) {};
+	ShapeDecorator(int x, int y): x_(x), y_(y) {};
 
 	virtual string draw() const;
 	virtual string draw(int x,int y) const;

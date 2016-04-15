@@ -37,6 +37,8 @@ public:
 	string bounds();
 	double width();
 	double height();
+	int x();
+	int y();
 	virtual void print(ostream & os = std::cout) const;
 
 protected:

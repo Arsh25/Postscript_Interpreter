@@ -8,6 +8,10 @@
 
  #include "rotate.h"
 
+string Rotated::draw() const{
+	return draw(shape_->x(),shape_->y());
+}
+
 string Rotated::draw(int x, int y) const{
 	stringstream ss;
 	ss << "gsave\n";
