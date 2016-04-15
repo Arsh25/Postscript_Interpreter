@@ -15,9 +15,9 @@ class Circle : public Shape
 {
 public:
 	Circle(): Shape(), radius_(0) {};
-	Circle(double radius) : Shape(2*radius, 2*radius), radius_(radius) {};
+	Circle(int x, int y, double radius) : Shape(x, y, 2*radius, 2*radius), radius_(radius) {};
 
-	string draw(int x, int y) override;
+	string draw(int x, int y) const;
 
 protected:
 	double radius_;

@@ -8,6 +8,6 @@
 
 #include "circle.h"
 
-string Circle::draw(int x, int y){
+string Circle::draw(int x, int y) const{
 	return "newpath\n" + psArc(x,y,radius_,0,360) + "\nstroke";
 }
