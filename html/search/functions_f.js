@@ -1,9 +1,11 @@
 var searchData=
 [
   ['tagalias',['TagAlias',['../struct_catch_1_1_tag_alias.html#ad9124d03bfb6f767f1c97572330b05bc',1,'Catch::TagAlias']]],
-  ['test_5fcase',['TEST_CASE',['../test_8cpp.html#a8118022f00ec40770a5fe4f658be1e9e',1,'test.cpp']]],
+  ['test_5fcase',['TEST_CASE',['../test_8cpp.html#a74b955489173fa85a27a3e845a12c980',1,'TEST_CASE(&quot;Utils Functions&quot;,&quot;Utils&quot;):&#160;test.cpp'],['../test_8cpp.html#a8118022f00ec40770a5fe4f658be1e9e',1,'TEST_CASE(&quot;Rectangle Construction&quot;,&quot;[Rectangle]&quot;):&#160;test.cpp'],['../test_8cpp.html#af90984b9c05d555841906ef3825e5f2b',1,'TEST_CASE(&quot;Polygon Draw&quot;,&quot;[Polygon]&quot;):&#160;test.cpp']]],
   ['testcase',['TestCase',['../class_catch_1_1_test_case.html#a03a5b913484681bd6d398dc5e9c2a907',1,'Catch::TestCase::TestCase(ITestCase *testCase, TestCaseInfo const &amp;info)'],['../class_catch_1_1_test_case.html#ac0011d3789edc3e44edb41f13c4775a0',1,'Catch::TestCase::TestCase(TestCase const &amp;other)']]],
   ['testcaseinfo',['TestCaseInfo',['../struct_catch_1_1_test_case_info.html#a35ec65315e0d1f178491b5a59f3f3123',1,'Catch::TestCaseInfo::TestCaseInfo(std::string const &amp;_name, std::string const &amp;_className, std::string const &amp;_description, std::set&lt; std::string &gt; const &amp;_tags, SourceLineInfo const &amp;_lineInfo)'],['../struct_catch_1_1_test_case_info.html#ac338adb4e38f4bf3977fb45b2b1fe447',1,'Catch::TestCaseInfo::TestCaseInfo(TestCaseInfo const &amp;other)']]],
+  ['testgetpoint',['testGetPoint',['../test_8cpp.html#a37c1a254560b9af8f5f5ea2e7473783b',1,'test.cpp']]],
+  ['testpolydraw',['testPolyDraw',['../test_8cpp.html#ac0798500b8334cc2c49953e1ebbbcf4b',1,'test.cpp']]],
   ['teststreamable',['testStreamable',['../namespace_catch_1_1_detail.html#aff0ca0f561ad8053654ab27d54486197',1,'Catch::Detail::testStreamable(std::ostream &amp;)'],['../namespace_catch_1_1_detail.html#aac81f01b0d687f75b8f24a925591b7ac',1,'Catch::Detail::testStreamable(FalseType)']]],
   ['then',['then',['../class_catch_1_1_composite_generator.html#a2e03f42df85cdd238aabd77a80b075d5',1,'Catch::CompositeGenerator::then(CompositeGenerator &amp;other)'],['../class_catch_1_1_composite_generator.html#aefdc11bcfccdf07d2db5f0da3ed8758c',1,'Catch::CompositeGenerator::then(T value)']]],
   ['throwlogicerror',['throwLogicError',['../namespace_catch.html#a702b612f683d154c466ea8297ed4a20d',1,'Catch']]],
@@ -17,6 +19,6 @@ var searchData=
   ['total',['total',['../struct_catch_1_1_counts.html#a9125c662e30114e5c5cc94729b1e9e84',1,'Catch::Counts']]],
   ['translate',['translate',['../struct_catch_1_1_i_exception_translator.html#a2a554b96ed5ed411e7c796b6b42837a5',1,'Catch::IExceptionTranslator']]],
   ['translateactiveexception',['translateActiveException',['../struct_catch_1_1_i_exception_translator_registry.html#af76ae8c331a17f2a94c9720bc0d686bb',1,'Catch::IExceptionTranslatorRegistry::translateActiveException()'],['../namespace_catch.html#adafff91485eeeeb9e9333f317cc0e3b1',1,'Catch::translateActiveException()']]],
-  ['triangle',['Triangle',['../class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5',1,'Triangle::Triangle()'],['../class_triangle.html#a55a9c6195c3f384f3b21b90a80ddc5c3',1,'Triangle::Triangle(double side)']]],
+  ['triangle',['Triangle',['../class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5',1,'Triangle::Triangle()'],['../class_triangle.html#a026fe60b6825f39eb8c582ab13032582',1,'Triangle::Triangle(int x, int y, double side)']]],
   ['trim',['trim',['../namespace_catch.html#a084108b47f37d8bfd5db51c50c7451b3',1,'Catch']]]
 ];

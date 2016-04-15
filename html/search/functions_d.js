@@ -4,7 +4,7 @@ var searchData=
   ['rawmemorytostring',['rawMemoryToString',['../namespace_catch_1_1_detail.html#ac5d6c510e565ee5bddcc2236194ce29e',1,'Catch::Detail::rawMemoryToString(const void *object, std::size_t size)'],['../namespace_catch_1_1_detail.html#a371620ed524abfcae5c3772bf49b563a',1,'Catch::Detail::rawMemoryToString(const T &amp;object)']]],
   ['react',['react',['../class_catch_1_1_result_builder.html#a3085cdc46533d45bed6f652a2ac295c0',1,'Catch::ResultBuilder']]],
   ['reconstructexpression',['reconstructExpression',['../class_catch_1_1_result_builder.html#ad34bc9b83d5cbd5d960903e5a3c6c96c',1,'Catch::ResultBuilder']]],
-  ['rectangle',['Rectangle',['../class_rectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../class_rectangle.html#a361b04e1812db6a4774273d18198f65d',1,'Rectangle::Rectangle(double w, double h)']]],
+  ['rectangle',['Rectangle',['../class_rectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../class_rectangle.html#a1dc8d8db9c867aa80616837bd980fd78',1,'Rectangle::Rectangle(int x, int y, double w, double h)']]],
   ['registerlistener',['registerListener',['../struct_catch_1_1_i_mutable_registry_hub.html#ae06fcb90ba3f2b389d450cd81e229276',1,'Catch::IMutableRegistryHub']]],
   ['registerreporter',['registerReporter',['../struct_catch_1_1_i_mutable_registry_hub.html#aab72d0aa1fa14627f1a6a4c893ae0a12',1,'Catch::IMutableRegistryHub']]],
   ['registertest',['registerTest',['../struct_catch_1_1_i_mutable_registry_hub.html#a11b85c6744d88c9f83fe16ad4a8dd451',1,'Catch::IMutableRegistryHub']]],
@@ -17,5 +17,5 @@ var searchData=
   ['reset',['reset',['../class_catch_1_1_ptr.html#af8d0fa7a2cd20842830b354ac31dfe5c',1,'Catch::Ptr::reset()'],['../class_catch_1_1_option.html#a37b4e0e5d4d56296adacd267a616f4e0',1,'Catch::Option::reset()']]],
   ['resultbuilder',['ResultBuilder',['../class_catch_1_1_result_builder.html#a8579c3056f64f9324cf1181532828376',1,'Catch::ResultBuilder']]],
   ['rngseed',['rngSeed',['../namespace_catch.html#acf5ea05e942d2d7fe79111e12754ed76',1,'Catch']]],
-  ['rotated',['Rotated',['../class_rotated.html#aee5f88769baea78d5d2fb8f72ac818cf',1,'Rotated']]]
+  ['rotated',['Rotated',['../class_rotated.html#a0e7bbab1043b5f83912a3963170160aa',1,'Rotated::Rotated()'],['../class_rotated.html#aee5f88769baea78d5d2fb8f72ac818cf',1,'Rotated::Rotated(Shape *shape, int angle)']]]
 ];

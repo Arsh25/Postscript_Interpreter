@@ -5,7 +5,5 @@ var searchData=
   ['tags',['tags',['../struct_catch_1_1_test_case_info.html#a045f62e7719a8760a5b456f7fd2dc97c',1,'Catch::TestCaseInfo']]],
   ['tagsasstring',['tagsAsString',['../struct_catch_1_1_test_case_info.html#ac65c2d36fd36f71e9bf782b2ea245c64',1,'Catch::TestCaseInfo']]],
   ['testcases',['testCases',['../struct_catch_1_1_totals.html#adb195fe477aedee2ecea88c888f16506',1,'Catch::Totals']]],
-  ['topl_5f',['topL_',['../class_shape.html#ab88d7c08e311e86a19b08145b46f3336',1,'Shape']]],
-  ['topr_5f',['topR_',['../class_shape.html#a90c38fe62f24ce729c75e82d206af433',1,'Shape']]],
   ['type',['type',['../struct_catch_1_1_message_info.html#ae928b9117465c696e45951d9d0284e78',1,'Catch::MessageInfo']]]
 ];

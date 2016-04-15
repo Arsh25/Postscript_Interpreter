@@ -125,9 +125,9 @@ $(document).ready(function(){initNavTree('circle_8h_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe">   17</a></span>&#160;    <a class="code" href="class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe">Circle</a>(): <a class="code" href="class_shape.html">Shape</a>(), <a class="code" href="class_circle.html#a7daf9293b23457177dbc0fadb960e07e">radius_</a>(0) {};</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_circle.html#a05c707753451188c26b43508b610ff8e">   18</a></span>&#160;    <a class="code" href="class_circle.html#a05c707753451188c26b43508b610ff8e">Circle</a>(<span class="keywordtype">double</span> radius) : <a class="code" href="class_shape.html">Shape</a>(2*radius, 2*radius), <a class="code" href="class_circle.html#a7daf9293b23457177dbc0fadb960e07e">radius_</a>(radius) {};</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_circle.html#ace551ce2e85abb8660f74ee34f5761a1">   18</a></span>&#160;    <a class="code" href="class_circle.html#ace551ce2e85abb8660f74ee34f5761a1">Circle</a>(<span class="keywordtype">int</span> <a class="code" href="class_shape.html#a41e403e73d2949f1a6adfba6032c41ec">x</a>, <span class="keywordtype">int</span> <a class="code" href="class_shape.html#ac757f715cc5b5681f2c691663ac06f0a">y</a>, <span class="keywordtype">double</span> radius) : <a class="code" href="class_shape.html">Shape</a>(x, y, 2*radius, 2*radius), <a class="code" href="class_circle.html#a7daf9293b23457177dbc0fadb960e07e">radius_</a>(radius) {};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_circle.html#adc303bbd4236110349698dbdf55d4d4a">draw</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_shape.html#a8405e352e8bbbdd173fd89065d63a80b">draw</a>(<span class="keywordtype">int</span> <a class="code" href="class_shape.html#a41e403e73d2949f1a6adfba6032c41ec">x</a>, <span class="keywordtype">int</span> <a class="code" href="class_shape.html#ac757f715cc5b5681f2c691663ac06f0a">y</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_circle.html#a7daf9293b23457177dbc0fadb960e07e">   23</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_circle.html#a7daf9293b23457177dbc0fadb960e07e">radius_</a>;</div>
@@ -136,10 +136,12 @@ $(document).ready(function(){initNavTree('circle_8h_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_circle_html"><div class="ttname"><a href="class_circle.html">Circle</a></div><div class="ttdef"><b>Definition:</b> circle.h:14</div></div>
+<div class="ttc" id="class_shape_html_a41e403e73d2949f1a6adfba6032c41ec"><div class="ttname"><a href="class_shape.html#a41e403e73d2949f1a6adfba6032c41ec">Shape::x</a></div><div class="ttdeci">int x()</div><div class="ttdef"><b>Definition:</b> shape.cpp:74</div></div>
 <div class="ttc" id="class_circle_html_ad1ecfcfc7bf34529c6a6d6c448bf70fe"><div class="ttname"><a href="class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe">Circle::Circle</a></div><div class="ttdeci">Circle()</div><div class="ttdef"><b>Definition:</b> circle.h:17</div></div>
-<div class="ttc" id="class_shape_html"><div class="ttname"><a href="class_shape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> shape.h:22</div></div>
-<div class="ttc" id="class_circle_html_a05c707753451188c26b43508b610ff8e"><div class="ttname"><a href="class_circle.html#a05c707753451188c26b43508b610ff8e">Circle::Circle</a></div><div class="ttdeci">Circle(double radius)</div><div class="ttdef"><b>Definition:</b> circle.h:18</div></div>
-<div class="ttc" id="class_circle_html_adc303bbd4236110349698dbdf55d4d4a"><div class="ttname"><a href="class_circle.html#adc303bbd4236110349698dbdf55d4d4a">Circle::draw</a></div><div class="ttdeci">string draw(int x, int y) override</div><div class="ttdef"><b>Definition:</b> circle.cpp:11</div></div>
+<div class="ttc" id="class_shape_html_a8405e352e8bbbdd173fd89065d63a80b"><div class="ttname"><a href="class_shape.html#a8405e352e8bbbdd173fd89065d63a80b">Shape::draw</a></div><div class="ttdeci">virtual string draw() const </div><div class="ttdoc">generate ps code for shape </div><div class="ttdef"><b>Definition:</b> shape.cpp:16</div></div>
+<div class="ttc" id="class_shape_html"><div class="ttname"><a href="class_shape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> shape.h:24</div></div>
+<div class="ttc" id="class_shape_html_ac757f715cc5b5681f2c691663ac06f0a"><div class="ttname"><a href="class_shape.html#ac757f715cc5b5681f2c691663ac06f0a">Shape::y</a></div><div class="ttdeci">int y()</div><div class="ttdef"><b>Definition:</b> shape.cpp:77</div></div>
+<div class="ttc" id="class_circle_html_ace551ce2e85abb8660f74ee34f5761a1"><div class="ttname"><a href="class_circle.html#ace551ce2e85abb8660f74ee34f5761a1">Circle::Circle</a></div><div class="ttdeci">Circle(int x, int y, double radius)</div><div class="ttdef"><b>Definition:</b> circle.h:18</div></div>
 <div class="ttc" id="shape_8h_html"><div class="ttname"><a href="shape_8h.html">shape.h</a></div></div>
 <div class="ttc" id="class_circle_html_a7daf9293b23457177dbc0fadb960e07e"><div class="ttname"><a href="class_circle.html#a7daf9293b23457177dbc0fadb960e07e">Circle::radius_</a></div><div class="ttdeci">double radius_</div><div class="ttdef"><b>Definition:</b> circle.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -148,7 +150,7 @@ $(document).ready(function(){initNavTree('circle_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="circle_8h.html">circle.h</a></li>
-    <li class="footer">Generated on Thu Apr 14 2016 13:59:48 for Postscript Interpreter by
+    <li class="footer">Generated on Fri Apr 15 2016 14:45:43 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

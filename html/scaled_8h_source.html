@@ -124,25 +124,26 @@ $(document).ready(function(){initNavTree('scaled_8h_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_scaled.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_scaled.html">Scaled</a> : <span class="keyword">public</span> <a class="code" href="class_shape_decorator.html">ShapeDecorator</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_scaled.html#a77df7ef81f1c3c267cf093c215fe67a8">   17</a></span>&#160;    <a class="code" href="class_scaled.html#a77df7ef81f1c3c267cf093c215fe67a8">Scaled</a>() {};</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_scaled.html#aa0379fdc7d7d44b4735644447386c5c4">   18</a></span>&#160;    <a class="code" href="class_scaled.html#aa0379fdc7d7d44b4735644447386c5c4">Scaled</a>(<a class="code" href="class_shape.html">Shape</a>* shape, <span class="keywordtype">double</span> sx, <span class="keywordtype">double</span> sy): shape_(shape), sx_(sx), sy_(sy) {}</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_scaled.html#a77df7ef81f1c3c267cf093c215fe67a8">   17</a></span>&#160;    <a class="code" href="class_scaled.html#a77df7ef81f1c3c267cf093c215fe67a8">Scaled</a>() : <a class="code" href="class_shape_decorator.html">ShapeDecorator</a>() {};</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_scaled.html#aa0379fdc7d7d44b4735644447386c5c4">   18</a></span>&#160;    <a class="code" href="class_scaled.html#aa0379fdc7d7d44b4735644447386c5c4">Scaled</a>(<a class="code" href="class_shape.html">Shape</a>* shape, <span class="keywordtype">double</span> sx, <span class="keywordtype">double</span> sy) : <a class="code" href="class_shape_decorator.html">ShapeDecorator</a>(), shape_(shape), sx_(sx), sy_(sy) {};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_scaled.html#af6acd883142faf6b13c531cb44cdb697">draw</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_shape.html">Shape</a> * shape_;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">double</span> sx_;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">double</span> sy_;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_scaled.html#ad86e14b9c9e880d31b7581134f03e5dc">draw</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_scaled.html#ad86e14b9c9e880d31b7581134f03e5dc">draw</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_shape.html">Shape</a> * shape_;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">double</span> sx_;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">double</span> sy_;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="class_shape_decorator_html"><div class="ttname"><a href="class_shape_decorator.html">ShapeDecorator</a></div><div class="ttdef"><b>Definition:</b> shape_decorator.h:17</div></div>
 <div class="ttc" id="class_scaled_html_aa0379fdc7d7d44b4735644447386c5c4"><div class="ttname"><a href="class_scaled.html#aa0379fdc7d7d44b4735644447386c5c4">Scaled::Scaled</a></div><div class="ttdeci">Scaled(Shape *shape, double sx, double sy)</div><div class="ttdef"><b>Definition:</b> scaled.h:18</div></div>
-<div class="ttc" id="class_scaled_html_af6acd883142faf6b13c531cb44cdb697"><div class="ttname"><a href="class_scaled.html#af6acd883142faf6b13c531cb44cdb697">Scaled::draw</a></div><div class="ttdeci">string draw(int x, int y)</div><div class="ttdef"><b>Definition:</b> scaled.cpp:11</div></div>
-<div class="ttc" id="class_shape_html"><div class="ttname"><a href="class_shape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> shape.h:22</div></div>
+<div class="ttc" id="class_scaled_html_ad86e14b9c9e880d31b7581134f03e5dc"><div class="ttname"><a href="class_scaled.html#ad86e14b9c9e880d31b7581134f03e5dc">Scaled::draw</a></div><div class="ttdeci">string draw() const </div><div class="ttdoc">generate ps code for shape </div><div class="ttdef"><b>Definition:</b> scaled.cpp:11</div></div>
+<div class="ttc" id="class_shape_html"><div class="ttname"><a href="class_shape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> shape.h:24</div></div>
 <div class="ttc" id="class_scaled_html_a77df7ef81f1c3c267cf093c215fe67a8"><div class="ttname"><a href="class_scaled.html#a77df7ef81f1c3c267cf093c215fe67a8">Scaled::Scaled</a></div><div class="ttdeci">Scaled()</div><div class="ttdef"><b>Definition:</b> scaled.h:17</div></div>
 <div class="ttc" id="class_scaled_html"><div class="ttname"><a href="class_scaled.html">Scaled</a></div><div class="ttdef"><b>Definition:</b> scaled.h:14</div></div>
 <div class="ttc" id="shape__decorator_8h_html"><div class="ttname"><a href="shape__decorator_8h.html">shape_decorator.h</a></div></div>
@@ -152,7 +153,7 @@ $(document).ready(function(){initNavTree('scaled_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="scaled_8h.html">scaled.h</a></li>
-    <li class="footer">Generated on Thu Apr 14 2016 13:59:48 for Postscript Interpreter by
+    <li class="footer">Generated on Fri Apr 15 2016 14:45:43 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
