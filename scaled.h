@@ -17,7 +17,7 @@ public:
 	Scaled() {};
 	Scaled(Shape* shape, double sx, double sy): shape_(shape), sx_(sx), sy_(sy) {}
 
-	string draw(int x, int y);
+	string draw(int x, int y) const;
 
 private:
 	Shape * shape_;

@@ -23,5 +23,26 @@ protected:
 };
 
 
+class Horizontal: public Layered
+{
+public:
+
+
+private:
+	
+
+};
+
+class Vertical : public Layered
+{
+public:
+
+
+private:
+
+
+};
+
+
 
 #endif

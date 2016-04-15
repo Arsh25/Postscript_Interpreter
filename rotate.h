@@ -16,7 +16,7 @@ class Rotated: public ShapeDecorator
 public:
 	Rotated(Shape * shape, int angle):shape_(shape), angle_(angle) {}
 
-	string draw(int x, int y);
+	string draw(int x, int y) const;
 
 private:
 	Shape * shape_;
