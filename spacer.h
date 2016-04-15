@@ -13,7 +13,7 @@ class Spacer : public Rectangle
 {
 public:
 	Spacer(): Rectangle() {};
-	Spacer(double w, double h): Rectangle(w,h) {};
+	Spacer(int x, int y, double w, double h): Rectangle(x,y,w,h) {};
 
 private:
 

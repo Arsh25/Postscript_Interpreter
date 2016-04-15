@@ -8,7 +8,7 @@
 
 #include "scaled.h"
 
-string Scaled::draw(int x, int y){
+string Scaled::draw(int x, int y) const{
 
 	stringstream ss;
 	ss << "gsave\n";

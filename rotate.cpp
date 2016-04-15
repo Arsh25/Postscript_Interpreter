@@ -8,7 +8,7 @@
 
  #include "rotate.h"
 
-string Rotated::draw(int x, int y){
+string Rotated::draw(int x, int y) const{
 	stringstream ss;
 	ss << "gsave\n";
 	ss << x << " " << y << " translate\n";

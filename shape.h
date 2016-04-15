@@ -16,6 +16,8 @@ using std::string;
 #include <sstream>
 using std::stringstream;
 #include <cmath>
+#include <iostream>
+using std::ostream;
 
 #include "utils.h"
 
@@ -23,39 +25,30 @@ class Shape
 {
 public:
 
-	Shape(): boundsWidth_(0), boundsHeight_(0) {};
-	Shape(double width, double height): boundsWidth_(width), boundsHeight_(height) {};
+	Shape(): x_(0), y_(0), boundsWidth_(0), boundsHeight_(0) {};
+	Shape(int x, int y, double width, double height): x_(x), y_(y), boundsWidth_(width), boundsHeight_(height) {};
 
 	virtual ~Shape() {};
 	Shape (const Shape & other){};
 
-	virtual string draw(int,int) = 0;
+	virtual string draw() const;
+	virtual string draw(int x,int y) const;
+	virtual void place(int x, int y);
 	string bounds();
 	double width();
 	double height();
-
+	virtual void print(ostream & os = std::cout) const;
 
 protected:
+	/**
+	 * x coordinate of shape position
+	 */
+	int x_;
 
 	/**
-	 * Point at top left corner of bounds
+	 * y coordinate of shape position
 	 */
-	pair<int,int> topL_;
-
-	/**
-	 * Point at bottom left corner of bounds
-	 */
-	pair<int,int> botL_;
-
-	/**
-	 * Point at top right corner of bounds
-	 */
-	pair<int,int> topR_;
-
-	/**
-	 * Point at bottom right corner of bounds
-	 */
-	pair<int,int> botR_;
+	int y_;
 
 	/**
 	 * width of boundary box
@@ -69,7 +62,12 @@ protected:
 
 	
 
+	
+
 
 }; //end of class Shape
+
+
+ostream & operator<<(ostream &os, const Shape & shape);
 
 #endif

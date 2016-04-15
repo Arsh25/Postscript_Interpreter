@@ -17,7 +17,7 @@
  * 
  * @return string containing ps code
  */
-string Polygon::draw(int x,int y){
+string Polygon::draw(int x,int y) const{
 	stringstream ss;
 
 	ss << "gsave\n";
