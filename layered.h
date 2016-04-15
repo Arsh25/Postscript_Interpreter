@@ -9,15 +9,19 @@
 #ifndef LAYERED_H_INCLUDED
 #define LAYERED_H_INCLUDED
 
+#include <initializer_list>
+using std::initializer_list;
+
 #include "shape_decorator.h"
 
 class Layered : public ShapeDecorator
 {
 public:
-	
+	Layered() : ShapeDecorator() {};
+	Layered(int x, int y, initializer_list<Shape*> shapes) : shapes_(shapes) {};
 
 protected:
-
+	initializer_list<Shape*> shapes_;
 };
 
 
