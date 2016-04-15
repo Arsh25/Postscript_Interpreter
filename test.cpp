@@ -3,6 +3,10 @@
 #include <string>
 using std::string;
 using std::make_pair;
+#include <random>
+using std::mt19937;
+using std::random_device;
+using std::uniform_real_distribution;
 
 #include "rectangle.h"
 #include "polygon.h"
@@ -35,6 +39,23 @@ string testPolyDraw (int x, int y, int sides, int length)
 
 	return ss.str();
 
+}
+
+TEST_CASE ("Utils Functions","Utils")
+{
+	const int NUM = 10;
+	random_device rndDev;
+	mt19937 rndNum(rndDev());
+	uniform_real_distribution<> x(0,595);
+	uniform_real_distribution<> y(0,842);
+	std::vector<double> listX;
+	std::vector<double> listY;
+
+	for(int i = 0; i<=NUM; i++)
+	{
+		listX.push_back(x(rndNum));
+		listY.push_back(y(rndNum));
+	}
 }
 
 TEST_CASE ("Rectangle Construction","[Rectangle]")
