@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['what',['what',['../class_catch_1_1_not_implemented_exception.html#ad4c13963f1a8feacda0cd331adda89e3',1,'Catch::NotImplementedException']]],
-  ['width',['width',['../class_shape.html#ab00e62f9f7cd0be450ac29437b80ce13',1,'Shape']]],
-  ['withname',['withName',['../class_catch_1_1_test_case.html#ab6dbc6c82b7c1680013c67bdedccfc8e',1,'Catch::TestCase']]],
-  ['writetodebugconsole',['writeToDebugConsole',['../namespace_catch.html#aa5dcf4750ce9a854f4b74d3c952d13cc',1,'Catch']]]
+  ['valueor',['valueOr',['../class_catch_1_1_option.html#a21b5629a7febbe3e23c475c9d9138a2d',1,'Catch::Option']]],
+  ['values',['values',['../namespace_catch_1_1_generators.html#a7a2c5bebb3c06c5b0ca05a80289b9eb1',1,'Catch::Generators::values(T val1, T val2)'],['../namespace_catch_1_1_generators.html#a496c4a826107e47203b6c609cfd8c2c5',1,'Catch::Generators::values(T val1, T val2, T val3)'],['../namespace_catch_1_1_generators.html#afb1dcf02bfc8cdf990f27fdc7d7e4a4e',1,'Catch::Generators::values(T val1, T val2, T val3, T val4)']]],
+  ['valuesgenerator',['ValuesGenerator',['../class_catch_1_1_values_generator.html#a36cd3d75afb1f5502400c3ad7cae7a5e',1,'Catch::ValuesGenerator']]]
 ];

@@ -119,25 +119,31 @@ $(document).ready(function(){initNavTree('spacer_8h_source.html','');});
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef SPACER_H_INCLUDED</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define SPACER_H_INCLUDED</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_spacer.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_spacer.html">Spacer</a> : <span class="keyword">public</span> <a class="code" href="class_rectangle.html">Rectangle</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_spacer.html#a633ff31f694cbefad661ba67c0a4b11b">   15</a></span>&#160;    <a class="code" href="class_spacer.html#a633ff31f694cbefad661ba67c0a4b11b">Spacer</a>(): <a class="code" href="class_rectangle.html">Rectangle</a>() {};</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_spacer.html#a358ef503c38bd3b6b370de2e8eb1b603">   16</a></span>&#160;    <a class="code" href="class_spacer.html#a358ef503c38bd3b6b370de2e8eb1b603">Spacer</a>(<span class="keywordtype">int</span> <a class="code" href="class_shape.html#a41e403e73d2949f1a6adfba6032c41ec">x</a>, <span class="keywordtype">int</span> <a class="code" href="class_shape.html#ac757f715cc5b5681f2c691663ac06f0a">y</a>, <span class="keywordtype">double</span> w, <span class="keywordtype">double</span> h): <a class="code" href="class_rectangle.html">Rectangle</a>(x,y,w,h) {};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="rectangle_8h.html">rectangle.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_spacer.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_spacer.html">Spacer</a> : <span class="keyword">public</span> <a class="code" href="class_rectangle.html">Rectangle</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_spacer.html#a633ff31f694cbefad661ba67c0a4b11b">   17</a></span>&#160;    <a class="code" href="class_spacer.html#a633ff31f694cbefad661ba67c0a4b11b">Spacer</a>(): <a class="code" href="class_rectangle.html">Rectangle</a>() {};</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_spacer.html#a358ef503c38bd3b6b370de2e8eb1b603">   18</a></span>&#160;    <a class="code" href="class_spacer.html#a358ef503c38bd3b6b370de2e8eb1b603">Spacer</a>(<span class="keywordtype">int</span> <a class="code" href="class_shape.html#a41e403e73d2949f1a6adfba6032c41ec">x</a>, <span class="keywordtype">int</span> <a class="code" href="class_shape.html#ac757f715cc5b5681f2c691663ac06f0a">y</a>, <span class="keywordtype">double</span> w, <span class="keywordtype">double</span> h): <a class="code" href="class_rectangle.html">Rectangle</a>(x,y,w,h) {};</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_shape.html#a8405e352e8bbbdd173fd89065d63a80b">draw</a>(<span class="keywordtype">int</span> <a class="code" href="class_shape.html#a41e403e73d2949f1a6adfba6032c41ec">x</a>, <span class="keywordtype">int</span> <a class="code" href="class_shape.html#ac757f715cc5b5681f2c691663ac06f0a">y</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="class_spacer_html_a358ef503c38bd3b6b370de2e8eb1b603"><div class="ttname"><a href="class_spacer.html#a358ef503c38bd3b6b370de2e8eb1b603">Spacer::Spacer</a></div><div class="ttdeci">Spacer(int x, int y, double w, double h)</div><div class="ttdef"><b>Definition:</b> spacer.h:16</div></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="class_spacer_html_a358ef503c38bd3b6b370de2e8eb1b603"><div class="ttname"><a href="class_spacer.html#a358ef503c38bd3b6b370de2e8eb1b603">Spacer::Spacer</a></div><div class="ttdeci">Spacer(int x, int y, double w, double h)</div><div class="ttdef"><b>Definition:</b> spacer.h:18</div></div>
 <div class="ttc" id="class_shape_html_a41e403e73d2949f1a6adfba6032c41ec"><div class="ttname"><a href="class_shape.html#a41e403e73d2949f1a6adfba6032c41ec">Shape::x</a></div><div class="ttdeci">int x()</div><div class="ttdef"><b>Definition:</b> shape.cpp:74</div></div>
 <div class="ttc" id="class_rectangle_html"><div class="ttname"><a href="class_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> rectangle.h:17</div></div>
-<div class="ttc" id="class_spacer_html"><div class="ttname"><a href="class_spacer.html">Spacer</a></div><div class="ttdef"><b>Definition:</b> spacer.h:12</div></div>
-<div class="ttc" id="class_spacer_html_a633ff31f694cbefad661ba67c0a4b11b"><div class="ttname"><a href="class_spacer.html#a633ff31f694cbefad661ba67c0a4b11b">Spacer::Spacer</a></div><div class="ttdeci">Spacer()</div><div class="ttdef"><b>Definition:</b> spacer.h:15</div></div>
+<div class="ttc" id="class_spacer_html"><div class="ttname"><a href="class_spacer.html">Spacer</a></div><div class="ttdef"><b>Definition:</b> spacer.h:14</div></div>
+<div class="ttc" id="class_spacer_html_a633ff31f694cbefad661ba67c0a4b11b"><div class="ttname"><a href="class_spacer.html#a633ff31f694cbefad661ba67c0a4b11b">Spacer::Spacer</a></div><div class="ttdeci">Spacer()</div><div class="ttdef"><b>Definition:</b> spacer.h:17</div></div>
+<div class="ttc" id="class_shape_html_a8405e352e8bbbdd173fd89065d63a80b"><div class="ttname"><a href="class_shape.html#a8405e352e8bbbdd173fd89065d63a80b">Shape::draw</a></div><div class="ttdeci">virtual string draw() const </div><div class="ttdoc">generate ps code for shape </div><div class="ttdef"><b>Definition:</b> shape.cpp:16</div></div>
+<div class="ttc" id="rectangle_8h_html"><div class="ttname"><a href="rectangle_8h.html">rectangle.h</a></div></div>
 <div class="ttc" id="class_shape_html_ac757f715cc5b5681f2c691663ac06f0a"><div class="ttname"><a href="class_shape.html#ac757f715cc5b5681f2c691663ac06f0a">Shape::y</a></div><div class="ttdeci">int y()</div><div class="ttdef"><b>Definition:</b> shape.cpp:77</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -145,7 +151,7 @@ $(document).ready(function(){initNavTree('spacer_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="spacer_8h.html">spacer.h</a></li>
-    <li class="footer">Generated on Fri Apr 15 2016 14:45:43 for Postscript Interpreter by
+    <li class="footer">Generated on Fri Apr 15 2016 15:42:37 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

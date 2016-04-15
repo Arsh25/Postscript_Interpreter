@@ -170,8 +170,9 @@ var NAVTREEINDEX1 =
 "class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe":[2,0,1,0],
 "class_horizontal.html":[2,0,2],
 "class_layered.html":[2,0,3],
-"class_layered.html#a93f7bc93cc36ff74f0f3a0d3e6de82ff":[2,0,3,0],
-"class_layered.html#aefa3069aa7bca3c8177aa1d12e207ebd":[2,0,3,1],
+"class_layered.html#a5957ef351efc54bcfe38719b3ef5e1a4":[2,0,3,1],
+"class_layered.html#a6a9d25d4d62c7dc21f93b8384c4f91ce":[2,0,3,0],
+"class_layered.html#a80ab4f9aaec1246a9d16400bbf8d3dce":[2,0,3,2],
 "class_polygon.html":[2,0,4],
 "class_polygon.html#a22a65792492ceb172e3f9ac63a619864":[2,0,4,4],
 "class_polygon.html#a295d10cfffd80d67f603642d82f62279":[2,0,4,1],
@@ -223,6 +224,7 @@ var NAVTREEINDEX1 =
 "class_spacer.html":[2,0,10],
 "class_spacer.html#a358ef503c38bd3b6b370de2e8eb1b603":[2,0,10,1],
 "class_spacer.html#a633ff31f694cbefad661ba67c0a4b11b":[2,0,10,0],
+"class_spacer.html#a7c79d0ca6ccc80a08bdaa839c8e05b2f":[2,0,10,2],
 "class_square.html":[2,0,11],
 "class_square.html#a3dc7ff9aefc2725172b5d3153973d243":[2,0,11,0],
 "class_square.html#aa8d8831ed45f154396848ef38b99e389":[2,0,11,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "functions_func_c.html":[2,3,1,2],
 "functions_func_d.html":[2,3,1,3],
 "functions_func_e.html":[2,3,1,4],
-"functions_func_f.html":[2,3,1,5],
-"functions_func_g.html":[2,3,1,6],
-"functions_func_h.html":[2,3,1,7]
+"functions_func_f.html":[2,3,1,5]
 };

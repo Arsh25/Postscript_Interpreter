@@ -5,6 +5,7 @@ var files =
     [ "circle.h", "circle_8h.html", [
       [ "Circle", "class_circle.html", "class_circle" ]
     ] ],
+    [ "layered.cpp", "layered_8cpp.html", null ],
     [ "layered.h", "layered_8h.html", [
       [ "Layered", "class_layered.html", "class_layered" ],
       [ "Horizontal", "class_horizontal.html", null ],
@@ -33,6 +34,7 @@ var files =
     [ "shape.h", "shape_8h.html", "shape_8h" ],
     [ "shape_decorator.cpp", "shape__decorator_8cpp.html", "shape__decorator_8cpp" ],
     [ "shape_decorator.h", "shape__decorator_8h.html", "shape__decorator_8h" ],
+    [ "spacer.cpp", "spacer_8cpp.html", null ],
     [ "spacer.h", "spacer_8h.html", [
       [ "Spacer", "class_spacer.html", "class_spacer" ]
     ] ],

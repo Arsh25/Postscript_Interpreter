@@ -22,7 +22,7 @@ var searchData=
   ['then',['then',['../class_catch_1_1_composite_generator.html#a2e03f42df85cdd238aabd77a80b075d5',1,'Catch::CompositeGenerator::then(CompositeGenerator &amp;other)'],['../class_catch_1_1_composite_generator.html#aefdc11bcfccdf07d2db5f0da3ed8758c',1,'Catch::CompositeGenerator::then(T value)'],['../catch_8hpp.html#a27987092139727fd7a471b5f74dc62de',1,'THEN():&#160;catch.hpp']]],
   ['threwexception',['ThrewException',['../struct_catch_1_1_result_was.html#a624e1ee3661fcf6094ceef1f654601efa3bb56296483947280cf7fa1ad074ab45',1,'Catch::ResultWas']]],
   ['throwlogicerror',['throwLogicError',['../namespace_catch.html#a702b612f683d154c466ea8297ed4a20d',1,'Catch']]],
-  ['throws',['throws',['../struct_catch_1_1_test_case_info.html#a19fb4f0b755956eee8a1fecf713fb7ca',1,'Catch::TestCaseInfo::throws() const '],['../struct_catch_1_1_test_case_info.html#a39b232f74b4a7a6f2183b96759027eaca4704adf89ed7f7ad653d08f99813a974',1,'Catch::TestCaseInfo::Throws()']]],
+  ['throws',['Throws',['../struct_catch_1_1_test_case_info.html#a39b232f74b4a7a6f2183b96759027eaca4704adf89ed7f7ad653d08f99813a974',1,'Catch::TestCaseInfo::Throws()'],['../struct_catch_1_1_test_case_info.html#a19fb4f0b755956eee8a1fecf713fb7ca',1,'Catch::TestCaseInfo::throws() const ']]],
   ['timer',['Timer',['../class_catch_1_1_timer.html',1,'Catch']]],
   ['timer',['Timer',['../class_catch_1_1_timer.html#af09b7cd7a40af71f4704262afb31558a',1,'Catch::Timer']]],
   ['tolower',['toLower',['../namespace_catch.html#ac036a17412d318598ffda8e1fe7a1177',1,'Catch']]],
