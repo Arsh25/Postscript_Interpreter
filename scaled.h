@@ -9,13 +9,13 @@
 #ifndef SCALED_H_INCLUDED
 #define SCALED_H_INCLUDED
 
-#include "shape_decorator.h"
+#include "shape.h"
 
-class Scaled : public ShapeDecorator
+class Scaled : public Shape
 {
 public:
-	Scaled() : ShapeDecorator() {};
-	Scaled(Shape* shape, double sx, double sy) : ShapeDecorator(), shape_(shape), sx_(sx), sy_(sy) {};
+	Scaled() : Shape() {};
+	Scaled(Shape* shape, double sx, double sy) : Shape(), shape_(shape), sx_(sx), sy_(sy) {};
 
 	string draw() const;
 	string draw(int x, int y) const;

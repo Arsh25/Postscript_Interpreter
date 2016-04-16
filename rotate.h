@@ -9,13 +9,13 @@
 #ifndef ROTATE_H_INCLUDED
 #define ROTATE_H_INCLUDED
 
-#include "shape_decorator.h"
+#include "shape.h"
 
-class Rotated: public ShapeDecorator 
+class Rotated: public Shape 
 {
 public:
-	Rotated() : ShapeDecorator() {};
-	Rotated(Shape * shape, int angle): ShapeDecorator(), shape_(shape), angle_(angle) {};
+	Rotated() : Shape() {};
+	Rotated(Shape * shape, int angle): Shape(), shape_(shape), angle_(angle) {};
 
 	string draw() const;
 	string draw(int x, int y) const;

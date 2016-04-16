@@ -110,16 +110,6 @@ void Shape::y(int y){
 }
 
 /**
- * @brief print Shape's ps code
- * @details prints the ps code for drawing the shape to the passed ostream
- * 
- * @param os target ostream
- */
-void Shape::print(ostream & os) const{
-	os << this->draw();
-}
-
-/**
  * @brief overloaded output operator
  * @details prints the ps code for drawing the shape to the calling ostream
  * 
@@ -127,6 +117,6 @@ void Shape::print(ostream & os) const{
  * @param shape Shape to print, passed implicitly
  */
 ostream & operator<<(ostream &os, const Shape & shape){
-	shape.print(os);
+	os << shape.draw();
 	return os;
 }

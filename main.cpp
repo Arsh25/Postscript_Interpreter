@@ -15,8 +15,6 @@
 #include "rectangle.h"
 #include "spacer.h"
 
-#include "shape_decorator.h"
-
 #include "layered.h"
 
 #include "rotate.h"
@@ -47,6 +45,7 @@ int main(){
 	cout << circle << endl;
 	cout << square << endl;
 	cout << triangle << endl;
+	cout << triangle.draw(400,400) << endl;
 	cout << rect << endl;
 	cout << poly6 << endl;
 	cout << poly10 << endl;

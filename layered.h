@@ -12,13 +12,13 @@
 #include <initializer_list>
 using std::initializer_list;
 
-#include "shape_decorator.h"
+#include "shape.h"
 
-class Layered : public ShapeDecorator
+class Layered : public Shape
 {
 public:
-	Layered() : ShapeDecorator() {};
-	Layered(int x, int y, initializer_list<Shape*> shapes) : ShapeDecorator(x,y), shapes_(shapes) {};
+	Layered() : Shape() {};
+	Layered(int x, int y, initializer_list<Shape*> shapes) : Shape(x,y), shapes_(shapes) {};
 	Layered(initializer_list<Shape*> shapes) : Layered(0,0,shapes) {};
 
 protected:
