@@ -18,6 +18,9 @@ using std::stringstream;
 #include <cmath>
 #include <iostream>
 using std::ostream;
+#include <algorithm>
+using std::min;
+using std::max;
 
 #include "utils.h"
 
@@ -37,11 +40,19 @@ public:
 	virtual void place(int x, int y);
 	string bounds();
 	double width();
+	void width(double w);
 	double height();
+	void height(double h);
 	int x();
 	void x(int x);
 	int y();
 	void y(int y);
+
+
+	virtual int numOfSides();
+	virtual double sideLength();
+	virtual double radius();
+
 
 protected:
 	/**

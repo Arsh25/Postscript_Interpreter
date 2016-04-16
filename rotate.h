@@ -15,7 +15,7 @@ class Rotated: public Shape
 {
 public:
 	Rotated() : Shape() {};
-	Rotated(Shape * shape, int angle): Shape(), shape_(shape), angle_(angle) {};
+	Rotated(Shape * shape, int angle);
 
 	string draw() const;
 	string draw(int x, int y) const;

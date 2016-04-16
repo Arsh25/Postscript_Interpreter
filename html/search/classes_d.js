@@ -7,7 +7,6 @@ var searchData=
   ['sectionendinfo',['SectionEndInfo',['../struct_catch_1_1_section_end_info.html',1,'Catch']]],
   ['sectioninfo',['SectionInfo',['../struct_catch_1_1_section_info.html',1,'Catch']]],
   ['shape',['Shape',['../class_shape.html',1,'']]],
-  ['shapedecorator',['ShapeDecorator',['../class_shape_decorator.html',1,'']]],
   ['sharedimpl',['SharedImpl',['../struct_catch_1_1_shared_impl.html',1,'Catch']]],
   ['sharedimpl_3c_20ishared_20_3e',['SharedImpl&lt; IShared &gt;',['../struct_catch_1_1_shared_impl.html',1,'Catch']]],
   ['sharedimpl_3c_20itestcase_20_3e',['SharedImpl&lt; ITestCase &gt;',['../struct_catch_1_1_shared_impl.html',1,'Catch']]],

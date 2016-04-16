@@ -32,8 +32,6 @@ var files =
     ] ],
     [ "shape.cpp", "shape_8cpp.html", "shape_8cpp" ],
     [ "shape.h", "shape_8h.html", "shape_8h" ],
-    [ "shape_decorator.cpp", "shape__decorator_8cpp.html", "shape__decorator_8cpp" ],
-    [ "shape_decorator.h", "shape__decorator_8h.html", "shape__decorator_8h" ],
     [ "spacer.cpp", "spacer_8cpp.html", null ],
     [ "spacer.h", "spacer_8h.html", [
       [ "Spacer", "class_spacer.html", "class_spacer" ]

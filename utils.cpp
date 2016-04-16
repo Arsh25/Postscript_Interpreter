@@ -63,7 +63,7 @@ pair<double,double> getPoint(int k, int n, double l){
  * @return width of polygon
  */
 double getWidth(int n, double l){
-	return n%2 ? (l*(sin(PI*(n-1)))/sin(PI/n)) : ( n%4 ? (l / sin(PI/2)) : (l*cos(PI/n)/sin(PI/n)) );
+	return n%2 ? (l*(sin(PI*(n-1)/(2*n)))/sin(PI/n)) : ( n%4 ? (l / sin(PI/2)) : (l*cos(PI/n)/sin(PI/n)) );
 }
 
 /**
@@ -79,3 +79,10 @@ double getHeight(int n, double l){
 	return n%2 ? (l * (1+cos(PI/n)) / (2*sin(PI/n))) : (l * (cos(PI/n)) / (sin(PI/n)));
 }
 
+double distance(int x0, int y0, int x1, int y1){
+	return sqrt( pow(x1-x0,2) + pow(y1-y0,2));
+}
+
+double getRadius(int n, double l){
+	return l/(2*sin(PI/n));
+}

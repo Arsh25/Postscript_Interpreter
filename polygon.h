@@ -14,15 +14,36 @@
 class Polygon: public Shape
 {
 public:
-	Polygon() : Shape(), numOfSides_(0), sideLength_(0) {};
-	Polygon(int x, int y, int sides, double length) : Shape(x, y, getWidth(sides,length),getHeight(sides,length)), numOfSides_(sides), sideLength_(length) {};
-	Polygon(int sides, double length) : Polygon(0,0,sides,length) {};
+	Polygon() 
+		: Shape(), 
+			numOfSides_(0), 
+			sideLength_(0), 
+			radius_(0) 
+			{};
+
+	Polygon(int x, int y, int sides, double length) 
+		: Shape(x, y, getWidth(sides,length),getHeight(sides,length)), 
+			numOfSides_(sides), 
+			sideLength_(length),
+			radius_(getRadius(sides,length))
+			{};
+
+	Polygon(int sides, double length) 
+		: Polygon(0,0,sides,length) 
+			{};
 
 	string draw(int x,int y) const;
+
+	int numOfSides();
+	void numOfSides(int n);
+	double sideLength();
+	void sideLength(double l);
+	double radius();
 
 protected:
 	int numOfSides_;
 	double sideLength_;
+	double radius_;
 
 }; //end of class Polygon
 

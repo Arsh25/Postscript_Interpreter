@@ -10,7 +10,6 @@ var class_shape =
     [ "draw", "class_shape.html#af26d06a96ece90a563795ec571451eb1", null ],
     [ "height", "class_shape.html#a11686d7b1511fc6707f4dd7b74c65111", null ],
     [ "place", "class_shape.html#a9d6b2e7274a0e1708d5ec93613b53ef2", null ],
-    [ "print", "class_shape.html#a975670945b7f2d26c4a0154bd3f9cfce", null ],
     [ "width", "class_shape.html#ab00e62f9f7cd0be450ac29437b80ce13", null ],
     [ "x", "class_shape.html#a41e403e73d2949f1a6adfba6032c41ec", null ],
     [ "x", "class_shape.html#adc67c1bfb923ed3d7e0cfe4a0cd34f29", null ],

@@ -113,23 +113,35 @@ $(document).ready(function(){initNavTree('class_layered.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_layered.html">Layered</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_shape_decorator.html#a0252e8a598e3c230714d33622af252b4">draw</a>() const </td><td class="entry"><a class="el" href="class_shape_decorator.html">ShapeDecorator</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_shape_decorator.html#a55d090325f584ace02ec2b8f22f11551">draw</a>(int x, int y) const </td><td class="entry"><a class="el" href="class_shape_decorator.html">ShapeDecorator</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_shape.html#a8b66fe7fe3e0e3ad883eb5d487d8d442">bounds</a>()</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#a99e0e92930da8380eedae20255347b50">boundsHeight_</a></td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_shape.html#a8d608b3645ea020c08eaabfd112bd5d4">boundsWidth_</a></td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#a8405e352e8bbbdd173fd89065d63a80b">draw</a>() const </td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_shape.html#af26d06a96ece90a563795ec571451eb1">draw</a>(int x, int y) const </td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#a11686d7b1511fc6707f4dd7b74c65111">height</a>()</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_layered.html#a6a9d25d4d62c7dc21f93b8384c4f91ce">Layered</a>()</td><td class="entry"><a class="el" href="class_layered.html">Layered</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_layered.html#a5957ef351efc54bcfe38719b3ef5e1a4">Layered</a>(int x, int y, initializer_list&lt; Shape * &gt; shapes)</td><td class="entry"><a class="el" href="class_layered.html">Layered</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_layered.html#ac9c58b109dfc7204a3a4be1a185cb1f2">Layered</a>(initializer_list&lt; Shape * &gt; shapes)</td><td class="entry"><a class="el" href="class_layered.html">Layered</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_shape_decorator.html#a5465e53ffaa368bb0025f0a44e9b7fdc">print</a>(ostream &amp;os=std::cout) const </td><td class="entry"><a class="el" href="class_shape_decorator.html">ShapeDecorator</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_shape_decorator.html#a59822066ec0cc121bce4d14a1decc4cb">ShapeDecorator</a>()</td><td class="entry"><a class="el" href="class_shape_decorator.html">ShapeDecorator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_shape_decorator.html#af6386145ebc78eb45be68ee870d4cfd7">ShapeDecorator</a>(int x, int y)</td><td class="entry"><a class="el" href="class_shape_decorator.html">ShapeDecorator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#a9d6b2e7274a0e1708d5ec93613b53ef2">place</a>(int x, int y)</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_shape.html#aaa8d87171e65e0d8ba3c5459978992a7">Shape</a>()</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#a06ed78198a1e3f0940d5e72006c3a074">Shape</a>(int x, int y, double width, double height)</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_shape.html#af3e449cf02a5f99a7c0d11873756b81f">Shape</a>(double width, double height)</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#af929eaa4d0cbd6b2fe2e9026796b9cae">Shape</a>(const Shape &amp;other)</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_layered.html#a80ab4f9aaec1246a9d16400bbf8d3dce">shapes_</a></td><td class="entry"><a class="el" href="class_layered.html">Layered</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_shape_decorator.html#a5c95290253a9410d723230e204bcafeb">x_</a></td><td class="entry"><a class="el" href="class_shape_decorator.html">ShapeDecorator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_shape_decorator.html#a2af82e2b4b0fd03aa976b4b69717a6bc">y_</a></td><td class="entry"><a class="el" href="class_shape_decorator.html">ShapeDecorator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#ab00e62f9f7cd0be450ac29437b80ce13">width</a>()</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_shape.html#a41e403e73d2949f1a6adfba6032c41ec">x</a>()</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#adc67c1bfb923ed3d7e0cfe4a0cd34f29">x</a>(int x)</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_shape.html#ac9f855989a11f0baf8c6a0a494270a2c">x_</a></td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#ac757f715cc5b5681f2c691663ac06f0a">y</a>()</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_shape.html#ae3245e558aad6f812b108632aed6745f">y</a>(int y)</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_shape.html#ae85309f9b9f6ecb7713ebe1d6891126b">y_</a></td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_shape.html#ac3b9fc48965274893f25b18aa14ba665">~Shape</a>()</td><td class="entry"><a class="el" href="class_shape.html">Shape</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 15 2016 16:29:58 for Postscript Interpreter by
+    <li class="footer">Generated on Fri Apr 15 2016 18:50:36 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -9,7 +9,6 @@ var annotated =
     [ "Rotated", "class_rotated.html", "class_rotated" ],
     [ "Scaled", "class_scaled.html", "class_scaled" ],
     [ "Shape", "class_shape.html", "class_shape" ],
-    [ "ShapeDecorator", "class_shape_decorator.html", "class_shape_decorator" ],
     [ "Spacer", "class_spacer.html", "class_spacer" ],
     [ "Square", "class_square.html", "class_square" ],
     [ "Triangle", "class_triangle.html", "class_triangle" ],

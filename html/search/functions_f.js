@@ -19,7 +19,6 @@ var searchData=
   ['setrhs',['setRhs',['../class_catch_1_1_result_builder.html#aaeb41a00cf352c7a0bcf75a0ded0a4a2',1,'Catch::ResultBuilder']]],
   ['setrunner',['setRunner',['../struct_catch_1_1_i_mutable_context.html#af2e53b1dea4527a2587cff266a730f6e',1,'Catch::IMutableContext']]],
   ['shape',['Shape',['../class_shape.html#aaa8d87171e65e0d8ba3c5459978992a7',1,'Shape::Shape()'],['../class_shape.html#a06ed78198a1e3f0940d5e72006c3a074',1,'Shape::Shape(int x, int y, double width, double height)'],['../class_shape.html#af3e449cf02a5f99a7c0d11873756b81f',1,'Shape::Shape(double width, double height)'],['../class_shape.html#af929eaa4d0cbd6b2fe2e9026796b9cae',1,'Shape::Shape(const Shape &amp;other)']]],
-  ['shapedecorator',['ShapeDecorator',['../class_shape_decorator.html#a59822066ec0cc121bce4d14a1decc4cb',1,'ShapeDecorator::ShapeDecorator()'],['../class_shape_decorator.html#af6386145ebc78eb45be68ee870d4cfd7',1,'ShapeDecorator::ShapeDecorator(int x, int y)']]],
   ['sharedimpl',['SharedImpl',['../struct_catch_1_1_shared_impl.html#a0629856ee353298b61ad52cf60e716fb',1,'Catch::SharedImpl']]],
   ['shouldcontinueonfailure',['shouldContinueOnFailure',['../namespace_catch.html#a7f7480b15d74965459c844f0d393ed87',1,'Catch']]],
   ['shoulddebugbreak',['shouldDebugBreak',['../class_catch_1_1_result_builder.html#a34cdbf7ad1e5b3cb4a94047f2d14bcb2',1,'Catch::ResultBuilder']]],

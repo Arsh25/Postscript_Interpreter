@@ -22,6 +22,7 @@
 
 #include "utils.h"
 
+#include <typeinfo>
 
 #include <iostream>
 using std::cout;
@@ -38,23 +39,29 @@ int main(){
 	Polygon poly25(300,100,25,12);
 
 	Scaled scaled(&triangle,0.5,1.5);
-	Rotated rotated(&square,45);
+	Rotated rotated(&square,30);
+	Rotated rTriangle(&triangle,15);
 
 	cout << "%!\n" << endl;
 
 	cout << circle << endl;
 	cout << square << endl;
 	cout << triangle << endl;
-	cout << triangle.draw(400,400) << endl;
 	cout << rect << endl;
 	cout << poly6 << endl;
 	cout << poly10 << endl;
 	cout << poly25 << endl;
 
-	cout << scaled << endl;
-	cout << rotated << endl;
+	cout << scaled.draw(400,400) << endl;
+	cout << rotated.draw(250,200) << endl;
 
 	cout << "showpage" << endl;
+
+	// cout << square.bounds() << endl;
+	// cout << rotated.bounds() << endl;
+
+	// cout << triangle.bounds() << endl;
+	// cout << rTriangle.bounds() << endl;
 
 	return 0;
 }

@@ -8,6 +8,7 @@
 
 #include "polygon.h"
 
+
 /**
  * @brief generates ps code for drawing a polygon
  * @details returns a string containing the ps code for drawing any equilateral polygon
@@ -39,3 +40,18 @@ string Polygon::draw(int x,int y) const{
 	return ss.str();
 }
 
+int Polygon::numOfSides(){
+	return numOfSides_;
+}
+void Polygon::numOfSides(int n){
+	numOfSides_ = n;
+}
+double Polygon::sideLength(){
+	return sideLength_;
+}
+void Polygon::sideLength(double l){
+	sideLength_ = l;
+}
+double Polygon::radius(){
+	return radius_;
+}
