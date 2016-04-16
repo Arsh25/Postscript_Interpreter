@@ -34,7 +34,7 @@ var searchData=
   ['checked_5felse',['CHECKED_ELSE',['../catch_8hpp.html#adabf2ab3d775d62ecc87ac74c235d303',1,'catch.hpp']]],
   ['checked_5fif',['CHECKED_IF',['../catch_8hpp.html#acf5256555bbf08fa5105f50242111dbb',1,'catch.hpp']]],
   ['choice',['Choice',['../struct_catch_1_1_case_sensitive.html#aad49d3aee2d97066642fffa919685c6a',1,'Catch::CaseSensitive']]],
-  ['circle',['Circle',['../class_circle.html',1,'Circle'],['../class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe',1,'Circle::Circle()'],['../class_circle.html#ace551ce2e85abb8660f74ee34f5761a1',1,'Circle::Circle(int x, int y, double radius)']]],
+  ['circle',['Circle',['../class_circle.html',1,'Circle'],['../class_circle.html#ad1ecfcfc7bf34529c6a6d6c448bf70fe',1,'Circle::Circle()'],['../class_circle.html#ace551ce2e85abb8660f74ee34f5761a1',1,'Circle::Circle(int x, int y, double radius)'],['../class_circle.html#a05c707753451188c26b43508b610ff8e',1,'Circle::Circle(double radius)']]],
   ['circle_2ecpp',['circle.cpp',['../circle_8cpp.html',1,'']]],
   ['circle_2eh',['circle.h',['../circle_8h.html',1,'']]],
   ['classname',['className',['../struct_catch_1_1_test_case_info.html#a1a5e0825132a38d091defdebbf2f8ce9',1,'Catch::TestCaseInfo']]],

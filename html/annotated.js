@@ -2,7 +2,7 @@ var annotated =
 [
     [ "Catch", "namespace_catch.html", "namespace_catch" ],
     [ "Circle", "class_circle.html", "class_circle" ],
-    [ "Horizontal", "class_horizontal.html", null ],
+    [ "Horizontal", "class_horizontal.html", "class_horizontal" ],
     [ "Layered", "class_layered.html", "class_layered" ],
     [ "Polygon", "class_polygon.html", "class_polygon" ],
     [ "Rectangle", "class_rectangle.html", "class_rectangle" ],
@@ -13,5 +13,5 @@ var annotated =
     [ "Spacer", "class_spacer.html", "class_spacer" ],
     [ "Square", "class_square.html", "class_square" ],
     [ "Triangle", "class_triangle.html", "class_triangle" ],
-    [ "Vertical", "class_vertical.html", null ]
+    [ "Vertical", "class_vertical.html", "class_vertical" ]
 ];

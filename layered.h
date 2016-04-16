@@ -18,7 +18,8 @@ class Layered : public ShapeDecorator
 {
 public:
 	Layered() : ShapeDecorator() {};
-	Layered(int x, int y, initializer_list<Shape*> shapes) : shapes_(shapes) {};
+	Layered(int x, int y, initializer_list<Shape*> shapes) : ShapeDecorator(x,y), shapes_(shapes) {};
+	Layered(initializer_list<Shape*> shapes) : Layered(0,0,shapes) {};
 
 protected:
 	initializer_list<Shape*> shapes_;
@@ -28,20 +29,22 @@ protected:
 class Horizontal: public Layered
 {
 public:
-
+	Horizontal() : Layered() {};
+	Horizontal(int x, int y, initializer_list<Shape*> shapes) : Layered(x,y,shapes) {};
+	Horizontal(initializer_list<Shape*> shapes) : Horizontal(0,0,shapes) {};
 
 private:
-	
 
 };
 
 class Vertical : public Layered
 {
 public:
-
+	Vertical() : Layered() {};
+	Vertical(int x, int y, initializer_list<Shape*> shapes) : Layered(x,y,shapes) {};
+	Vertical(initializer_list<Shape*> shapes) : Vertical(0,0,shapes) {};
 
 private:
-
 
 };
 

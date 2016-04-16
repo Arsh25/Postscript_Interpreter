@@ -33,7 +33,7 @@ class Triangle : public Polygon
 public:
 	Triangle() : Polygon(0,0,3,0) {};
 	Triangle(int x, int y, double side) : Polygon(x,y,3,side) {};
-	Triangle(double side) : Triangle(3,side) {};
+	Triangle(double side) : Triangle(0,0,side) {};
 
 private:
 
@@ -47,7 +47,7 @@ class Square: public Polygon
 public:
 	Square(): Polygon(0,0,4,0) {};
 	Square(int x, int y, double side): Polygon(x,y,4,side) {};
-	Square(double side) : Square(4,side) {};
+	Square(double side) : Square(0,0,side) {};
 
 private:
 

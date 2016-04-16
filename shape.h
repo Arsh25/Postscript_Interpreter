@@ -39,7 +39,9 @@ public:
 	double width();
 	double height();
 	int x();
+	void x(int x);
 	int y();
+	void y(int y);
 	virtual void print(ostream & os = std::cout) const;
 
 protected:

@@ -8,8 +8,8 @@ var files =
     [ "layered.cpp", "layered_8cpp.html", null ],
     [ "layered.h", "layered_8h.html", [
       [ "Layered", "class_layered.html", "class_layered" ],
-      [ "Horizontal", "class_horizontal.html", null ],
-      [ "Vertical", "class_vertical.html", null ]
+      [ "Horizontal", "class_horizontal.html", "class_horizontal" ],
+      [ "Vertical", "class_vertical.html", "class_vertical" ]
     ] ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "polygon.cpp", "polygon_8cpp.html", null ],

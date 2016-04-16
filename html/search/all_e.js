@@ -7,7 +7,7 @@ var searchData=
   ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['reconstructedexpression',['reconstructedExpression',['../struct_catch_1_1_assertion_result_data.html#a9e809d36fffbeb1c7d0cbe7382dd9595',1,'Catch::AssertionResultData']]],
   ['reconstructexpression',['reconstructExpression',['../class_catch_1_1_result_builder.html#ad34bc9b83d5cbd5d960903e5a3c6c96c',1,'Catch::ResultBuilder']]],
-  ['rectangle',['Rectangle',['../class_rectangle.html',1,'Rectangle'],['../class_rectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../class_rectangle.html#a1dc8d8db9c867aa80616837bd980fd78',1,'Rectangle::Rectangle(int x, int y, double w, double h)']]],
+  ['rectangle',['Rectangle',['../class_rectangle.html',1,'Rectangle'],['../class_rectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../class_rectangle.html#a1dc8d8db9c867aa80616837bd980fd78',1,'Rectangle::Rectangle(int x, int y, double w, double h)'],['../class_rectangle.html#a361b04e1812db6a4774273d18198f65d',1,'Rectangle::Rectangle(double w, double h)']]],
   ['rectangle_2ecpp',['rectangle.cpp',['../rectangle_8cpp.html',1,'']]],
   ['rectangle_2eh',['rectangle.h',['../rectangle_8h.html',1,'']]],
   ['register_5flegacy_5freporter',['REGISTER_LEGACY_REPORTER',['../catch_8hpp.html#a1adc4854d9c6a32af14aa1ddee5b87ef',1,'catch.hpp']]],

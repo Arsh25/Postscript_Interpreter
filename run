@@ -1,1 +1,1 @@
-./main > out.ps ; open out.ps 
+./main > out.ps && open out.ps 

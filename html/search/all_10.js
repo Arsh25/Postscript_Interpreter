@@ -34,7 +34,7 @@ var searchData=
   ['totals',['Totals',['../struct_catch_1_1_totals.html',1,'Catch']]],
   ['translate',['translate',['../struct_catch_1_1_i_exception_translator.html#a2a554b96ed5ed411e7c796b6b42837a5',1,'Catch::IExceptionTranslator']]],
   ['translateactiveexception',['translateActiveException',['../struct_catch_1_1_i_exception_translator_registry.html#af76ae8c331a17f2a94c9720bc0d686bb',1,'Catch::IExceptionTranslatorRegistry::translateActiveException()'],['../namespace_catch.html#adafff91485eeeeb9e9333f317cc0e3b1',1,'Catch::translateActiveException()']]],
-  ['triangle',['Triangle',['../class_triangle.html',1,'Triangle'],['../class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5',1,'Triangle::Triangle()'],['../class_triangle.html#a026fe60b6825f39eb8c582ab13032582',1,'Triangle::Triangle(int x, int y, double side)']]],
+  ['triangle',['Triangle',['../class_triangle.html',1,'Triangle'],['../class_triangle.html#aaefe4ed500c07918d30c6f0e286332c5',1,'Triangle::Triangle()'],['../class_triangle.html#a026fe60b6825f39eb8c582ab13032582',1,'Triangle::Triangle(int x, int y, double side)'],['../class_triangle.html#a55a9c6195c3f384f3b21b90a80ddc5c3',1,'Triangle::Triangle(double side)']]],
   ['trim',['trim',['../namespace_catch.html#a084108b47f37d8bfd5db51c50c7451b3',1,'Catch']]],
   ['truetype',['TrueType',['../struct_catch_1_1_detail_1_1_true_type.html',1,'Catch::Detail']]],
   ['twobluecubes_5fcatch_5fapprox_5fhpp_5fincluded',['TWOBLUECUBES_CATCH_APPROX_HPP_INCLUDED',['../catch_8hpp.html#ac4e861fe31efada5e2470f4aba857224',1,'catch.hpp']]],

@@ -6,7 +6,7 @@ var searchData=
   ['place',['place',['../class_shape.html#a9d6b2e7274a0e1708d5ec93613b53ef2',1,'Shape']]],
   ['pluralise',['pluralise',['../struct_catch_1_1pluralise.html',1,'Catch']]],
   ['pluralise',['pluralise',['../struct_catch_1_1pluralise.html#a5c55e22de2416cfe416edf715c6b9234',1,'Catch::pluralise']]],
-  ['polygon',['Polygon',['../class_polygon.html',1,'Polygon'],['../class_polygon.html#ac183e712f8be1e13f1c9d5b4d4512ead',1,'Polygon::Polygon()'],['../class_polygon.html#a295d10cfffd80d67f603642d82f62279',1,'Polygon::Polygon(int x, int y, int sides, double length)']]],
+  ['polygon',['Polygon',['../class_polygon.html',1,'Polygon'],['../class_polygon.html#ac183e712f8be1e13f1c9d5b4d4512ead',1,'Polygon::Polygon()'],['../class_polygon.html#a295d10cfffd80d67f603642d82f62279',1,'Polygon::Polygon(int x, int y, int sides, double length)'],['../class_polygon.html#a8cb36a982609ea22b8722b76cfa9d6fa',1,'Polygon::Polygon(int sides, double length)']]],
   ['polygon_2ecpp',['polygon.cpp',['../polygon_8cpp.html',1,'']]],
   ['polygon_2eh',['polygon.h',['../polygon_8h.html',1,'']]],
   ['popscopedmessage',['popScopedMessage',['../struct_catch_1_1_i_result_capture.html#a42bcb13276706bf8c3ce081ce16d37fd',1,'Catch::IResultCapture']]],

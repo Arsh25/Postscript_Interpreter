@@ -71,17 +71,61 @@ double Shape::height(){
 	return boundsHeight_;
 }
 
+/**
+ * @brief get x
+ * @details gets x value of center of shape
+ * @return returns x
+ */
 int Shape::x(){
 	return x_;
 }
+
+/**
+ * @brief set x
+ * @details sets x value of center of shape
+ * 
+ * @param x new x value
+ */
+void Shape::x(int x){
+	x_ = x;
+}
+
+/**
+ * @brief get y
+ * @details gets y value of center of shape
+ * @return returns y
+ */
 int Shape::y(){
 	return y_;
 }
 
+/**
+ * @brief sets y
+ * @details sets y value of center of shape
+ * 
+ * @param y new y value
+ */
+void Shape::y(int y){
+	y_ = y;
+}
+
+/**
+ * @brief print Shape's ps code
+ * @details prints the ps code for drawing the shape to the passed ostream
+ * 
+ * @param os target ostream
+ */
 void Shape::print(ostream & os) const{
 	os << this->draw();
 }
 
+/**
+ * @brief overloaded output operator
+ * @details prints the ps code for drawing the shape to the calling ostream
+ * 
+ * @param os target ostream, passed implicitly
+ * @param shape Shape to print, passed implicitly
+ */
 ostream & operator<<(ostream &os, const Shape & shape){
 	shape.print(os);
 	return os;
