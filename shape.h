@@ -27,6 +27,7 @@ public:
 
 	Shape(): x_(0), y_(0), boundsWidth_(0), boundsHeight_(0) {};
 	Shape(int x, int y, double width, double height): x_(x), y_(y), boundsWidth_(width), boundsHeight_(height) {};
+	Shape(double width,double height) : Shape(0,0,width,height) {};
 
 	virtual ~Shape() {};
 	Shape (const Shape & other){};
