@@ -16,6 +16,7 @@ class Polygon: public Shape
 public:
 	Polygon() : Shape(), numOfSides_(0), sideLength_(0) {};
 	Polygon(int x, int y, int sides, double length) : Shape(x, y, getWidth(sides,length),getHeight(sides,length)), numOfSides_(sides), sideLength_(length) {};
+	Polygon(int sides, double length) : Polygon(0,0,sides,length) {};
 
 	string draw(int x,int y) const;
 
@@ -32,6 +33,7 @@ class Triangle : public Polygon
 public:
 	Triangle() : Polygon(0,0,3,0) {};
 	Triangle(int x, int y, double side) : Polygon(x,y,3,side) {};
+	Triangle(double side) : Triangle(3,side) {};
 
 private:
 
@@ -45,6 +47,7 @@ class Square: public Polygon
 public:
 	Square(): Polygon(0,0,4,0) {};
 	Square(int x, int y, double side): Polygon(x,y,4,side) {};
+	Square(double side) : Square(4,side) {};
 
 private:
 
