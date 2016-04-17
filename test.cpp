@@ -7,6 +7,8 @@ using std::make_pair;
 using std::mt19937;
 using std::random_device;
 using std::uniform_real_distribution;
+#include <algorithm>
+using std::swap;
 
 #include "rectangle.h"
 #include "polygon.h"
@@ -160,17 +162,24 @@ TEST_CASE("Shape operator <<","[Shape] [operator <<]")
 	mt19937 randomNum(rndDev());
 	uniform_real_distribution<> randomLen(0,842);
 	std::vector<double> lenCollection;
+	stringstream returnedPS;
 	for (int i=0; i<NUM; i++ )
 	{
 		lenCollection.push_back(randomLen(rndDev));
 	}
 	for(auto len : lenCollection)
-	{
+	{	
+		returnedPS.str("");
 		Polygon poly1(2,len);
-		REQUIRE(poly1.draw(0,0) == testPolyDraw (0,0,2,len));
+		returnedPS << poly1;
+		REQUIRE(returnedPS.str()  == testPolyDraw (0,0,2,len));
+		returnedPS.str("");
 		Triangle tri1(len);
-		REQUIRE(tri1.draw(0,0) == testPolyDraw (0,0,3,len));
+		returnedPS << tri1;
+		REQUIRE(returnedPS.str() == testPolyDraw (0,0,3,len));
 		Square square1(len);
-		REQUIRE(square1.draw(0,0) == testPolyDraw (0,0,4,len));
+		returnedPS.str("");
+		returnedPS << square1;
+		REQUIRE(returnedPS.str() == testPolyDraw (0,0,4,len));
 	}
 }
