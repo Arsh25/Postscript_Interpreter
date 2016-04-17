@@ -45,14 +45,8 @@ string Polygon::draw(int x,int y) const{
 int Polygon::numOfSides(){
 	return numOfSides_;
 }
-void Polygon::numOfSides(int n){
-	numOfSides_ = n;
-}
 double Polygon::sideLength(){
 	return sideLength_;
-}
-void Polygon::sideLength(double l){
-	sideLength_ = l;
 }
 double Polygon::radius(){
 	return radius_;

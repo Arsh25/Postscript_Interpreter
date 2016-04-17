@@ -40,9 +40,7 @@ public:
 	virtual void place(int x, int y);
 	string bounds();
 	double width();
-	void width(double w);
 	double height();
-	void height(double h);
 	int x();
 	void x(int x);
 	int y();

@@ -82,6 +82,7 @@ int main(){
 	// cout << rotated.bounds() << endl;
 
 	// cout << triangle.bounds() << endl;
+	// cout << triangle.radius() << endl;
 	// cout << rTriangle.bounds() << endl;
 
 	return 0;
