@@ -52,7 +52,7 @@ int main(){
 	cout << poly10 << endl;
 	cout << poly25 << endl;
 
-	cout << scaled.draw(400,400) << endl;
+	cout << scaled(400,400) << endl;
 	cout << rotated.draw(250,200) << endl;
 
 	cout << "showpage" << endl;

@@ -117,6 +117,10 @@ void Shape::y(int y){
 	y_ = y;
 }
 
+string Shape::operator()(int x, int y){
+	return draw(x,y);
+}
+
 int Shape::numOfSides(){
 	return 0;
 }

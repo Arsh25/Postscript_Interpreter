@@ -2,4 +2,6 @@ a.out
 .DS_Store
 main
 test
+run
+build
 *.ps

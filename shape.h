@@ -48,6 +48,7 @@ public:
 	int y();
 	void y(int y);
 
+	string operator()(int x, int y);
 
 	virtual int numOfSides();
 	virtual double sideLength();
