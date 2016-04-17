@@ -64,6 +64,18 @@ int main(){
 	Horizontal horizontal({&circle,&square,&triangle,&rect,&poly6,&poly10,&poly25,&scaled,&rotated,&rTriangle});
 	cout << horizontal(300,700) << endl;
 
+	Triangle triangleTest(30);
+	Circle circleTest(triangleTest.radius());
+	Rotated rTriOne(&triangleTest,30);
+	Rotated rTriTwo(&triangleTest,60);
+	Rotated rTriThr(&triangleTest,90);
+
+	cout << triangleTest(100,500) << endl;
+	cout << circleTest(100,500) << endl;
+	cout << rTriOne(100,500) << endl;
+	cout << rTriTwo(100,500) << endl;
+	cout << rTriThr(100,500) << endl;
+
 	cout << "showpage" << endl;
 
 	// cout << square.bounds() << endl;

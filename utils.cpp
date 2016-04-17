@@ -73,7 +73,16 @@ double calcY(int k, int n, double l){
  * @return width of polygon
  */
 double getWidth(int n, double l){
-	return n%2 ? (l*(sin(PI*(n-1)/(2*n)))/sin(PI/n)) : ( n%4 ? (l / sin(PI/n)) : (l*cos(PI/n)/sin(PI/n)) );
+	if(n%2 == 0){
+		if(n%4 == 0){
+			return (l*cos(PI/n)/sin(PI/n));
+		} else {
+			return (l / sin(PI/n));
+		}
+	} else {
+		return ( l * ( sin( PI * (n-1) / (2*n) ) ) / sin(PI/n) );
+	}
+	// return n%2 ? (l*(sin(PI*(n-1)/(2*n)))/sin(PI/n)) : ( n%4 ? (l / sin(PI/n)) : (l*cos(PI/n)/sin(PI/n)) );
 }
 
 /**
@@ -86,7 +95,12 @@ double getWidth(int n, double l){
  * @return height of polygon
  */
 double getHeight(int n, double l){
-	return n%2 ? (l * (1+cos(PI/n)) / (2*sin(PI/n))) : (l * (cos(PI/n)) / (sin(PI/n)));
+	if(n%2 == 0){
+		return (l * (cos(PI/n)) / (sin(PI/n)));
+	} else {
+		return (l * (1+cos(PI/n)) / (2*sin(PI/n)));
+	}
+	// return n%2 ? (l * (1+cos(PI/n)) / (2*sin(PI/n))) : (l * (cos(PI/n)) / (sin(PI/n)));
 }
 
 /**
