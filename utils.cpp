@@ -37,20 +37,12 @@ string psArc(int x, int y, double r, int startAngle, int endAngle){
 	return stringify(x) + " " + stringify(y) + " " + stringify(r) + " " + stringify(startAngle) + " " + stringify(endAngle) + " arc";
 }
 
-/**
- * @brief calculates a point
- * @details calculates the position of the nth vertice of a polygon
- * 
- * @param k vetrice number, 0 through n-1
- * @param n number of sides
- * @param l side length
- * 
- * @return the location of the vertice
- */
-pair<double,double> getPoint(int k, int n, double l){
-	double x = (l/2)*( sin( (2*k+1)*PI/n ) / sin(PI/n) );
-	double y = (-l/2)*( cos( (2*k+1)*PI/n ) / sin(PI/n) );
-	return pair<double,double>(x,y);
+double calcX(int k, int n, double l){
+	return (l/2)*( sin( (2*k+1)*PI/n ) / sin(PI/n) );
+}
+
+double calcY(int k, int n, double l){
+	return (-l/2)*( cos( (2*k+1)*PI/n ) / sin(PI/n) );
 }
 
 /**
@@ -63,7 +55,7 @@ pair<double,double> getPoint(int k, int n, double l){
  * @return width of polygon
  */
 double getWidth(int n, double l){
-	return n%2 ? (l*(sin(PI*(n-1)/(2*n)))/sin(PI/n)) : ( n%4 ? (l / sin(PI/2)) : (l*cos(PI/n)/sin(PI/n)) );
+	return n%2 ? (l*(sin(PI*(n-1)/(2*n)))/sin(PI/n)) : ( n%4 ? (l / sin(PI/n)) : (l*cos(PI/n)/sin(PI/n)) );
 }
 
 /**

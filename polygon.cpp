@@ -25,12 +25,14 @@ string Polygon::draw(int x,int y) const{
 	ss << "newpath\n";
 	ss << x << " " << y << " translate\n";
 
-	pair<double,double> vertex = getPoint(0,numOfSides_,sideLength_);
-	ss << vertex.first << " " << vertex.second << " moveto\n";
+	double vertexX = calcX(0,numOfSides_,sideLength_);
+	double vertexY = calcY(0,numOfSides_,sideLength_);
+	ss << vertexX << " " << vertexY << " moveto\n";
 
 	for(int i = 1; i < numOfSides_; i++){
-		vertex = getPoint(i,numOfSides_,sideLength_);
-		ss << vertex.first << " " << vertex.second << " lineto\n";
+		vertexX = calcX(i,numOfSides_,sideLength_);
+		vertexY = calcY(i,numOfSides_,sideLength_);
+		ss << vertexX << " " << vertexY << " lineto\n";
 	}
 
 	ss << "closepath\n";

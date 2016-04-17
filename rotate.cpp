@@ -10,7 +10,7 @@
 
 Rotated::Rotated(Shape * shape, int angle): Shape(), shape_(shape), angle_(angle){
 	string name = string(typeid(*shape).name()).substr(1);
-	
+
 	if(name == "Circle"){
 		boundsWidth_ = shape->width();
 		boundsHeight_ = shape->height();

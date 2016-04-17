@@ -18,7 +18,7 @@ class Layered : public Shape
 {
 public:
 	Layered() : Shape() {};
-	Layered(int x, int y, initializer_list<Shape*> shapes) : Shape(x,y), shapes_(shapes) {};
+	Layered(int x, int y, initializer_list<Shape*> shapes);
 	Layered(initializer_list<Shape*> shapes) : Layered(0,0,shapes) {};
 
 	string draw(int x, int y) const;
@@ -32,7 +32,7 @@ class Horizontal: public Layered
 {
 public:
 	Horizontal() : Layered() {};
-	Horizontal(int x, int y, initializer_list<Shape*> shapes) : Layered(x,y,shapes) {};
+	Horizontal(int x, int y, initializer_list<Shape*> shapes);
 	Horizontal(initializer_list<Shape*> shapes) : Horizontal(0,0,shapes) {};
 
 	string draw(int x, int y) const;
@@ -45,7 +45,7 @@ class Vertical : public Layered
 {
 public:
 	Vertical() : Layered() {};
-	Vertical(int x, int y, initializer_list<Shape*> shapes) : Layered(x,y,shapes) {};
+	Vertical(int x, int y, initializer_list<Shape*> shapes);
 	Vertical(initializer_list<Shape*> shapes) : Vertical(0,0,shapes) {};
 
 	string draw(int x, int y) const;

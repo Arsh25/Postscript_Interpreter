@@ -15,7 +15,12 @@ class Scaled : public Shape
 {
 public:
 	Scaled() : Shape() {};
-	Scaled(Shape* shape, double sx, double sy) : Shape(), shape_(shape), sx_(sx), sy_(sy) {};
+	Scaled(Shape* shape, double sx, double sy) 
+		: Shape(0,0,shape->width()*sx,shape->height()*sy), 
+			shape_(shape), 
+			sx_(sx), 
+			sy_(sy) 
+			{};
 
 	string draw() const;
 	string draw(int x, int y) const;
