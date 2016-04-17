@@ -7,30 +7,36 @@ using std::make_pair;
 using std::mt19937;
 using std::random_device;
 using std::uniform_real_distribution;
+#include <algorithm>
+using std::swap;
 
 #include "rectangle.h"
 #include "polygon.h"
 
-pair<double,double> testGetPoint (int k, int sides, double length)
+double testCalcX(int k, int n, double l)
 {
-	double x = (length/2)*(sin((((2*k)+1)*PI)/sides))/(sin(PI/sides));
-	double y = (-length/2)*(cos((((2*k)+1)*PI)/sides))/(sin(PI/sides));
-	return make_pair(x,y);
-
+	return (l/2)*(sin(((2*k+1)*PI)/n)/(sin(PI/n)));
 }
 
-string testPolyDraw (int x, int y, int sides, int length)
+double testCalcY(int k, int n, double l)
+{
+	return (-l/2)*(cos(((2*k+1)*PI)/n)/(sin(PI/n)));		
+}
+
+string testPolyDraw (int x, int y, int sides, double length)
 {
 	stringstream ss;
 	ss << "gsave\n";
 	ss << "newpath\n";
 	ss << x <<" " <<y << " translate\n";
-	pair<double,double> vertex = testGetPoint(0,sides,length);
-	ss << vertex.first << " "<< vertex.second << " moveto\n";
+	double vertX = testCalcX(0,sides,length);
+	double vertY = testCalcY(0,sides,length);
+	ss << vertX << " "<< vertY << " moveto\n";
 
 	for(int i = 1; i < sides; i++){
-		vertex = testGetPoint(i,sides,length);
-		ss << vertex.first << " " << vertex.second << " lineto\n";
+		vertX = testCalcX(i,sides,length);
+		vertY = testCalcY(i,sides,length);
+		ss << vertX << " " << vertY << " lineto\n";
 	}
 
 	ss << "closepath\n";
@@ -41,21 +47,50 @@ string testPolyDraw (int x, int y, int sides, int length)
 
 }
 
-TEST_CASE ("Utils Functions","Utils")
+TEST_CASE ("Testing Centers","[Utils]")
 {
-	const int NUM = 10;
+	const int NUM = 5;
 	random_device rndDev;
-	mt19937 rndNum(rndDev());
-	uniform_real_distribution<> x(0,595);
-	uniform_real_distribution<> y(0,842);
-	std::vector<double> listX;
-	std::vector<double> listY;
-
-	for(int i = 0; i<=NUM; i++)
+	mt19937 randomNum(rndDev());
+	uniform_real_distribution<> randomLen(0,842);
+	std::vector<double> lenCollection;
+	for (int i=0; i<NUM; i++ )
 	{
-		listX.push_back(x(rndNum));
-		listY.push_back(y(rndNum));
+		lenCollection.push_back(randomLen(rndDev));
 	}
+	//Testing Triangles 
+	for (auto v:lenCollection)
+	{
+		REQUIRE(testCalcX(1,3,v) == calcX (1,3,v));
+		REQUIRE(testCalcX(2,3,v) == calcX (2,3,v));
+		REQUIRE(testCalcY(1,3,v) == calcY (1,3,v));
+		REQUIRE(testCalcY(2,3,v) == calcY (2,3,v));
+	}
+	//Testing Squares 
+	for (auto v:lenCollection)
+	{
+		REQUIRE(testCalcX(1,4,v) == calcX (1,4,v));
+		REQUIRE(testCalcX(2,4,v) == calcX (2,4,v));
+		REQUIRE(testCalcX(3,4,v) == calcX (3,4,v));
+		REQUIRE(testCalcY(1,4,v) == calcY (1,4,v));
+		REQUIRE(testCalcY(2,4,v) == calcY (2,4,v));
+		REQUIRE(testCalcY(3,4,v) == calcY (3,4,v));
+	}
+
+	//Testing Pentagon
+		for (auto v:lenCollection)
+	{
+		REQUIRE(testCalcX(1,5,v) == calcX (1,5,v));
+		REQUIRE(testCalcX(2,5,v) == calcX (2,5,v));
+		REQUIRE(testCalcX(3,5,v) == calcX (3,5,v));
+		REQUIRE(testCalcX(4,5,v) == calcX (4,5,v));
+		REQUIRE(testCalcY(1,5,v) == calcY (1,5,v));
+		REQUIRE(testCalcY(2,5,v) == calcY (2,5,v));
+		REQUIRE(testCalcY(3,5,v) == calcY (3,5,v));
+		REQUIRE(testCalcY(4,5,v) == calcY (4,5,v));
+	}
+
+	
 }
 
 TEST_CASE ("Rectangle Construction","[Rectangle]")
@@ -100,19 +135,51 @@ TEST_CASE ("Rectangle Construction","[Rectangle]")
 	REQUIRE(postScript == expectedPS.str());
 }
 
-TEST_CASE("Polygon Draw","[Polygon]")
+TEST_CASE("Polygon Draw","[Polygon] [draw function]")
 {
     //numOfSides, sidelength
 	Polygon poly1(0,0,1,1); 
 	Polygon poly2(0,0,1,1);
-	Polygon poly3(0,0,4,1); //Square
-	Polygon poly4(0,0,3,10); //Triangle 
+	Polygon poly3(0,0,3,1); //Triangle
+	Polygon poly4(0,0,4,10); //Square 
 	Polygon poly5(0,0,10,10);
-	Polygon poly6(0,0,10,23.6);
+	Polygon poly6(0,0,9,23);
+	Polygon poly7(0,0,10,230.345);
 
 	REQUIRE(poly1.draw(72,72) == testPolyDraw(72,72,1,1));
 	REQUIRE(poly2.draw(72,144) == testPolyDraw(72,144,1,1));
-	REQUIRE(poly3.draw(72,72) == testPolyDraw(72,72,4,1));
+	REQUIRE(poly3.draw(72,72) == testPolyDraw(72,72,3,1));
+	REQUIRE(poly4.draw(72,72) == testPolyDraw(72,72,4,10));
+	REQUIRE(poly5.draw(72,72) == testPolyDraw(72,72,10,10));
+	REQUIRE(poly6.draw(72,72) == testPolyDraw(72,72,9,23));
+	REQUIRE(poly7.draw(72,72) == testPolyDraw(72,72,10,230.345));
+}
 
-
+TEST_CASE("Shape operator <<","[Shape] [operator <<]")
+{
+	const int NUM = 5;
+	random_device rndDev;
+	mt19937 randomNum(rndDev());
+	uniform_real_distribution<> randomLen(0,842);
+	std::vector<double> lenCollection;
+	stringstream returnedPS;
+	for (int i=0; i<NUM; i++ )
+	{
+		lenCollection.push_back(randomLen(rndDev));
+	}
+	for(auto len : lenCollection)
+	{	
+		returnedPS.str("");
+		Polygon poly1(2,len);
+		returnedPS << poly1;
+		REQUIRE(returnedPS.str()  == testPolyDraw (0,0,2,len));
+		returnedPS.str("");
+		Triangle tri1(len);
+		returnedPS << tri1;
+		REQUIRE(returnedPS.str() == testPolyDraw (0,0,3,len));
+		Square square1(len);
+		returnedPS.str("");
+		returnedPS << square1;
+		REQUIRE(returnedPS.str() == testPolyDraw (0,0,4,len));
+	}
 }
