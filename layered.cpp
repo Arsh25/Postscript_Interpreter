@@ -82,7 +82,12 @@ string Vertical::draw(int x, int y) const{
 	double half = boundsHeight_/2;
 
 	for(auto shape: shapes_){
-		ss << shape->draw(0, half-(shape->height()/2) ) << "\n";
+		string name = string(typeid(*shape).name()).substr(1);
+		if(name == "Triangle"){
+			ss << shape->draw(0, half-(shape->radius())) << "\n";
+		} else {
+			ss << shape->draw(0, half-(shape->height()/2) ) << "\n";
+		}
 		half -= shape->height();
 	}
 

@@ -35,9 +35,7 @@ public:
 	string draw(int x,int y) const;
 
 	int numOfSides();
-	void numOfSides(int n);
 	double sideLength();
-	void sideLength(double l);
 	double radius();
 
 protected:

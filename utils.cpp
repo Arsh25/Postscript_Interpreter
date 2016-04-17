@@ -82,7 +82,6 @@ double getWidth(int n, double l){
 	} else {
 		return ( l * ( sin( PI * (n-1) / (2*n) ) ) / sin(PI/n) );
 	}
-	// return n%2 ? (l*(sin(PI*(n-1)/(2*n)))/sin(PI/n)) : ( n%4 ? (l / sin(PI/n)) : (l*cos(PI/n)/sin(PI/n)) );
 }
 
 /**
@@ -100,7 +99,6 @@ double getHeight(int n, double l){
 	} else {
 		return (l * (1+cos(PI/n)) / (2*sin(PI/n)));
 	}
-	// return n%2 ? (l * (1+cos(PI/n)) / (2*sin(PI/n))) : (l * (cos(PI/n)) / (sin(PI/n)));
 }
 
 /**

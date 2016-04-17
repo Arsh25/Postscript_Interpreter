@@ -62,10 +62,6 @@ double Shape::width(){
 	return boundsWidth_;
 }
 
-void Shape::width(double w){
-	boundsWidth_ = w;
-}
-
 /**
  * @brief get boundary box height
  * @details get the double containing the height of the shape's boundary box
@@ -73,10 +69,6 @@ void Shape::width(double w){
  */
 double Shape::height(){
 	return boundsHeight_;
-}
-
-void Shape::height(double h){
-	boundsHeight_ = h;
 }
 
 /**
