@@ -17,5 +17,5 @@ script:
 - make clean test 
 - ./test 
 - make clean main
-- ./main
+- ./main > /dev/null
 
