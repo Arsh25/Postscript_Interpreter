@@ -55,6 +55,9 @@ int main(){
 	cout << scaled(400,400) << endl;
 	cout << rotated.draw(250,200) << endl;
 
+	Layered layered({&circle,&square,&triangle,&rect,&poly6,&poly10,&poly25,&scaled,&rotated,&rTriangle});
+	cout << layered(250,500) << endl;
+
 	cout << "showpage" << endl;
 
 	// cout << square.bounds() << endl;
