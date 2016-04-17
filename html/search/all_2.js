@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['calcx',['calcX',['../utils_8cpp.html#afd1f4d21b2ff666093d2ef34f3424292',1,'calcX(int k, int n, double l):&#160;utils.cpp'],['../utils_8h.html#a0b2571970cf3129b6321ba3f3558cef4',1,'calcX(int, int, double):&#160;utils.cpp']]],
+  ['calcy',['calcY',['../utils_8cpp.html#a0f806f5e75c61438a77de18f413ac8bd',1,'calcY(int k, int n, double l):&#160;utils.cpp'],['../utils_8h.html#ab9cfb69d3fcbb603dd3585d12a765da0',1,'calcY(int, int, double):&#160;utils.cpp']]],
   ['capture',['CAPTURE',['../catch_8hpp.html#a88df55a964a20b22fec4d74235ed7651',1,'catch.hpp']]],
   ['capturedexpression',['capturedExpression',['../struct_catch_1_1_assertion_info.html#af7c1d3cbfa346e9a303030fa0ef0cb54',1,'Catch::AssertionInfo']]],
   ['captureexpectedexception',['captureExpectedException',['../class_catch_1_1_result_builder.html#a9ac96f6220c8dd8e4feee725c6228d77',1,'Catch::ResultBuilder::captureExpectedException(std::string const &amp;expectedMessage)'],['../class_catch_1_1_result_builder.html#a7d443d632eaeabe2cb36218b8dcb7400',1,'Catch::ResultBuilder::captureExpectedException(Matchers::Impl::Matcher&lt; std::string &gt; const &amp;matcher)']]],
@@ -50,8 +52,8 @@ var searchData=
   ['convert',['convert',['../struct_catch_1_1_detail_1_1_string_maker_base.html#a8eb9f635dc413a5758e22614bafaf1a3',1,'Catch::Detail::StringMakerBase::convert()'],['../struct_catch_1_1_detail_1_1_string_maker_base_3_01true_01_4.html#af9b5fdf7fddd8c5c873caa819e5f00f6',1,'Catch::Detail::StringMakerBase&lt; true &gt;::convert()'],['../struct_catch_1_1_string_maker_3_01_t_01_5_01_4.html#a2adbc75c99d71b8323f4052bcb0815c9',1,'Catch::StringMaker&lt; T * &gt;::convert()'],['../struct_catch_1_1_string_maker_3_01_r_01_c_1_1_5_01_4.html#af69c15e0b406e945777137fe4a333731',1,'Catch::StringMaker&lt; R C::* &gt;::convert()']]],
   ['copyablestream',['CopyableStream',['../struct_catch_1_1_copyable_stream.html',1,'Catch']]],
   ['copyablestream',['CopyableStream',['../struct_catch_1_1_copyable_stream.html#a5a61d0da675ae00cd46efaef4c445cdd',1,'Catch::CopyableStream::CopyableStream()'],['../struct_catch_1_1_copyable_stream.html#a0e72dc16240653f52c17106f4bf34da8',1,'Catch::CopyableStream::CopyableStream(CopyableStream const &amp;other)']]],
-  ['counts',['Counts',['../struct_catch_1_1_counts.html#aab9092ce70d4b0179cc743555d2fc39b',1,'Catch::Counts']]],
   ['counts',['Counts',['../struct_catch_1_1_counts.html',1,'Catch']]],
+  ['counts',['Counts',['../struct_catch_1_1_counts.html#aab9092ce70d4b0179cc743555d2fc39b',1,'Catch::Counts']]],
   ['creategeneratorsfortest',['createGeneratorsForTest',['../namespace_catch.html#a3d93b31e88fd01ee9e0d20757ff64eab',1,'Catch']]],
   ['createstream',['createStream',['../namespace_catch.html#ad7591011c5d99d59504ecd3384001c3e',1,'Catch']]],
   ['custom',['custom',['../class_catch_1_1_detail_1_1_approx.html#aaf86dc0ee92272ac2d9839197a07951d',1,'Catch::Detail::Approx']]],

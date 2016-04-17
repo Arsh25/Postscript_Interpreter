@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['radius_5f',['radius_',['../class_circle.html#a7daf9293b23457177dbc0fadb960e07e',1,'Circle']]],
+  ['radius',['radius',['../class_polygon.html#af1af4ce31b24eb31b4300e932f2578c2',1,'Polygon::radius()'],['../class_shape.html#a8193b252afa84bbf0b173160d2b3302d',1,'Shape::radius()']]],
+  ['radius_5f',['radius_',['../class_circle.html#a7daf9293b23457177dbc0fadb960e07e',1,'Circle::radius_()'],['../class_polygon.html#ae9ee97d51db108f9e2cc073aabaa68df',1,'Polygon::radius_()']]],
   ['rangetostring',['rangeToString',['../namespace_catch_1_1_detail.html#a6650a1dff325bf29962ff15ae73fd972',1,'Catch::Detail']]],
   ['rawmemorytostring',['rawMemoryToString',['../namespace_catch_1_1_detail.html#ac5d6c510e565ee5bddcc2236194ce29e',1,'Catch::Detail::rawMemoryToString(const void *object, std::size_t size)'],['../namespace_catch_1_1_detail.html#a371620ed524abfcae5c3772bf49b563a',1,'Catch::Detail::rawMemoryToString(const T &amp;object)']]],
   ['react',['react',['../class_catch_1_1_result_builder.html#a3085cdc46533d45bed6f652a2ac295c0',1,'Catch::ResultBuilder']]],
@@ -33,8 +34,8 @@ var searchData=
   ['reset',['reset',['../class_catch_1_1_ptr.html#af8d0fa7a2cd20842830b354ac31dfe5c',1,'Catch::Ptr::reset()'],['../class_catch_1_1_option.html#a37b4e0e5d4d56296adacd267a616f4e0',1,'Catch::Option::reset()']]],
   ['resultbuilder',['ResultBuilder',['../class_catch_1_1_result_builder.html',1,'Catch']]],
   ['resultbuilder',['ResultBuilder',['../class_catch_1_1_result_builder.html#a8579c3056f64f9324cf1181532828376',1,'Catch::ResultBuilder']]],
-  ['resultdisposition',['ResultDisposition',['../struct_catch_1_1_result_disposition.html',1,'Catch']]],
   ['resultdisposition',['resultDisposition',['../struct_catch_1_1_assertion_info.html#a60353b3632ab2f827162f2b2d6911073',1,'Catch::AssertionInfo']]],
+  ['resultdisposition',['ResultDisposition',['../struct_catch_1_1_result_disposition.html',1,'Catch']]],
   ['resulttype',['resultType',['../struct_catch_1_1_assertion_result_data.html#a7ceab4a7ff722aec5587e3748caf66b7',1,'Catch::AssertionResultData']]],
   ['resultwas',['ResultWas',['../struct_catch_1_1_result_was.html',1,'Catch']]],
   ['rngseed',['rngSeed',['../namespace_catch.html#acf5ea05e942d2d7fe79111e12754ed76',1,'Catch']]],

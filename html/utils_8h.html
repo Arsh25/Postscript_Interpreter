@@ -130,15 +130,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a2280cf7a9cf579a11eb9651c8b580419"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a2280cf7a9cf579a11eb9651c8b580419">psArc</a> (int, int, double, int, int)</td></tr>
 <tr class="memdesc:a2280cf7a9cf579a11eb9651c8b580419"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for drawing an arc  <a href="#a2280cf7a9cf579a11eb9651c8b580419">More...</a><br /></td></tr>
 <tr class="separator:a2280cf7a9cf579a11eb9651c8b580419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aec7ecc1579e5df73f42a5e1009e42d"><td class="memItemLeft" align="right" valign="top">pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a9aec7ecc1579e5df73f42a5e1009e42d">getPoint</a> (int, int, double)</td></tr>
-<tr class="memdesc:a9aec7ecc1579e5df73f42a5e1009e42d"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates a point  <a href="#a9aec7ecc1579e5df73f42a5e1009e42d">More...</a><br /></td></tr>
-<tr class="separator:a9aec7ecc1579e5df73f42a5e1009e42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b2571970cf3129b6321ba3f3558cef4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a0b2571970cf3129b6321ba3f3558cef4">calcX</a> (int, int, double)</td></tr>
+<tr class="memdesc:a0b2571970cf3129b6321ba3f3558cef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate x  <a href="#a0b2571970cf3129b6321ba3f3558cef4">More...</a><br /></td></tr>
+<tr class="separator:a0b2571970cf3129b6321ba3f3558cef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cfb69d3fcbb603dd3585d12a765da0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#ab9cfb69d3fcbb603dd3585d12a765da0">calcY</a> (int, int, double)</td></tr>
+<tr class="memdesc:ab9cfb69d3fcbb603dd3585d12a765da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate y  <a href="#ab9cfb69d3fcbb603dd3585d12a765da0">More...</a><br /></td></tr>
+<tr class="separator:ab9cfb69d3fcbb603dd3585d12a765da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39afe7df227da3c47746232c30caad57"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a39afe7df227da3c47746232c30caad57">getWidth</a> (int, double)</td></tr>
 <tr class="memdesc:a39afe7df227da3c47746232c30caad57"><td class="mdescLeft">&#160;</td><td class="mdescRight">cacluate width of polygon  <a href="#a39afe7df227da3c47746232c30caad57">More...</a><br /></td></tr>
 <tr class="separator:a39afe7df227da3c47746232c30caad57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e37c3ff7a91624e6d5a42cfa4e02b84"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a5e37c3ff7a91624e6d5a42cfa4e02b84">getHeight</a> (int, double)</td></tr>
 <tr class="memdesc:a5e37c3ff7a91624e6d5a42cfa4e02b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">cacluate height of polygon  <a href="#a5e37c3ff7a91624e6d5a42cfa4e02b84">More...</a><br /></td></tr>
 <tr class="separator:a5e37c3ff7a91624e6d5a42cfa4e02b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dbf535e69c904f8fa212d0dc1320b48"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8h.html#a8dbf535e69c904f8fa212d0dc1320b48">getRadius</a> (int, double)</td></tr>
+<tr class="memdesc:a8dbf535e69c904f8fa212d0dc1320b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate radius  <a href="#a8dbf535e69c904f8fa212d0dc1320b48">More...</a><br /></td></tr>
+<tr class="separator:a8dbf535e69c904f8fa212d0dc1320b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -146,6 +152,94 @@ Variables</h2></td></tr>
 <tr class="separator:a952eac791b596a61bba0a133a3bb439f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a0b2571970cf3129b6321ba3f3558cef4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double calcX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculate x </p>
+<p>calculate the x coordinate of a given vertex of an equilateral polygon</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>vertex number </td></tr>
+    <tr><td class="paramname">n</td><td>number of sides </td></tr>
+    <tr><td class="paramname">l</td><td>length of sides </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double, x coordinate of vertex </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9cfb69d3fcbb603dd3585d12a765da0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double calcY </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculate y </p>
+<p>calcualte the y coordinate of a given vertex of an equilateral polygon</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>vertex number </td></tr>
+    <tr><td class="paramname">n</td><td>number of sides </td></tr>
+    <tr><td class="paramname">l</td><td>length of sides </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double, y coordinate of vertex </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a5e37c3ff7a91624e6d5a42cfa4e02b84"></a>
 <div class="memitem">
 <div class="memproto">
@@ -183,19 +277,13 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9aec7ecc1579e5df73f42a5e1009e42d"></a>
+<a class="anchor" id="a8dbf535e69c904f8fa212d0dc1320b48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pair&lt;double,double&gt; getPoint </td>
+          <td class="memname">double getRadius </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>k</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n</em>, </td>
         </tr>
@@ -213,17 +301,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>calculates a point </p>
-<p>calculates the position of the nth vertice of a polygon</p>
+<p>calculate radius </p>
+<p>calculate radius of an equlateral polygon</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">k</td><td>vetrice number, 0 through n-1 </td></tr>
     <tr><td class="paramname">n</td><td>number of sides </td></tr>
-    <tr><td class="paramname">l</td><td>side length</td></tr>
+    <tr><td class="paramname">l</td><td>length of sides</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the location of the vertice </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>double, radius </dd></dl>
 
 </div>
 </div>
@@ -420,7 +507,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="utils_8h.html">utils.h</a></li>
-    <li class="footer">Generated on Fri Apr 15 2016 18:50:36 for Postscript Interpreter by
+    <li class="footer">Generated on Sun Apr 17 2016 00:46:04 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

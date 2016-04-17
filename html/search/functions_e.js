@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['radius',['radius',['../class_polygon.html#af1af4ce31b24eb31b4300e932f2578c2',1,'Polygon::radius()'],['../class_shape.html#a8193b252afa84bbf0b173160d2b3302d',1,'Shape::radius()']]],
   ['rangetostring',['rangeToString',['../namespace_catch_1_1_detail.html#a6650a1dff325bf29962ff15ae73fd972',1,'Catch::Detail']]],
   ['rawmemorytostring',['rawMemoryToString',['../namespace_catch_1_1_detail.html#ac5d6c510e565ee5bddcc2236194ce29e',1,'Catch::Detail::rawMemoryToString(const void *object, std::size_t size)'],['../namespace_catch_1_1_detail.html#a371620ed524abfcae5c3772bf49b563a',1,'Catch::Detail::rawMemoryToString(const T &amp;object)']]],
   ['react',['react',['../class_catch_1_1_result_builder.html#a3085cdc46533d45bed6f652a2ac295c0',1,'Catch::ResultBuilder']]],

@@ -37,10 +37,28 @@ string psArc(int x, int y, double r, int startAngle, int endAngle){
 	return stringify(x) + " " + stringify(y) + " " + stringify(r) + " " + stringify(startAngle) + " " + stringify(endAngle) + " arc";
 }
 
+/**
+ * @brief calculate x
+ * @details calculate the x coordinate of a given vertex of an equilateral polygon
+ * 
+ * @param k vertex number
+ * @param n number of sides
+ * @param l length of sides
+ * @return double, x coordinate of vertex
+ */
 double calcX(int k, int n, double l){
 	return (l/2)*( sin( (2*k+1)*PI/n ) / sin(PI/n) );
 }
 
+/**
+ * @brief calculate y
+ * @details calcualte the y coordinate of a given vertex of an equilateral polygon
+ * 
+ * @param k vertex number
+ * @param n number of sides
+ * @param l length of sides
+ * @return double, y coordinate of vertex
+ */
 double calcY(int k, int n, double l){
 	return (-l/2)*( cos( (2*k+1)*PI/n ) / sin(PI/n) );
 }
@@ -71,10 +89,15 @@ double getHeight(int n, double l){
 	return n%2 ? (l * (1+cos(PI/n)) / (2*sin(PI/n))) : (l * (cos(PI/n)) / (sin(PI/n)));
 }
 
-double distance(int x0, int y0, int x1, int y1){
-	return sqrt( pow(x1-x0,2) + pow(y1-y0,2));
-}
-
+/**
+ * @brief calculate radius
+ * @details calculate radius of an equlateral polygon
+ * 
+ * @param n number of sides
+ * @param l length of sides
+ * 
+ * @return double, radius
+ */
 double getRadius(int n, double l){
 	return l/(2*sin(PI/n));
 }

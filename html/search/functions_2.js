@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['calcx',['calcX',['../utils_8cpp.html#afd1f4d21b2ff666093d2ef34f3424292',1,'calcX(int k, int n, double l):&#160;utils.cpp'],['../utils_8h.html#a0b2571970cf3129b6321ba3f3558cef4',1,'calcX(int, int, double):&#160;utils.cpp']]],
+  ['calcy',['calcY',['../utils_8cpp.html#a0f806f5e75c61438a77de18f413ac8bd',1,'calcY(int k, int n, double l):&#160;utils.cpp'],['../utils_8h.html#ab9cfb69d3fcbb603dd3585d12a765da0',1,'calcY(int, int, double):&#160;utils.cpp']]],
   ['captureexpectedexception',['captureExpectedException',['../class_catch_1_1_result_builder.html#a9ac96f6220c8dd8e4feee725c6228d77',1,'Catch::ResultBuilder::captureExpectedException(std::string const &amp;expectedMessage)'],['../class_catch_1_1_result_builder.html#a7d443d632eaeabe2cb36218b8dcb7400',1,'Catch::ResultBuilder::captureExpectedException(Matchers::Impl::Matcher&lt; std::string &gt; const &amp;matcher)']]],
   ['captureexpression',['captureExpression',['../class_catch_1_1_result_builder.html#af2ae2343965802eeeb0abbd4ea9d2d36',1,'Catch::ResultBuilder']]],
   ['captureresult',['captureResult',['../class_catch_1_1_result_builder.html#a10e467f7b7a4976e5d148b4d5066e8fd',1,'Catch::ResultBuilder']]],

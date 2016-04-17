@@ -59,7 +59,7 @@ int main(){
 	cout << layered(250,500) << endl;
 
 	Vertical vertical({&circle,&square,&triangle,&rect,&poly6,&poly10,&poly25,&scaled,&rotated,&rTriangle});
-	cout << vertical(500,400) << endl;
+	cout << vertical(500,350) << endl;
 
 	Horizontal horizontal({&circle,&square,&triangle,&rect,&poly6,&poly10,&poly25,&scaled,&rotated,&rTriangle});
 	cout << horizontal(300,700) << endl;
