@@ -21,6 +21,9 @@ using std::swap;
 	corresponding utils.h function. 
 */
 
+//error in doubles
+const double ERROR = 0.0000001;
+
 
 string testPsLine(int x, int y)
 {
@@ -62,7 +65,7 @@ double testGetwidth (int sides, double len)
 {
 	if (sides % 2 !=0)
 	{
-		return (len*((sin(M_PI*(sides-1))/ (2*sides)))/(sin(M_PI/sides)));
+		return (len * (sin( M_PI * (sides-1) / ( 2*sides )))/(sin(M_PI/sides)));
 	}
 	else
 	{
@@ -206,7 +209,7 @@ TEST_CASE ("Testing Centers","[Utils]")
 	
 }
 
-/*TEST_CASE ("Testing width and height calculations","[Utils]")
+TEST_CASE ("Testing width and height calculations","[Utils]")
 {
 	const int NUM = 5;
 	random_device rndDev;
@@ -226,32 +229,32 @@ TEST_CASE ("Testing Centers","[Utils]")
 	{
 		expectWidth = testGetwidth(sidesCollection[0],v);
 		returnedWidth = getWidth(sidesCollection[0],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[1],v);
 		returnedWidth = getWidth(sidesCollection[1],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[2],v);
 		returnedWidth = getWidth(sidesCollection[2],v);
-		//REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[3],v);
 		returnedWidth = getWidth(sidesCollection[3],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[4],v);
 		returnedWidth = getWidth(sidesCollection[4],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[5],v);
 		returnedWidth = getWidth(sidesCollection[5],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[6],v);
 		returnedWidth = getWidth(sidesCollection[6],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[7],v);
 		returnedWidth = getWidth(sidesCollection[7],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 	}
 
 
-}*/
+}
 
 TEST_CASE ("Rectangle Construction","[Rectangle]")
 {
