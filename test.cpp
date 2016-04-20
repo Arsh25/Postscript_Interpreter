@@ -7,6 +7,7 @@ using std::make_pair;
 using std::mt19937;
 using std::random_device;
 using std::uniform_real_distribution;
+using std::uniform_int_distribution;
 #include <algorithm>
 using std::swap;
 
@@ -20,10 +21,17 @@ using std::swap;
 	corresponding utils.h function. 
 */
 
+
+string testPsLine(int x, int y,int x1, int y1)
+{
+	return to_string(x)+ " "+ to_string(y)+ " "+ "moveto " + to_string(x1) + " " + to_string(y1)+ " lineto" ; 
+}
+
 string testPsArc(int x, int y, double r, int startAngle, int endAngle )
 {
-	return to_string(x)+" "+ to_string(y)+" "+ to_string(r)+ " "+ to_string(startAngle) + " "+to_string(endAngle);
+	return to_string(x)+" "+ to_string(y)+" "+ to_string(r)+ " "+ to_string(startAngle) + " "+to_string(endAngle) + " arc";
 }
+
 
 double testCalcX(int k, int n, double l)
 {
@@ -58,6 +66,54 @@ string testPolyDraw (int x, int y, int sides, double length)
 
 	return ss.str();
 
+}
+
+TEST_CASE ("Testing utils drawing helpers","[Utils]")
+{
+	const int NUM = 5;
+	random_device rndDev;
+	mt19937 randomNum(rndDev());
+	uniform_int_distribution<> posX1(0,842);
+	uniform_int_distribution<>posY1 (0,595);
+	uniform_int_distribution<> posX2(0,842);
+	uniform_int_distribution<>posY2 (0,595);
+
+	uniform_int_distribution<> startAngle(0,360);
+	uniform_int_distribution<>endAngle (0,360);
+	uniform_real_distribution<>radii(0,595);
+	
+	std::vector<int> x1Collection;
+	std::vector<int> y1Collection;
+	std::vector<int> x2Collection;
+	std::vector<int> y2Collection;
+	
+	std::vector<int> startAngleCollection;
+	std::vector<int> endAngleCollection;
+	std::vector<double> radiiColection;
+
+	for (int i=0; i<NUM; i++ )
+	{
+		x1Collection.push_back(posY1(rndDev));
+		y1Collection.push_back(posY1(rndDev));
+		x2Collection.push_back(posX2(rndDev));
+		y2Collection.push_back(posY2(rndDev));
+
+		startAngleCollection.push_back(startAngle(rndDev));
+		endAngleCollection.push_back(endAngle(rndDev));
+		radiiColection.push_back(radii(rndDev));
+	}
+
+	for (int i = 0; i<NUM; i++)
+	{
+		string expectedPS, returnedPS;
+		expectedPS = testPsLine(x1Collection[i],y1Collection[i], x2Collection[i], y2Collection[i]);
+		returnedPS = psLine(x1Collection[i],y1Collection[i], x2Collection[i], y2Collection[i]);
+		REQUIRE(returnedPS == expectedPS);
+		expectedPS=returnedPS=string();
+		expectedPS = testPsArc(x1Collection[i], y1Collection[i], radiiColection[i]  , startAngleCollection[i],endAngleCollection[i]);
+		returnedPS = psArc(x1Collection[i], y1Collection[i], radiiColection[i], startAngleCollection[i],endAngleCollection[i]);
+		REQUIRE(returnedPS == expectedPS);
+	}
 }
 
 TEST_CASE ("Testing Centers","[Utils]")
