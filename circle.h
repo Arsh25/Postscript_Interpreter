@@ -18,8 +18,9 @@ public:
 	Circle(int x, int y, double radius) : Shape(x, y, 2*radius, 2*radius), radius_(radius) {};
 	Circle(double radius) : Circle(0,0,radius) {};
 
-	double radius();
 	string draw(int x, int y) const;
+	
+	double radius();
 
 protected:
 	/**

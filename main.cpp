@@ -84,6 +84,8 @@ int main(){
 	Rotated rStar(&star,90);
 	cout << rStar(150,600) << endl;
 
+	cout << triangleTest.draw() << endl;
+
 
 	cout << "showpage" << endl;
 
