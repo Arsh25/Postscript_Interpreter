@@ -15,7 +15,12 @@ class Star : public Shape
 {
 public:
 	Star(): Shape(), outerRadius_(0), innerRadius_(0) {};
-	Star(int x, int y, int n, double oRadius, double iRadius) : Shape(x, y, 2* (oRadius<iRadius ? iRadius : oRadius), 2*(oRadius<iRadius ? iRadius : oRadius)), numOfPoints_(n), outerRadius_(oRadius), innerRadius_(iRadius) {};
+	Star(int x, int y, int n, double oRadius, double iRadius) 
+		: Shape(x, y, 2* (oRadius<iRadius ? iRadius : oRadius), 2*(oRadius<iRadius ? iRadius : oRadius)), 
+			numOfPoints_(n), 
+			outerRadius_(oRadius), 
+			innerRadius_(iRadius) 
+			{};
 	Star(int n, double oRadius, double iRadius) : Star(0,0,n,oRadius,iRadius) {};
 
 	string draw() const;

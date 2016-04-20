@@ -11,7 +11,7 @@
 Rotated::Rotated(Shape * shape, int angle): Shape(), shape_(shape), angle_(angle){
 	string name = string(typeid(*shape).name()).substr(1);
 
-	if(name == "Circle"){
+	if(name == "Circle" || name == "Star"){
 		boundsWidth_ = shape->width();
 		boundsHeight_ = shape->height();
 	} else if (name == "Square" || name == "Rectangle" || name == "Rotated" || name == "Scaled"){

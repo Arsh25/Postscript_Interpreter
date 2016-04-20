@@ -6,3 +6,4 @@ run
 build
 *.ps
 latex/*
+Doxyfile
