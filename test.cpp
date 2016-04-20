@@ -275,58 +275,60 @@ TEST_CASE ("Testing width and height calculations","[Utils]")
 
 	for(int i=0;i<NUM;i++)
 	{
-		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
-		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
-		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
-		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
-		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
-		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
-		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
-		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
-		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-	}
-
-	for(auto v : lenCollection)
-	{
-		expectHeight = testGetHeight(sidesCollection[0],v);
-		returnedHeight = getHeight(sidesCollection[0],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[1],v);
-		returnedHeight = getHeight(sidesCollection[1],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[2],v);
-		returnedHeight = getHeight(sidesCollection[2],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[3],v);
-		returnedHeight = getHeight(sidesCollection[3],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[4],v);
-		returnedHeight = getHeight(sidesCollection[4],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[5],v);
-		returnedHeight = getHeight(sidesCollection[5],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[6],v);
-		returnedHeight = getHeight(sidesCollection[6],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[7],v);
-		returnedHeight = getHeight(sidesCollection[7],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		SECTION ("Testing Width")
+		{
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+		}
+		SECTION("Testing height")
+		{
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		}
 	}
 }
 
