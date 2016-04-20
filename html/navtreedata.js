@@ -1,8 +1,6 @@
 var NAVTREE =
 [
   [ "Postscript Interpreter", "index.html", [
-    [ "designDocument", "md_design_document.html", null ],
-    [ "Postscript_Interpreter", "md__r_e_a_d_m_e.html", null ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],

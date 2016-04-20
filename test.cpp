@@ -13,6 +13,15 @@ using std::swap;
 
 #include "rectangle.h"
 #include "polygon.h"
+#include "spacer.h"
+#include "circle.h"
+
+//Complex Shapes
+#include "layered.h"
+#include "rotate.h"
+#include "star.h" //Our custom shape
+#include "scaled.h"
+
 
 
 /*	utils.h test functions 
@@ -20,6 +29,9 @@ using std::swap;
 	Calling these functions should return the same thing
 	corresponding utils.h function. 
 */
+
+//error in doubles
+const double ERROR = 0.0000001;
 
 
 string testPsLine(int x, int y)
@@ -62,7 +74,7 @@ double testGetwidth (int sides, double len)
 {
 	if (sides % 2 !=0)
 	{
-		return (len*((sin(M_PI*(sides-1))/ (2*sides)))/(sin(M_PI/sides)));
+		return (len * (sin( M_PI * (sides-1) / ( 2*sides )))/(sin(M_PI/sides)));
 	}
 	else
 	{
@@ -98,6 +110,16 @@ string testPolyDraw (int x, int y, int sides, double length)
 
 	return ss.str();
 
+}
+
+string testCircleDraw(int x, int y, double radius)
+{
+	stringstream ss;
+	ss << testPsHeader(x,y);
+	ss << testPsArc(0,0, radius,0,360);
+	ss << testPsFooter();
+
+	return ss.str();
 }
 
 TEST_CASE ("Testing utils drawing helpers","[Utils]")
@@ -145,17 +167,19 @@ TEST_CASE ("Testing utils drawing helpers","[Utils]")
 		expectedPS=returnedPS=string();
 		expectedPS = testPsMove(xCollection[i],yCollection[i]);
 		returnedPS = psMove(xCollection[i],yCollection[i]);
+		REQUIRE(expectedPS == returnedPS);
 
 		//Testing psHeader
 		expectedPS=returnedPS=string();
 		expectedPS = testPsHeader(xCollection[i],yCollection[i]);
 		returnedPS = psHeader(xCollection[i],yCollection[i]);		
-
+		REQUIRE(expectedPS == returnedPS);
 	}
 	//Testing psFooter
 		expectedPS=returnedPS=string();
 		expectedPS = testPsFooter();
 		returnedPS = psFooter();
+		REQUIRE(expectedPS == returnedPS);
 }
 
 TEST_CASE ("Testing Centers","[Utils]")
@@ -204,7 +228,7 @@ TEST_CASE ("Testing Centers","[Utils]")
 	
 }
 
-/*TEST_CASE ("Testing width and height calculations","[Utils]")
+TEST_CASE ("Testing width and height calculations","[Utils]")
 {
 	const int NUM = 5;
 	random_device rndDev;
@@ -224,46 +248,80 @@ TEST_CASE ("Testing Centers","[Utils]")
 	{
 		expectWidth = testGetwidth(sidesCollection[0],v);
 		returnedWidth = getWidth(sidesCollection[0],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[1],v);
 		returnedWidth = getWidth(sidesCollection[1],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[2],v);
 		returnedWidth = getWidth(sidesCollection[2],v);
-		//REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[3],v);
 		returnedWidth = getWidth(sidesCollection[3],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[4],v);
 		returnedWidth = getWidth(sidesCollection[4],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[5],v);
 		returnedWidth = getWidth(sidesCollection[5],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[6],v);
 		returnedWidth = getWidth(sidesCollection[6],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 		expectWidth = testGetwidth(sidesCollection[7],v);
 		returnedWidth = getWidth(sidesCollection[7],v);
-		REQUIRE(expectWidth == returnedWidth);
+		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 	}
 
 
-}*/
+}
 
-TEST_CASE ("Rectangle Construction","[Rectangle]")
+TEST_CASE ("Simple Shape Default Construction","[Construction]")
 {
 	Rectangle defaultRect;
 	string postScript, expectPS;
 	postScript = defaultRect.draw(72,72);
+	expectPS = testPolyDraw(72,72,4,0);
+	REQUIRE(expectPS == postScript);
 
-	//Helper variables, keeps test interface 
-	// similar to internal interface
-	int width, height, x, y;
-	width = 72;
-	height = 144;
-	x=y=72; //Draw 1 inch from left edge
+	Square defaultSquare;
+	postScript = defaultSquare.draw(72,72);
+	expectPS = testPolyDraw(72,72,4,0);
+	REQUIRE(expectPS == postScript);
+
+	Triangle defaultTri;
+	postScript = defaultTri.draw(72,72);
+	expectPS = testPolyDraw(72,72,3,0);
+	REQUIRE(expectPS == postScript);
+
+	Polygon defaultPoly;
+	postScript = defaultPoly.draw(72,72);
+	expectPS = testPolyDraw(72,72,0,0);
+	REQUIRE(expectPS == postScript);	
+
+	Spacer defaultSpacer;
+	postScript = defaultSpacer.draw(72,72);
+	expectPS = "";
+	REQUIRE(expectPS == postScript);
+
+	Circle defaultCircle;
+	postScript = defaultCircle.draw(72,72);
+	expectPS = testCircleDraw(72,72,0);
+	REQUIRE(expectPS == postScript);	
+
 }
+
+//Commented out since drawing complex shapes means getting the initializer list
+/*TEST_CASE ("Complex Shape Default Construction","[Construction]")
+{
+	string returnedPS, expectedPS;
+	Layered defaultLayered;
+	returnedPS = defaultLayered.draw(144,72);
+	expectedPS = 
+
+	Horizontal defaultHorizontal;
+	Vertical defaultVertical;
+
+}*/
 
 TEST_CASE("Polygon Draw","[Polygon] [draw function]")
 {
