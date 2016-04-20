@@ -81,7 +81,33 @@ double testGetwidth (int sides, double len)
 	}
 }
 
+double testGetHeight(int n,double l){
+	if(n%2 == 0){
+		return (l * (cos(M_PI/n)) / (sin(M_PI/n)));
+	} else {
+		return (l * (1+cos(M_PI/n)) / (2*sin(M_PI/n)));
+	}
+}
 
+double testGetRadius(int n,double l){
+	return l/(2*sin(M_PI/n));
+}
+
+double testGetConvexX(int k, int n, double r){
+	return r * cos(2 * M_PI * k / n);
+}
+
+double testGetConvexY(int k, int n, double r){
+	return r * sin(2 * M_PI * k / n);
+}
+
+double testGetConcaveX(int k, int n, double r){
+	return r * cos( (2 * M_PI * k + M_PI) / n);
+}
+
+double testGetConcaveY(int k, int n, double r){
+	return r * sin( (2 * M_PI * k + M_PI) / n);
+}
 
 string testPolyDraw (int x, int y, int sides, double length)
 {
@@ -100,8 +126,8 @@ string testPolyDraw (int x, int y, int sides, double length)
 	ss << testPsFooter();
 
 	return ss.str();
-
 }
+
 
 TEST_CASE ("Testing utils drawing helpers","[Utils]")
 {
@@ -163,6 +189,7 @@ TEST_CASE ("Testing utils drawing helpers","[Utils]")
 		REQUIRE(expectedPS == returnedPS);
 }
 
+
 TEST_CASE ("Testing Centers","[Utils]")
 {
 	const int NUM = 5;
@@ -194,7 +221,7 @@ TEST_CASE ("Testing Centers","[Utils]")
 	}
 
 	//Testing Pentagon
-		for (auto v:lenCollection)
+	for (auto v:lenCollection)
 	{
 		REQUIRE(testCalcX(1,5,v) == calcX (1,5,v));
 		REQUIRE(testCalcX(2,5,v) == calcX (2,5,v));
@@ -205,9 +232,8 @@ TEST_CASE ("Testing Centers","[Utils]")
 		REQUIRE(testCalcY(3,5,v) == calcY (3,5,v));
 		REQUIRE(testCalcY(4,5,v) == calcY (4,5,v));
 	}
-
-	
 }
+
 
 TEST_CASE ("Testing width and height calculations","[Utils]")
 {
@@ -253,8 +279,35 @@ TEST_CASE ("Testing width and height calculations","[Utils]")
 		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 	}
 
-
+	for(auto v : lenCollection)
+	{
+		expectHeight = testGetHeight(sidesCollection[0],v);
+		returnedHeight = getHeight(sidesCollection[0],v);
+		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		expectHeight = testGetHeight(sidesCollection[1],v);
+		returnedHeight = getHeight(sidesCollection[1],v);
+		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		expectHeight = testGetHeight(sidesCollection[2],v);
+		returnedHeight = getHeight(sidesCollection[2],v);
+		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		expectHeight = testGetHeight(sidesCollection[3],v);
+		returnedHeight = getHeight(sidesCollection[3],v);
+		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		expectHeight = testGetHeight(sidesCollection[4],v);
+		returnedHeight = getHeight(sidesCollection[4],v);
+		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		expectHeight = testGetHeight(sidesCollection[5],v);
+		returnedHeight = getHeight(sidesCollection[5],v);
+		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		expectHeight = testGetHeight(sidesCollection[6],v);
+		returnedHeight = getHeight(sidesCollection[6],v);
+		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		expectHeight = testGetHeight(sidesCollection[7],v);
+		returnedHeight = getHeight(sidesCollection[7],v);
+		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+	}
 }
+
 
 TEST_CASE ("Rectangle Construction","[Rectangle]")
 {
@@ -264,6 +317,7 @@ TEST_CASE ("Rectangle Construction","[Rectangle]")
 	expectPS = testPolyDraw(72,72,4,0);
 	REQUIRE(expectPS == postScript);
 }
+
 
 TEST_CASE("Polygon Draw","[Polygon] [draw function]")
 {
@@ -284,6 +338,7 @@ TEST_CASE("Polygon Draw","[Polygon] [draw function]")
 	REQUIRE(poly6.draw(72,72) == testPolyDraw(72,72,9,23));
 	REQUIRE(poly7.draw(72,72) == testPolyDraw(72,72,10,230.345));
 }
+
 
 TEST_CASE("Shape operator <<","[Shape] [operator <<]")
 {
@@ -313,6 +368,7 @@ TEST_CASE("Shape operator <<","[Shape] [operator <<]")
 		REQUIRE(returnedPS.str() == testPolyDraw (0,0,4,len));
 	}
 }
+
 
 TEST_CASE("Shape operator ()","[Shape] [operator ()]")
 {
