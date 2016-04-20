@@ -8,6 +8,10 @@
 
 #include "circle.h"
 
+double Circle::radius(){
+	return radius_;
+}
+
 string Circle::draw(int x, int y) const{
 	stringstream ss;
 

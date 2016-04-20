@@ -8,7 +8,15 @@
 
 #include "layered.h"
 
-Layered::Layered(int x, int y, initializer_list<Shape*> shapes) : Shape(x,y), shapes_(shapes){
+/**
+ * @brief Layered constructor
+ * @details constructs a Layered shape from a list of shapes
+ * 
+ * @param x x position of center
+ * @param y y position of center
+ * @param shapes list of pointers to Shapes
+ */
+Layered::Layered(int x, int y, initializer_list<Shape*> shapes) : Shape(x,y), shapes_(shapes) {
 	double width=0,height=0;
 	for(auto shape: shapes_){
 		width = max(width,shape->width());
@@ -32,8 +40,14 @@ string Layered::draw(int x, int y) const{
 	return ss.str();
 }
 
-
-
+/**
+ * @brief Horizontal costructor
+ * @details constructs a Horizontal shape from a list of shapes
+ * 
+ * @param x x position of center
+ * @param y y position of center
+ * @param shapes list of pointers to Shapes
+ */
 Horizontal::Horizontal(int x, int y, initializer_list<Shape*> shapes) : Layered(x,y,shapes){
 	double width=0,height=0;
 	for(auto shape: shapes_){
