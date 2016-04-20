@@ -28,10 +28,10 @@ We are utilizing a documentation generation tool from source code called [Doxyge
 
 Figure 1: Shape Abstract Class Hierarchy
 
-Shape &ltAbstract&gt|
+*Shape*|
 ---
 #int x_<br>#int y_<br>#double boundsWidth_<br>#double boundsHeight_|
-+Shape()<br>+Shape(int x, int y, double width, double height)<br>+Shape(double width,double height)<br>+virtual ~Shape()<br>+Shape (const Shape & other)<br>+virtual string draw() const<br>+virtual string draw(int x,int y) const<br>+virtual void place(int x, int y)<br>+string bounds()<br>+double width()<br>+double height()<br>+int x()<br>+void x(int x)<br>+int y()<br>+void y(int y)<br>+string operator()(int x, int y)<br>+virtual int numOfSides()<br>+virtual double sideLength()<br>+virtual double radius()<br>+ostream & operator<<(ostream &os, const Shape & shape)|
++Shape()<br>+Shape(int x, int y, double width, double height)<br>+Shape(double width,double height)<br>*+virtual ~Shape()*<br>+Shape (const Shape & other)<br>*+virtual string draw() const*<br>*+virtual string draw(int x,int y) const*<br>*+virtual void place(int x, int y)*<br>+string bounds()<br>+double width()<br>+double height()<br>+int x()<br>+void x(int x)<br>+int y()<br>+void y(int y)<br>+string operator()(int x, int y)<br>*+virtual int numOfSides()*<br>*+virtual double sideLength()*<br>*+virtual double radius()*<br>+ostream & operator<<(ostream &os, const Shape & shape)|
 
 Circle |
 ---
