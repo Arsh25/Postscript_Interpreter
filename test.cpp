@@ -393,16 +393,16 @@ TEST_CASE( "Drawing and Constructing Simple Shapes ", "Construction, Drawing")
 		}
 		for (int i = 0; i < NUM; ++i)
 		{
-			Polygon poly1(xCollection[i],yCollection[i],4,lenCollection[i]);
-			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			Polygon poly1(xCollection[i],yCollection[i],sidesCollection[0],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[0],lenCollection[i]);
 			returnedPS = poly1.draw();
 			REQUIRE(expectedPS == returnedPS);
-			Polygon poly2(xCollection[i],yCollection[i],4,lenCollection[i]);
-			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			Polygon poly2(xCollection[i],yCollection[i],sidesCollection[1],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[1],lenCollection[i]);
 			returnedPS = poly2.draw();
 			REQUIRE(expectedPS == returnedPS);
-			Polygon poly3(xCollection[i],yCollection[i],4,lenCollection[i]);
-			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			Polygon poly3(xCollection[i],yCollection[i],sidesCollection[2],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[2],lenCollection[i]);
 			returnedPS = poly3.draw();
 			REQUIRE(expectedPS == returnedPS);
 			Polygon poly4(xCollection[i],yCollection[i],sidesCollection[3],lenCollection[i]);
@@ -512,7 +512,7 @@ TEST_CASE( "Drawing and Constructing Simple Shapes ", "Construction, Drawing")
 		}
 	}
 
-		SECTION ("Squares")
+		SECTION ("Triangles")
 	{
 		const int NUM = 5;
 		random_device rndDev;
@@ -582,20 +582,78 @@ TEST_CASE( "Drawing and Constructing Simple Shapes ", "Construction, Drawing")
 
 		}
 	}
+	SECTION ("Circles")
+	{
+		const int NUM = 5;
+		random_device rndDev;
+		mt19937 randomNum(rndDev());
+		uniform_real_distribution<> radius(0,842);
+		uniform_int_distribution<>x (0,842);
+		uniform_int_distribution<>y (0,595);
+
+		std::vector<double> radiiCollection;
+		std::vector<int> xCollection;
+		std::vector<int> yCollection;
+
+		string expectedPS, returnedPS;
+
+		for(int i=0; i<NUM; i++)
+		{
+			radiiCollection.push_back(radius(rndDev));
+			xCollection.push_back(x(rndDev));
+			yCollection.push_back(y(rndDev));
+		}
+		for (int i = 0; i < NUM; ++i)
+		{
+			Circle circle1(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle1.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle2(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle2.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle3(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle3.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle4(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle4.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle5(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle5.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle6(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle6.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle7(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle7.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle8(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle8.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle9(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle9.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle0(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle0.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Circle circle11(xCollection[i],yCollection[i],radiiCollection[i]);
+			expectedPS = testCircleDraw(xCollection[i],yCollection[i],radiiCollection[i]);
+			returnedPS = circle11.draw();
+			REQUIRE(expectedPS == returnedPS);
+
+		}
+	}
 }
 
-//Commented out since drawing complex shapes means getting the initializer list
-/*TEST_CASE ("Complex Shape Default Construction","[Construction]")
-{
-	string returnedPS, expectedPS;
-	Layered defaultLayered;
-	returnedPS = defaultLayered.draw(144,72);
-	expectedPS = 
-
-	Horizontal defaultHorizontal;
-	Vertical defaultVertical;
-
-}*/
 
 TEST_CASE("Polygon Draw","[Polygon] [draw function]")
 {
