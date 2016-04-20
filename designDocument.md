@@ -89,3 +89,7 @@ Scaled|
 -Shape * shape_<br>-double sx_<br>-double sy_|
 +Scaled()<br>+Scaled(Shape* shape, double sx, double sy)<br>+string draw() const<br>+string draw(int x, int y) const|
 
+Star |
+---
+-double numOfPoints_<br>-double outerRadius_<br>-double innerRadius_|
++Star()<br>+Star(int x, int y, int n, double oRadius, double iRadius)<br>+Star(int n, double oRadius, double iRadius)<br>+string draw(int x, int y) const<br>+double outerRadius()<br>+double innerRadius()|
