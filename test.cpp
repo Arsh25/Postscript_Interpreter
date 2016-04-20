@@ -13,6 +13,9 @@ using std::swap;
 
 #include "rectangle.h"
 #include "polygon.h"
+#include "spacer.h"
+#include "circle.h"
+
 
 
 /*	utils.h test functions 
@@ -101,6 +104,16 @@ string testPolyDraw (int x, int y, int sides, double length)
 
 	return ss.str();
 
+}
+
+string testCircleDraw(int x, int y, double radius)
+{
+	stringstream ss;
+	ss << testPsHeader(x,y);
+	ss << testPsArc(0,0, radius,0,360);
+	ss << testPsFooter();
+
+	return ss.str();
 }
 
 TEST_CASE ("Testing utils drawing helpers","[Utils]")
@@ -256,13 +269,39 @@ TEST_CASE ("Testing width and height calculations","[Utils]")
 
 }
 
-TEST_CASE ("Rectangle Construction","[Rectangle]")
+TEST_CASE ("Simple Shape Default Construction","[Shape]")
 {
 	Rectangle defaultRect;
 	string postScript, expectPS;
 	postScript = defaultRect.draw(72,72);
 	expectPS = testPolyDraw(72,72,4,0);
 	REQUIRE(expectPS == postScript);
+
+	Square defaultSquare;
+	postScript = defaultSquare.draw(72,72);
+	expectPS = testPolyDraw(72,72,4,0);
+	REQUIRE(expectPS == postScript);
+
+	Triangle defaultTri;
+	postScript = defaultTri.draw(72,72);
+	expectPS = testPolyDraw(72,72,3,0);
+	REQUIRE(expectPS == postScript);
+
+	Polygon defaultPoly;
+	postScript = defaultPoly.draw(72,72);
+	expectPS = testPolyDraw(72,72,0,0);
+	REQUIRE(expectPS == postScript);	
+
+	Spacer defaultSpacer;
+	postScript = defaultSpacer.draw(72,72);
+	expectPS = "";
+	REQUIRE(expectPS == postScript);
+
+	Circle defaultCircle;
+	postScript = defaultCircle.draw(72,72);
+	expectPS = testCircleDraw(72,72,0);
+	REQUIRE(expectPS == postScript);	
+
 }
 
 TEST_CASE("Polygon Draw","[Polygon] [draw function]")
