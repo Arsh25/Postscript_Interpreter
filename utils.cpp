@@ -9,6 +9,26 @@
 #include "utils.h"
 
 /**
+ * @brief generates ps code for ps file header
+ * @details returns a string for ps file headers
+ * @return string "%!\n"
+ */
+string psBegin()
+{
+	return "%!\n";
+}
+
+/**
+ * @brief generates ps code for printing a page
+ * @details returns a string containing the ps code for printing a page
+ * @return string "showpage"
+ */
+string psPageBreak()
+{
+	return "showpage";
+}
+
+/**
  * @brief generates ps code for drawing a line
  * @details returns a string containing the ps code for drawing a line, in the form "x y lineto\n"
  * 

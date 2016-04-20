@@ -32,67 +32,76 @@ using std::endl;
 
 int main(){
 
-	Circle circle(100,100,20);
-	Square square(200,150,40);
-	Triangle triangle(100,200,40);
-	Rectangle rect(300,300,100.0, 50.0);
-	Polygon poly6(100,300,6,55.5);
-	Polygon poly10(100,400,10,16);
-	Polygon poly25(300,100,25,12);
+	// ***** Basic Shape Constructors *****
+	// If x & y coordinates are not set, default location is (0,0)
+	Circle circle1(25);							// Circle(double radius)
+	Circle circle2(100,700,20); 				// Circle(int x, int y, double radius)
 
-	Scaled scaled(&triangle,0.5,1.5);
-	Rotated rotated(&square,30);
-	Rotated rTriangle(&triangle,15);
+	Square square1(50);							// Square(double side)
+	Square square2(200,150,40);					// Square(int x, int y, double side)
 
-	cout << "%!\n" << endl;
+	Triangle triangle1(30);						// Triangle(double side)
+	Triangle triangle2(300,700,40);				// Triangle(int x, int y, double side)
 
-	cout << circle << endl;
-	cout << square << endl;
-	cout << triangle << endl;
-	cout << rect << endl;
-	cout << poly6 << endl;
+	Rectangle rectangle1(50.0, 100.0);			// Rectangle(double w, double h)
+	Rectangle rectangle2(300,300,100.0, 50.0);	// Rectangle(int x, int y, double w, double h)
+
+	Star star1(5,10,30);						// Star(int n, double oRadius, double iRadius)
+	Star star2(200,300,5,10,30);				// Star(int x, int y, int n, double oRadius, double iRadius)
+
+	Polygon poly6(6,55.5);						// Polygon(int sides, double length)
+	Polygon poly10(200,500,10,16);				// Polygon(int x, int y, int sides, double length)
+	Polygon poly25(300,500,25,12);
+
+
+
+	// ***** Compound Shape Constructors *****
+	Scaled sCircle(&circle1,0.5,1.5);			// Scaled(Shape* shape, double sx, double sy)
+	Scaled sHexagon(&poly6,2.0,1.5);
+
+	Rotated rSquare(&square1,30);				// Rotated(Shape * shape, int angle)
+	Rotated rStar(&star1,90);
+
+	// Layered(initializer_list<Shape*> shapes)
+	// Layered(int x, int y, initializer_list<Shape*> shapes)
+	Layered layered{&circle1,&triangle1,&rectangle2,&poly6,&poly25,&rSquare};
+
+	Spacer spacer1(50.0,50.0);					//Spacer(double w, double h)
+	Spacer spacer2(50,100,25.0,50.0);			//Spacer(int x, int y, double w, double h)
+
+	// Vertical(initializer_list<Shape*> shapes)
+	// Vertical(int x, int y, initializer_list<Shape*> shapes)
+	Vertical vertical(500,350,{&circle2,&square1,&triangle2,&rectangle1,&spacer2,&poly10,&rStar});
+
+	// Horizontal(initializer_list<Shape*> shapes)
+	// Horizontal(int x, int y, initializer_list<Shape*> shapes)
+	Horizontal horizontal(300,100,{&square2,&triangle1,&spacer1,&rectangle2,&poly6,&star1,&poly25,&sCircle,&rSquare});
+
+
+
+	// ***** Begin Postscript *****
+	cout << psBegin() << endl;
+
+	// ***** 4 Ways to Print Shapes *****
+	cout << circle2 << endl;						// 1: << shapeName
+	cout << square1(200,700) << endl;				// 2: shapeName(int x, int y)
+	cout << triangle2.draw() << endl;				// 3: shapeName.draw()
+	cout << rectangle1.draw(400,700) << endl;		// 4: shapeName.draw(int x, int y)
+
+	cout << poly6(100,500) << endl;
 	cout << poly10 << endl;
 	cout << poly25 << endl;
+	cout << sCircle(400,500) << endl;
 
-	cout << scaled(400,400) << endl;
-	cout << rotated.draw(250,200) << endl;
+	cout << rSquare.draw(100,300) << endl;
+	cout << star2 << endl;
+	cout << layered(350,300) << endl;
 
-	Layered layered({&circle,&square,&triangle,&rect,&poly6,&poly10,&poly25,&scaled,&rotated,&rTriangle});
-	cout << layered(250,500) << endl;
+	cout << vertical(500,450) << endl;
+	cout << horizontal(300,100) << endl;
 
-	Vertical vertical({&circle,&square,&triangle,&rect,&poly6,&poly10,&poly25,&scaled,&rotated,&rTriangle});
-	cout << vertical(500,350) << endl;
-
-	Horizontal horizontal({&circle,&square,&triangle,&rect,&poly6,&poly10,&poly25,&scaled,&rotated,&rTriangle});
-	cout << horizontal(300,700) << endl;
-
-	Triangle triangleTest(30);
-	Circle circleTest(triangleTest.radius());
-	Rotated rTriOne(&triangleTest,30);
-	Rotated rTriTwo(&triangleTest,60);
-	Rotated rTriThr(&triangleTest,90);
-
-	cout << triangleTest(100,500) << endl;
-	cout << circleTest(100,500) << endl;
-	cout << rTriOne(100,500) << endl;
-	cout << rTriTwo(100,500) << endl;
-	cout << rTriThr(100,500) << endl;
-
-	Star star(5,10,30);
-	cout << star(100,600) << endl;
-
-	Rotated rStar(&star,90);
-	cout << rStar(150,600) << endl;
-
-
-	cout << "showpage" << endl;
-
-	// cout << square.bounds() << endl;
-	// cout << rotated.bounds() << endl;
-
-	// cout << triangle.bounds() << endl;
-	// cout << triangle.radius() << endl;
-	// cout << rTriangle.bounds() << endl;
+	// ***** Print Page / Page Break *****
+	cout << psPageBreak() << endl;
 
 	return 0;
 }
