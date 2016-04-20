@@ -113,3 +113,55 @@ double getHeight(int n, double l){
 double getRadius(int n, double l){
 	return l/(2*sin(PI/n));
 }
+
+/**
+ * @brief get x
+ * @details calculate x coordinate of a convex vertex of a star
+ * 
+ * @param k vertex number, 0 - (n-1)
+ * @param n number of verticies
+ * @param r radius out outer circle
+ * @return double, x coordinate
+ */
+double getConvexX(int k, int n, double r){
+	return r * cos(2 * M_PI * k / n);
+}
+
+/**
+ * @brief get y
+ * @details calculate y coordinate of a convex vertex of a star
+ * 
+ * @param k vertex number, 0 - (n-1)
+ * @param n number of verticies
+ * @param r radius out outer circle
+ * @return double, y coordinate
+ */
+double getConvexY(int k, int n, double r){
+	return r * sin(2 * M_PI * k / n);
+}
+
+/**
+ * @brief get x
+ * @details calculate x coordinate of a concave vertex of a star
+ * 
+ * @param k vertex number, 0 - (n-1)
+ * @param n number of verticies
+ * @param r radius of inner circle
+ * @return double, x coordinate
+ */
+double getConcaveX(int k, int n, double r){
+	return r * cos( (2 * M_PI * k + PI) / n);
+}
+
+/**
+ * @brief get y
+ * @details calculate y coordinate of a concave vertex of a star
+ * 
+ * @param k vertex number, 0 - (n-1)
+ * @param n number of verticies
+ * @param r radius of inner circle
+ * @return double, y coordinate
+ */
+double getConcaveY(int k, int n, double r){
+	return r * sin( (2 * M_PI * k + PI) / n);
+}

@@ -22,6 +22,8 @@
 
 #include "utils.h"
 
+#include "star.h"
+
 #include <typeinfo>
 
 #include <iostream>
@@ -75,6 +77,9 @@ int main(){
 	cout << rTriOne(100,500) << endl;
 	cout << rTriTwo(100,500) << endl;
 	cout << rTriThr(100,500) << endl;
+
+	Star star(6,20,5);
+	cout << star(100,600) << endl;
 
 	cout << "showpage" << endl;
 

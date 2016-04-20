@@ -21,6 +21,7 @@ using std::ostream;
 #include <algorithm>
 using std::min;
 using std::max;
+#include <typeinfo>
 
 #include "utils.h"
 
