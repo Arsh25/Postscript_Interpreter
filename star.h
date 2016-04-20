@@ -24,10 +24,20 @@ public:
 	double innerRadius();
 
 private:
+	/**
+	 * number of points on star
+	 */
 	double numOfPoints_;
+	/**
+	 * distance from center of star to tip of point
+	 */
 	double outerRadius_;
+	/**
+	 * distance from center of star to bottom of vertex between points
+	 */
 	double innerRadius_;
-};
+
+}; //end of class Star
 
 
 #endif // STAR_H

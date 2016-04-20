@@ -26,8 +26,17 @@ public:
 	string draw(int x, int y) const;
 
 private:
+	/**
+	 * pointer to Shape object
+	 */
 	Shape * shape_;
+	/**
+	 * stretch along x-axis
+	 */
 	double sx_;
+	/**
+	 * stretch along y-axis
+	 */
 	double sy_;
 
 };

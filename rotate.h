@@ -21,7 +21,13 @@ public:
 	string draw(int x, int y) const;
 
 private:
+	/**
+	 * pointer to Shape object
+	 */
 	Shape * shape_;
+	/**
+	 * angle of rotation
+	 */
 	int angle_;
 
 };

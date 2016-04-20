@@ -75,11 +75,6 @@ protected:
 	 */
 	double boundsHeight_;
 
-	
-
-	
-
-
 }; //end of class Shape
 
 
