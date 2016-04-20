@@ -19,7 +19,7 @@
  * @return string with ps code
  */
 string psLine(int x0, int y0, int x1, int y1){
-	return stringify(x0) + " " + stringify(y0) + " moveto " + stringify(x1) + " " + stringify(y1) + " lineto";
+	return to_string(x0) + " " + to_string(y0) + " moveto " + to_string(x1) + " " + to_string(y1) + " lineto";
 }
 
 /**
@@ -34,7 +34,7 @@ string psLine(int x0, int y0, int x1, int y1){
  * @return string containing ps code
  */
 string psArc(int x, int y, double r, int startAngle, int endAngle){
-	return stringify(x) + " " + stringify(y) + " " + stringify(r) + " " + stringify(startAngle) + " " + stringify(endAngle) + " arc";
+	return to_string(x) + " " + to_string(y) + " " + to_string(r) + " " + to_string(startAngle) + " " + to_string(endAngle) + " arc";
 }
 
 /**
@@ -47,7 +47,7 @@ string psArc(int x, int y, double r, int startAngle, int endAngle){
  * @return double, x coordinate of vertex
  */
 double calcX(int k, int n, double l){
-	return (l/2)*( sin( (2*k+1)*PI/n ) / sin(PI/n) );
+	return (l/2)*( sin( (2*k+1)*M_PI/n ) / sin(M_PI/n) );
 }
 
 /**
@@ -60,7 +60,7 @@ double calcX(int k, int n, double l){
  * @return double, y coordinate of vertex
  */
 double calcY(int k, int n, double l){
-	return (-l/2)*( cos( (2*k+1)*PI/n ) / sin(PI/n) );
+	return (-l/2)*( cos( (2*k+1)*M_PI/n ) / sin(M_PI/n) );
 }
 
 /**
@@ -75,12 +75,12 @@ double calcY(int k, int n, double l){
 double getWidth(int n, double l){
 	if(n%2 == 0){
 		if(n%4 == 0){
-			return (l*cos(PI/n)/sin(PI/n));
+			return (l*cos(M_PI/n)/sin(M_PI/n));
 		} else {
-			return (l / sin(PI/n));
+			return (l / sin(M_PI/n));
 		}
 	} else {
-		return ( l * ( sin( PI * (n-1) / (2*n) ) ) / sin(PI/n) );
+		return ( l * ( sin( M_PI * (n-1) / (2*n) ) ) / sin(M_PI/n) );
 	}
 }
 
@@ -95,9 +95,9 @@ double getWidth(int n, double l){
  */
 double getHeight(int n, double l){
 	if(n%2 == 0){
-		return (l * (cos(PI/n)) / (sin(PI/n)));
+		return (l * (cos(M_PI/n)) / (sin(M_PI/n)));
 	} else {
-		return (l * (1+cos(PI/n)) / (2*sin(PI/n)));
+		return (l * (1+cos(M_PI/n)) / (2*sin(M_PI/n)));
 	}
 }
 
@@ -111,5 +111,5 @@ double getHeight(int n, double l){
  * @return double, radius
  */
 double getRadius(int n, double l){
-	return l/(2*sin(PI/n));
+	return l/(2*sin(M_PI/n));
 }
