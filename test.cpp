@@ -145,17 +145,19 @@ TEST_CASE ("Testing utils drawing helpers","[Utils]")
 		expectedPS=returnedPS=string();
 		expectedPS = testPsMove(xCollection[i],yCollection[i]);
 		returnedPS = psMove(xCollection[i],yCollection[i]);
+		REQUIRE(expectedPS == returnedPS);
 
 		//Testing psHeader
 		expectedPS=returnedPS=string();
 		expectedPS = testPsHeader(xCollection[i],yCollection[i]);
 		returnedPS = psHeader(xCollection[i],yCollection[i]);		
-
+		REQUIRE(expectedPS == returnedPS);
 	}
 	//Testing psFooter
 		expectedPS=returnedPS=string();
 		expectedPS = testPsFooter();
 		returnedPS = psFooter();
+		REQUIRE(expectedPS == returnedPS);
 }
 
 TEST_CASE ("Testing Centers","[Utils]")
