@@ -63,7 +63,7 @@ public:
 	Triangle() : Polygon(0,0,3,0) {};
 	Triangle(int x, int y, double side) : Polygon(x,y,3,side) {};
 	Triangle(double side) : Triangle(0,0,side) {};
-
+	
 }; //end of class Triangle
 
 

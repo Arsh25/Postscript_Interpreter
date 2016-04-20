@@ -34,7 +34,6 @@ public:
 	Shape(double width,double height) : Shape(0,0,width,height) {};
 
 	virtual ~Shape() {};
-	Shape (const Shape & other){};
 
 	virtual string draw() const;
 	virtual string draw(int x,int y) const;
