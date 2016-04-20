@@ -150,7 +150,7 @@ double getConvexY(int k, int n, double r){
  * @return double, x coordinate
  */
 double getConcaveX(int k, int n, double r){
-	return r * cos( (2 * M_PI * k + PI) / n);
+	return r * cos( (2 * M_PI * k + M_PI) / n);
 }
 
 /**
@@ -163,5 +163,5 @@ double getConcaveX(int k, int n, double r){
  * @return double, y coordinate
  */
 double getConcaveY(int k, int n, double r){
-	return r * sin( (2 * M_PI * k + PI) / n);
+	return r * sin( (2 * M_PI * k + M_PI) / n);
 }
