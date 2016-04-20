@@ -13,15 +13,28 @@ using std::swap;
 #include "rectangle.h"
 #include "polygon.h"
 
+
+/*	utils.h test functions 
+	Functions to test utils.h functionality
+	Calling these functions should return the same thing
+	corresponding utils.h function. 
+*/
+
+string testPsArc(int x, int y, double r, int startAngle, int endAngle )
+{
+	return to_string(x)+" "+ to_string(y)+" "+ to_string(r)+ " "+ to_string(startAngle) + " "+to_string(endAngle);
+}
+
 double testCalcX(int k, int n, double l)
 {
-	return (l/2)*(sin(((2*k+1)*PI)/n)/(sin(PI/n)));
+	return (l/2)*(sin(((2*k+1)*M_PI)/n)/(sin(M_PI/n)));
 }
 
 double testCalcY(int k, int n, double l)
 {
-	return (-l/2)*(cos(((2*k+1)*PI)/n)/(sin(PI/n)));		
+	return (-l/2)*(cos(((2*k+1)*M_PI)/n)/(sin(M_PI/n)));		
 }
+
 
 string testPolyDraw (int x, int y, int sides, double length)
 {
