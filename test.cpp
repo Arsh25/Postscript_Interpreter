@@ -24,12 +24,27 @@ using std::swap;
 
 string testPsLine(int x, int y)
 {
-	return to_string(x)+ " "+ to_string(y)+ " "+ "lineto\n" ; 
+	return to_string(x)+ " "+ to_string(y)+ " lineto\n" ; 
+}
+
+string testPsMove (int x, int y)
+{
+	return to_string(x) + " " + to_string(y) + " " +"lineto\n";
 }
 
 string testPsArc(int x, int y, double r, int startAngle, int endAngle )
 {
-	return to_string(x)+" "+ to_string(y)+" "+ to_string(r)+ " "+ to_string(startAngle) + " "+to_string(endAngle) + " arc";
+	return to_string(x)+" "+ to_string(y)+" "+ to_string(r)+ " "+ to_string(startAngle) + " "+to_string(endAngle) + " arc\n";
+}
+
+string testPsHeader (int x, int y)
+{
+	return "gsave\nnewpath\n" + to_string(x) + " " + to_string(y) + " " + "translate\n";
+}
+
+string testPsFooter ()
+{
+	return "closepath\nstroke\nstroke\n";
 }
 
 
@@ -68,7 +83,7 @@ double testGetwidth (int sides, double len)
 string testPolyDraw (int x, int y, int sides, double length)
 {
 	stringstream ss;
-	ss << "gsave\n";
+	ss << "gyve\n";
 	ss << "newpath\n";
 	ss << x <<" " <<y << " translate\n";
 	double vertX = testCalcX(0,sides,length);
@@ -82,8 +97,8 @@ string testPolyDraw (int x, int y, int sides, double length)
 	}
 
 	ss << "closepath\n";
-	ss << "stroke\n";
-	ss << "grestore\n";
+	ss << "styke\n";
+	ss << "gresyre\n";
 
 	return ss.str();
 
@@ -94,30 +109,25 @@ TEST_CASE ("Testing utils drawing helpers","[Utils]")
 	const int NUM = 5;
 	random_device rndDev;
 	mt19937 randomNum(rndDev());
-	uniform_int_distribution<> posX1(0,842);
-	uniform_int_distribution<>posY1 (0,595);
-	uniform_int_distribution<> posX2(0,842);
-	uniform_int_distribution<>posY2 (0,595);
+	uniform_int_distribution<> posx(0,842);
+	uniform_int_distribution<>posy (0,595);
 
 	uniform_int_distribution<> startAngle(0,360);
 	uniform_int_distribution<>endAngle (0,360);
 	uniform_real_distribution<>radii(0,595);
 	
-	std::vector<int> x1Collection;
-	std::vector<int> y1Collection;
-	std::vector<int> x2Collection;
-	std::vector<int> y2Collection;
+	std::vector<int> xCollection;
+	std::vector<int> yCollection;
 	
 	std::vector<int> startAngleCollection;
 	std::vector<int> endAngleCollection;
 	std::vector<double> radiiColection;
 
+	string expectedPS, returnedPS;
 	for (int i=0; i<NUM; i++ )
 	{
-		x1Collection.push_back(posY1(rndDev));
-		y1Collection.push_back(posY1(rndDev));
-		x2Collection.push_back(posX2(rndDev));
-		y2Collection.push_back(posY2(rndDev));
+		xCollection.push_back(posx(rndDev));
+		yCollection.push_back(posy(rndDev));
 
 		startAngleCollection.push_back(startAngle(rndDev));
 		endAngleCollection.push_back(endAngle(rndDev));
@@ -126,15 +136,30 @@ TEST_CASE ("Testing utils drawing helpers","[Utils]")
 
 	for (int i = 0; i<NUM; i++)
 	{
-		string expectedPS, returnedPS;
-		expectedPS = testPsLine(x1Collection[i],y1Collection[i]);
-		returnedPS = psLine(x1Collection[i],y1Collection[i]);
+		expectedPS = testPsLine(xCollection[i],yCollection[i]);
+		returnedPS = psLine(xCollection[i],yCollection[i]);
 		REQUIRE(returnedPS == expectedPS);
+		
 		expectedPS=returnedPS=string();
-		expectedPS = testPsArc(x1Collection[i], y1Collection[i], radiiColection[i]  , startAngleCollection[i],endAngleCollection[i]);
-		returnedPS = psArc(x1Collection[i], y1Collection[i], radiiColection[i], startAngleCollection[i],endAngleCollection[i]);
+		expectedPS = testPsArc(xCollection[i], yCollection[i], radiiColection[i] , startAngleCollection[i],endAngleCollection[i]);
+		returnedPS = psArc(xCollection[i], yCollection[i], radiiColection[i], startAngleCollection[i],endAngleCollection[i]);
 		REQUIRE(returnedPS == expectedPS);
+
+		//Testing psMove
+		expectedPS=returnedPS=string();
+		expectedPS = testPsMove(xCollection[i],yCollection[i]);
+		returnedPS = psMove(xCollection[i],yCollection[i]);
+
+		//Testing psHeader
+		expectedPS=returnedPS=string();
+		expectedPS = testPsHeader(xCollection[i],yCollection[i]);
+		returnedPS = psHeader(xCollection[i],yCollection[i]);		
+
 	}
+	//Testing psFooter
+		expectedPS=returnedPS=string();
+		expectedPS = testPsFooter();
+		returnedPS = psFooter();
 }
 
 TEST_CASE ("Testing Centers","[Utils]")
@@ -235,41 +260,13 @@ TEST_CASE ("Rectangle Construction","[Rectangle]")
 	Rectangle defaultRect;
 	string postScript, expectPS;
 	postScript = defaultRect.draw(72,72);
-	expectPS = "newpath\n72 72 moveto\n72 72 lineto\n";
-	expectPS+= "72 72 lineto\n72 72 lineto\nclosepath\n";
-	expectPS+= "stroke\n";
-
-	REQUIRE( postScript == expectPS);
-
-	postScript = defaultRect.draw(75,75);
-	expectPS = "newpath\n75 75 moveto\n75 75 lineto\n";
-	expectPS+= "75 75 lineto\n75 75 lineto\nclosepath\n";
-	expectPS+= "stroke\n";
-
-	REQUIRE( postScript == expectPS);
 
 	//Helper variables, keeps test interface 
 	// similar to internal interface
-	int llx, lly, width, height, x, y;
+	int width, height, x, y;
 	width = 72;
 	height = 144;
 	x=y=72; //Draw 1 inch from left edge
-	llx = x - (width/2);
-	lly = y - (height/2);
-	Rectangle rect(0,0,width,height);
-
-	stringstream expectedPS;
-
-	expectedPS << "newpath\n";
-	expectedPS << (llx) << " " << (lly) <<" moveto\n";
-	expectedPS << (llx + width) << " " <<(lly) << " lineto\n";
-	expectedPS << (llx + width) << " " <<(lly + height) << " lineto\n";
-	expectedPS << (llx) <<" " << (lly + height) << " lineto\n";
-	expectedPS << "closepath\n";
-	expectedPS << "stroke\n";
-
-	postScript = rect.draw(x,y);
-	REQUIRE(postScript == expectedPS.str());
 }
 
 TEST_CASE("Polygon Draw","[Polygon] [draw function]")
