@@ -77,7 +77,7 @@ int main(){
 	// Horizontal(int x, int y, initializer_list<Shape*> shapes)
 	Horizontal horizontal(300,100,{&square2,&triangle1,&spacer1,&rectangle2,&poly6,&star1,&poly25,&sCircle,&rSquare});
 
-	cout << triangleTest.draw() << endl;
+	// cout << triangleTest.draw() << endl;
 
 
 

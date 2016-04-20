@@ -137,8 +137,6 @@ string testPolyDraw (int x, int y, int sides, double length)
 	return ss.str();
 }
 
-<<<<<<< HEAD
-=======
 string testCircleDraw(int x, int y, double radius)
 {
 	stringstream ss;
@@ -148,7 +146,6 @@ string testCircleDraw(int x, int y, double radius)
 
 	return ss.str();
 }
->>>>>>> bace2b341e5d630f6d1aa78746288a06a84aa899
 
 TEST_CASE ("Testing utils drawing helpers","[Utils]")
 {
