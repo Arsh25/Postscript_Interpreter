@@ -29,7 +29,7 @@ string testPsLine(int x, int y)
 
 string testPsMove (int x, int y)
 {
-	return to_string(x) + " " + to_string(y) + " " +"moveto\n";
+	return to_string(x) + " " + to_string(y) + " moveto\n";
 }
 
 string testPsArc(int x, int y, double r, int startAngle, int endAngle )
@@ -44,7 +44,7 @@ string testPsHeader (int x, int y)
 
 string testPsFooter ()
 {
-	return "closepath\nstroke\nstroke\n";
+	return "closepath\nstroke\ngrestore\n";
 }
 
 
