@@ -367,7 +367,7 @@ TEST_CASE ("Simple Shape Default Construction","[Construction]")
 
 }
 
-TEST_CASE( "Simple Shape Construction", "Construction")
+TEST_CASE( "Drawing and Constructing Simple Shapes ", "Construction, Drawing")
 {
 	SECTION ("Polygons")
 	{
@@ -468,9 +468,9 @@ TEST_CASE( "Simple Shape Construction", "Construction")
 			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
 			returnedPS = square1.draw();
 			REQUIRE(expectedPS == returnedPS);
-			Square sqaue2(xCollection[i],yCollection[i],lenCollection[i]);
+			Square square2(xCollection[i],yCollection[i],lenCollection[i]);
 			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
-			returnedPS = sqaue2.draw();
+			returnedPS = square2.draw();
 			REQUIRE(expectedPS == returnedPS);
 			Square square3(xCollection[i],yCollection[i],lenCollection[i]);
 			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
@@ -507,6 +507,77 @@ TEST_CASE( "Simple Shape Construction", "Construction")
 			Square square11(xCollection[i],yCollection[i],lenCollection[i]);
 			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
 			returnedPS = square11.draw();
+			REQUIRE(expectedPS == returnedPS);
+
+		}
+	}
+
+		SECTION ("Squares")
+	{
+		const int NUM = 5;
+		random_device rndDev;
+		mt19937 randomNum(rndDev());
+		uniform_real_distribution<> len(0,842);
+		uniform_int_distribution<>x (0,842);
+		uniform_int_distribution<>y (0,595);
+
+		std::vector<double> lenCollection;
+		std::vector<int> xCollection;
+		std::vector<int> yCollection;
+
+		string expectedPS, returnedPS;
+
+		for(int i=0; i<NUM; i++)
+		{
+			lenCollection.push_back(len(rndDev));
+			xCollection.push_back(x(rndDev));
+			yCollection.push_back(y(rndDev));
+		}
+		for (int i = 0; i < NUM; ++i)
+		{
+			Triangle triangle1(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle1.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle2(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle2.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle3(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle3.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle4(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle4.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle5(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle5.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle6(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle6.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle7(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle7.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle8(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle8.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle9(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle9.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle0(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle0.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Triangle triangle11(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],3,lenCollection[i]);
+			returnedPS = triangle11.draw();
 			REQUIRE(expectedPS == returnedPS);
 
 		}
