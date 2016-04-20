@@ -47,18 +47,18 @@ double testGetwidth (int sides, double len)
 {
 	if (sides % 2 !=0)
 	{
-		return len*((sin(M_PI*(sides-1))/2*sides)/(sin(M_PI/sides)));
+		return (len*((sin(M_PI*(sides-1))/ (2*sides)))/(sin(M_PI/sides)));
 	}
 	else
 	{
 		if (sides % 4 != 0)
 		{
-			return len*(1/(sin(M_PI/sides)));
+			return (len*(1/(sin(M_PI/sides))));
 		}
 	
 		else
 		{
-			return len*((cos(M_PI/sides))/(sin(M_PI/sides)));
+			return (len*((cos(M_PI/sides))/(sin(M_PI/sides))));
 		}
 	}
 }
@@ -182,6 +182,53 @@ TEST_CASE ("Testing Centers","[Utils]")
 
 	
 }
+
+/*TEST_CASE ("Testing width and height calculations","[Utils]")
+{
+	const int NUM = 5;
+	random_device rndDev;
+	mt19937 randomNum(rndDev());
+	uniform_real_distribution<double> len(0,842);
+	uniform_int_distribution<>sides (0,1000);
+
+	double expectWidth, expectHeight;
+	double returnedWidth, returnedHeight;
+
+	std::vector<double> lenCollection;
+	std::vector<int> sidesCollection;
+
+	lenCollection = {72,144, 150.45, 160, 621, 630.79};
+	sidesCollection = {2,3,4,5,6,10,12,13};
+	for(auto v : lenCollection)
+	{
+		expectWidth = testGetwidth(sidesCollection[0],v);
+		returnedWidth = getWidth(sidesCollection[0],v);
+		REQUIRE(expectWidth == returnedWidth);
+		expectWidth = testGetwidth(sidesCollection[1],v);
+		returnedWidth = getWidth(sidesCollection[1],v);
+		REQUIRE(expectWidth == returnedWidth);
+		expectWidth = testGetwidth(sidesCollection[2],v);
+		returnedWidth = getWidth(sidesCollection[2],v);
+		//REQUIRE(expectWidth == returnedWidth);
+		expectWidth = testGetwidth(sidesCollection[3],v);
+		returnedWidth = getWidth(sidesCollection[3],v);
+		REQUIRE(expectWidth == returnedWidth);
+		expectWidth = testGetwidth(sidesCollection[4],v);
+		returnedWidth = getWidth(sidesCollection[4],v);
+		REQUIRE(expectWidth == returnedWidth);
+		expectWidth = testGetwidth(sidesCollection[5],v);
+		returnedWidth = getWidth(sidesCollection[5],v);
+		REQUIRE(expectWidth == returnedWidth);
+		expectWidth = testGetwidth(sidesCollection[6],v);
+		returnedWidth = getWidth(sidesCollection[6],v);
+		REQUIRE(expectWidth == returnedWidth);
+		expectWidth = testGetwidth(sidesCollection[7],v);
+		returnedWidth = getWidth(sidesCollection[7],v);
+		REQUIRE(expectWidth == returnedWidth);
+	}
+
+
+}*/
 
 TEST_CASE ("Rectangle Construction","[Rectangle]")
 {
