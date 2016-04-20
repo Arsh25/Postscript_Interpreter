@@ -320,3 +320,32 @@ TEST_CASE("Shape operator <<","[Shape] [operator <<]")
 		REQUIRE(returnedPS.str() == testPolyDraw (0,0,4,len));
 	}
 }
+
+TEST_CASE("Shape operator ()","[Shape] [operator ()]")
+{
+	const int NUM = 5;
+	random_device rndDev;
+	mt19937 randomNum(rndDev());
+	uniform_real_distribution<> randomLen(0,842);
+	std::vector<double> lenCollection;
+	stringstream returnedPS;
+	for (int i=0; i<NUM; i++ )
+	{
+		lenCollection.push_back(randomLen(rndDev));
+	}
+	for(auto len : lenCollection)
+	{	
+		returnedPS.str("");
+		Polygon poly1(2,len);
+		returnedPS << poly1(0,0);
+		REQUIRE(returnedPS.str()  == testPolyDraw (0,0,2,len));
+		returnedPS.str("");
+		Triangle tri1(len);
+		returnedPS << tri1(10,10);
+		REQUIRE(returnedPS.str() == testPolyDraw (10,10,3,len));
+		Square square1(len);
+		returnedPS.str("");
+		returnedPS << square1(20,20);
+		REQUIRE(returnedPS.str() == testPolyDraw (20,20,4,len));
+	}
+}
