@@ -12,16 +12,14 @@ string Rectangle::draw(int x, int y) const
 {
 	stringstream ss;
 
-	int llx = x - (width_ / 2);
-	int lly = y - (height_ / 2);
+	ss << psHeader(x,y);
 
-	ss << "newpath\n";
-	ss << llx << " " << lly << " moveto\n";
-	ss << (llx + width_) << " " << (lly) << " lineto\n";
-	ss << (llx + width_) << " " << (lly + height_) << " lineto\n";
-	ss << (llx) << " " << (lly + height_) << " lineto\n";
-	ss << "closepath\n";
-	ss << "stroke\n";
+	ss << psMove(width_/2,height_/2);
+	ss << psLine(-width_/2,height_/2);
+	ss << psLine(-width_/2,-height_/2);
+	ss << psLine(width_/2,-height_/2);
+
+	ss << psFooter();
 
 	return ss.str();
 }

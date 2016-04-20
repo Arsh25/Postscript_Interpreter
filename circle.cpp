@@ -11,15 +11,11 @@
 string Circle::draw(int x, int y) const{
 	stringstream ss;
 
-	ss << "gsave\n";
-	ss << "newpath\n";
-	ss << x << " " << y << " translate\n";
+	ss << psHeader(x,y);
 
-	ss << psArc(0,0,radius_,0,360) << "\n";
+	ss << psArc(0,0,radius_,0,360);
 
-	ss << "closepath\n";
-	ss << "stroke\n";
-	ss << "grestore\n";
+	ss << psFooter();
 
 	return ss.str();
 }

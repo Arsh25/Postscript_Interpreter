@@ -43,14 +43,16 @@ string Rotated::draw() const{
 	return draw(shape_->x(),shape_->y());
 }
 
-string Rotated::draw(int x, int y) const{
-
+string Rotated::draw(int x, int y) const
+{
 	stringstream ss;
-	ss << "gsave\n";
-	ss << x << " " << y << " translate\n";
+
+	ss << psHeader(x,y);
+
 	ss << angle_ << " rotate\n";
-	ss << shape_->draw(0,0);
-	ss << "grestore\n";
+	ss << (*shape_)(0,0);
+
+	ss << psFooter();
 
 	return ss.str();
 }

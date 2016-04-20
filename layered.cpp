@@ -21,14 +21,14 @@ Layered::Layered(int x, int y, initializer_list<Shape*> shapes) : Shape(x,y), sh
 string Layered::draw(int x, int y) const{
 	stringstream ss;
 
-	ss << "gsave\n";
-	ss << x << " " << y << " translate\n";
+	ss << psHeader(x,y);
 
 	for(auto shape: shapes_){
 		ss << shape->draw(0,0) << "\n";
 	}
 
-	ss << "grestore\n"; 
+	ss << psFooter();
+
 	return ss.str();
 }
 
@@ -47,8 +47,7 @@ Horizontal::Horizontal(int x, int y, initializer_list<Shape*> shapes) : Layered(
 string Horizontal::draw(int x, int y) const{
 	stringstream ss;
 
-	ss << "gsave\n";
-	ss << x << " " << y << " translate\n";
+	ss << psHeader(x,y);
 
 	double half = boundsWidth_/2;
 
@@ -57,7 +56,8 @@ string Horizontal::draw(int x, int y) const{
 		half -= shape->width();
 	}
 
-	ss << "grestore\n";
+	ss << psFooter();
+
 	return ss.str();
 }
 
@@ -76,8 +76,7 @@ Vertical::Vertical(int x, int y, initializer_list<Shape*> shapes) : Layered(x,y,
 string Vertical::draw(int x, int y) const{
 	stringstream ss;
 
-	ss << "gsave\n";
-	ss << x << " " << y << " translate\n";
+	ss << psHeader(x,y);
 
 	double half = boundsHeight_/2;
 
@@ -91,7 +90,8 @@ string Vertical::draw(int x, int y) const{
 		half -= shape->height();
 	}
 
-	ss << "grestore\n";
+	ss << psFooter();
+
 	return ss.str();
 }
 

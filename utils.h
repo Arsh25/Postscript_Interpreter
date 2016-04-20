@@ -24,6 +24,9 @@ using std::pair;
 string psLine(int,int);
 string psMove(int,int);
 string psArc(int,int,double,int,int);
+string psHeader(int x, int y);
+string psFooter();
+
 double calcX(int,int,double);
 double calcY(int,int,double);
 double getWidth(int,double);

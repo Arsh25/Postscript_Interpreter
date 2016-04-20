@@ -45,7 +45,15 @@ string psMove(int x, int y){
  * @return string containing ps code
  */
 string psArc(int x, int y, double r, int startAngle, int endAngle){
-	return to_string(x) + " " + to_string(y) + " " + to_string(r) + " " + to_string(startAngle) + " " + to_string(endAngle) + " arc";
+	return to_string(x) + " " + to_string(y) + " " + to_string(r) + " " + to_string(startAngle) + " " + to_string(endAngle) + " arc\n";
+}
+
+string psHeader(int x, int y){
+	return "gsave\nnewpath\n" + to_string(x) + " " + to_string(y) + " translate\n";
+}
+
+string psFooter(){
+	return "closepath\nstroke\ngrestore\n";
 }
 
 /**

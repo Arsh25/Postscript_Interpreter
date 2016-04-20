@@ -21,23 +21,19 @@
 string Polygon::draw(int x,int y) const{
 	stringstream ss;
 
-	ss << "gsave\n";
-	ss << "newpath\n";
-	ss << x << " " << y << " translate\n";
+	ss << psHeader(x,y);
 
 	double vertexX = calcX(0,numOfSides_,sideLength_);
 	double vertexY = calcY(0,numOfSides_,sideLength_);
-	ss << vertexX << " " << vertexY << " moveto\n";
+	ss << psMove(vertexX,vertexY);
 
 	for(int i = 1; i < numOfSides_; i++){
 		vertexX = calcX(i,numOfSides_,sideLength_);
 		vertexY = calcY(i,numOfSides_,sideLength_);
-		ss << vertexX << " " << vertexY << " lineto\n";
+		ss << psLine(vertexX,vertexY);
 	}
 
-	ss << "closepath\n";
-	ss << "stroke\n";
-	ss << "grestore\n";
+	ss << psFooter();
 
 	return ss.str();
 }
