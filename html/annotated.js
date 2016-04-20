@@ -1,6 +1,5 @@
 var annotated =
 [
-    [ "Catch", "namespace_catch.html", "namespace_catch" ],
     [ "Circle", "class_circle.html", "class_circle" ],
     [ "Horizontal", "class_horizontal.html", "class_horizontal" ],
     [ "Layered", "class_layered.html", "class_layered" ],

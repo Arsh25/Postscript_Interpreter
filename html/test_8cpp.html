@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -111,13 +110,13 @@ $(document).ready(function(){initNavTree('test_8cpp.html','');});
 <div class="title">test.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="catch_8hpp_source.html">catch.hpp</a>&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &quot;catch.hpp&quot;</code><br />
 <code>#include &lt;random&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &quot;<a class="el" href="rectangle_8h_source.html">rectangle.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="polygon_8h_source.html">polygon.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+</div>
+<p><a href="test_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a656eb5868e824d59f489f910db438420"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a656eb5868e824d59f489f910db438420">CATCH_CONFIG_MAIN</a></td></tr>
@@ -125,14 +124,20 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a05a2cf7a2cccf5ed31896cec5516fb34"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a05a2cf7a2cccf5ed31896cec5516fb34">testPsLine</a> (int x, int y)</td></tr>
+<tr class="separator:a05a2cf7a2cccf5ed31896cec5516fb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae11dbf7e8b9a70506cee960cb8eb7ac1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ae11dbf7e8b9a70506cee960cb8eb7ac1">testPsArc</a> (int x, int y, double r, int startAngle, int endAngle)</td></tr>
 <tr class="separator:ae11dbf7e8b9a70506cee960cb8eb7ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21ad69bdaec05e3c7e33a6c0e2457a52"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a21ad69bdaec05e3c7e33a6c0e2457a52">testCalcX</a> (int k, int n, double l)</td></tr>
 <tr class="separator:a21ad69bdaec05e3c7e33a6c0e2457a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f271afc15ce17c857a60f9256262e0f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a0f271afc15ce17c857a60f9256262e0f">testCalcY</a> (int k, int n, double l)</td></tr>
 <tr class="separator:a0f271afc15ce17c857a60f9256262e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ac5242bbaf697333ad4c6968e3fa08"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ac4ac5242bbaf697333ad4c6968e3fa08">testGetwidth</a> (int sides, double len)</td></tr>
+<tr class="separator:ac4ac5242bbaf697333ad4c6968e3fa08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9326b802b363d823b82a62ef6f44dcb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ae9326b802b363d823b82a62ef6f44dcb">testPolyDraw</a> (int x, int y, int sides, double length)</td></tr>
 <tr class="separator:ae9326b802b363d823b82a62ef6f44dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90116ecd1bf6593f72838013e72e7224"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a90116ecd1bf6593f72838013e72e7224">TEST_CASE</a> (&quot;Testing utils drawing helpers&quot;,&quot;[Utils]&quot;)</td></tr>
+<tr class="separator:a90116ecd1bf6593f72838013e72e7224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc04d9b255824240b506edadf2e1085a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#adc04d9b255824240b506edadf2e1085a">TEST_CASE</a> (&quot;Testing Centers&quot;,&quot;[Utils]&quot;)</td></tr>
 <tr class="separator:adc04d9b255824240b506edadf2e1085a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8118022f00ec40770a5fe4f658be1e9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a8118022f00ec40770a5fe4f658be1e9e">TEST_CASE</a> (&quot;Rectangle Construction&quot;,&quot;[<a class="el" href="class_rectangle.html">Rectangle</a>]&quot;)</td></tr>
@@ -153,9 +158,39 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00001">1</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a90116ecd1bf6593f72838013e72e7224"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Testing utils drawing helpers&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;&quot;&#160;</td>
+          <td class="paramname">[Utils]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00092">92</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="adc04d9b255824240b506edadf2e1085a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -179,6 +214,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00140">140</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
 
 </div>
 </div>
@@ -206,6 +243,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00186">186</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0db85045df9d5fa1a652c27f0fb40097"></a>
@@ -232,6 +271,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00228">228</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abcfdfc36ff5292f8feb49f21c6ab5d63"></a>
@@ -257,6 +298,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00248">248</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
 
 </div>
 </div>
@@ -290,6 +333,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00036">36</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0f271afc15ce17c857a60f9256262e0f"></a>
@@ -321,6 +366,36 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00041">41</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4ac5242bbaf697333ad4c6968e3fa08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double testGetwidth </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sides</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00046">46</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
 
 </div>
 </div>
@@ -359,6 +434,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00068">68</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
 
 </div>
 </div>
@@ -404,6 +481,36 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00030">30</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05a2cf7a2cccf5ed31896cec5516fb34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string testPsLine </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="test_8cpp_source.html#l00025">25</a> of file <a class="el" href="test_8cpp_source.html">test.cpp</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -412,7 +519,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="test_8cpp.html">test.cpp</a></li>
-    <li class="footer">Generated on Tue Apr 19 2016 19:35:43 for Postscript Interpreter by
+    <li class="footer">Generated on Tue Apr 19 2016 20:38:57 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

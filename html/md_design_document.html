@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -121,98 +120,92 @@ $(document).ready(function(){initNavTree('md_design_document.html','');});
 <img src="https://github.com/Arsh25/Postscript_Interpreter/blob/master/html/class_shape.png"  alt="Figure 1: Shape Abstract Class Hierarchy"/>
 </div>
 <p>Figure 1: <a class="el" href="class_shape.html">Shape</a> Abstract Class Hierarchy</p>
-<h2><a class="el" href="class_shape.html">Shape</a> | </h2>
-<p>int x_<br />
-int y_<br />
-double boundsWidth_<br />
-double boundsHeight_ | <a class="el" href="class_shape.html">Shape()</a><br />
-<a class="el" href="class_shape.html">Shape(int x, int y, double width, double height)</a><br />
-<a class="el" href="class_shape.html">Shape(double width,double height)</a><br />
-virtual ~Shape()<br />
-<a class="el" href="class_shape.html">Shape</a> (const <a class="el" href="class_shape.html">Shape</a> &amp; other)<br />
-virtual string draw() const<br />
-virtual string draw(int x,int y) const<br />
-virtual void place(int x, int y)<br />
-string bounds()<br />
-double width()<br />
-double height()<br />
-int x()<br />
-void x(int x)<br />
-int y()<br />
-void y(int y)<br />
-string operator()(int x, int y)<br />
-virtual int numOfSides()<br />
-virtual double sideLength()<br />
-virtual double radius()<br />
-ostream &amp; <a class="el" href="shape_8h.html#ada7f3e97b3113c4725bf7ec7293b5a36" title="overloaded output operator ">operator&lt;&lt;(ostream &amp;os, const Shape &amp; shape)</a> |</p>
+<h2>*Shape*| </h2>
+<p>#int x_&lt;br&gt;::int y_&lt;br&gt;::double boundsWidth_&lt;br&gt;::double boundsHeight_| +Shape()<br />
++Shape(int x, int y, double width, double height)<br />
++Shape(double width,double height)<br />
+*+virtual ~Shape()*<br />
++Shape (const <a class="el" href="class_shape.html">Shape</a> &amp; other)<br />
+*+virtual string draw() const*<br />
+*+virtual string draw(int x,int y) const*<br />
+*+virtual void place(int x, int y)*<br />
++string bounds()<br />
++double width()<br />
++double height()<br />
++int x()<br />
++void x(int x)<br />
++int y()<br />
++void y(int y)<br />
++string operator()(int x, int y)<br />
+*+virtual int numOfSides()*<br />
+*+virtual double sideLength()*<br />
+*+virtual double radius()*<br />
++ostream &amp; <a class="el" href="shape_8h.html#ada7f3e97b3113c4725bf7ec7293b5a36" title="overloaded output operator ">operator&lt;&lt;(ostream &amp;os, const Shape &amp; shape)</a>|</p>
 <h2><a class="el" href="class_circle.html">Circle</a> | </h2>
-<p>double radius_ | <a class="el" href="class_circle.html">Circle()</a><br />
-<a class="el" href="class_circle.html">Circle(int x, int y, double radius)</a><br />
-<a class="el" href="class_circle.html">Circle(double radius)</a><br />
-string draw(int x, int y) const|</p>
+<p>#double radius_ | +Circle()<br />
++Circle(int x, int y, double radius)<br />
++Circle(double radius)<br />
++string draw(int x, int y) const|</p>
 <h2>Layered| </h2>
-<p>initializer_list&lt;Shape*&gt; shapes_| <a class="el" href="class_layered.html">Layered()</a><br />
-<a class="el" href="class_layered.html">Layered(int x, int y, initializer_list&lt;Shape*&gt; shapes)</a><br />
-<a class="el" href="class_layered.html">Layered(initializer_list&lt;Shape*&gt; shapes)</a><br />
-string draw(int x, int y) const|</p>
+<p>#initializer_list&lt;Shape*&gt; shapes_| +Layered()<br />
++Layered(int x, int y, initializer_list&lt;Shape*&gt; shapes)<br />
++Layered(initializer_list&lt;Shape*&gt; shapes)<br />
++string draw(int x, int y) const|</p>
 <h2>Horizontal| </h2>
-<p>| <a class="el" href="class_horizontal.html">Horizontal()</a><br />
-<a class="el" href="class_horizontal.html">Horizontal(int x, int y, initializer_list&lt;Shape*&gt; shapes)</a><br />
-<a class="el" href="class_horizontal.html">Horizontal(initializer_list&lt;Shape*&gt; shapes)</a><br />
-string draw(int x, int y) const|</p>
+<p>| +Horizontal()<br />
++Horizontal(int x, int y, initializer_list&lt;Shape*&gt; shapes)<br />
++Horizontal(initializer_list&lt;Shape*&gt; shapes)<br />
++string draw(int x, int y) const|</p>
 <h2>Vertical| </h2>
-<p>| <a class="el" href="class_vertical.html">Vertical()</a><br />
-<a class="el" href="class_vertical.html">Vertical(int x, int y, initializer_list&lt;Shape*&gt; shapes)</a><br />
-<a class="el" href="class_vertical.html">Vertical(initializer_list&lt;Shape*&gt; shapes)</a><br />
-string draw(int x, int y) const|</p>
+<p>| +Vertical()<br />
++Vertical(int x, int y, initializer_list&lt;Shape*&gt; shapes)<br />
++Vertical(initializer_list&lt;Shape*&gt; shapes)<br />
++string draw(int x, int y) const|</p>
 <h2>Polygon| </h2>
-<p>int numOfSides_<br />
-double sideLength_<br />
-double radius_| <a class="el" href="class_polygon.html">Polygon()</a><br />
-<a class="el" href="class_polygon.html">Polygon(int x, int y, int sides, double length)</a><br />
-<a class="el" href="class_polygon.html">Polygon(int sides, double length)</a><br />
-string draw(int x,int y) const<br />
-int numOfSides()<br />
-double sideLength()<br />
-double radius()|</p>
+<p>#int numOfSides_&lt;br&gt;::double sideLength_&lt;br&gt;::double radius_| +Polygon()<br />
++Polygon(int x, int y, int sides, double length)<br />
++Polygon(int sides, double length)<br />
++string draw(int x,int y) const<br />
++int numOfSides()<br />
++double sideLength()<br />
++double radius()|</p>
 <h2>Square| </h2>
-<p>| <a class="el" href="class_square.html">Square()</a><br />
-<a class="el" href="class_square.html">Square(int x, int y, double side)</a><br />
-<a class="el" href="class_square.html">Square(double side)</a>|</p>
+<p>| +Square()<br />
++Square(int x, int y, double side)<br />
++Square(double side)|</p>
 <h2>Triangle| </h2>
-<p>| <a class="el" href="class_triangle.html">Triangle()</a><br />
-<a class="el" href="class_triangle.html">Triangle(int x, int y, double side)</a><br />
-<a class="el" href="class_triangle.html">Triangle(double side)</a>|</p>
+<p>| +Triangle()<br />
++Triangle(int x, int y, double side)<br />
++Triangle(double side)|</p>
 <h2>Rectangle| </h2>
-<p>double width_<br />
-double height_| <a class="el" href="class_rectangle.html">Rectangle()</a><br />
-<a class="el" href="class_rectangle.html">Rectangle(int x, int y, double w, double h)</a><br />
-<a class="el" href="class_rectangle.html">Rectangle(double w, double h)</a><br />
-string draw(int x, int y) const|</p>
+<p>#double width_&lt;br&gt;::double height_| +Rectangle()<br />
++Rectangle(int x, int y, double w, double h)<br />
++Rectangle(double w, double h)<br />
++string draw(int x, int y) const|</p>
 <h2>Spacer| </h2>
-<p>| <a class="el" href="class_spacer.html">Spacer()</a><br />
-<a class="el" href="class_spacer.html">Spacer(int x, int y, double w, double h)</a> <br />
-<a class="el" href="class_spacer.html">Spacer(double w, double h)</a> <br />
-string draw(int x, int y) const|</p>
+<p>| +Spacer()<br />
++Spacer(int x, int y, double w, double h) <br />
++Spacer(double w, double h) <br />
++string draw(int x, int y) const|</p>
 <h2>Rotated| </h2>
-<p><a class="el" href="class_shape.html">Shape</a> * shape_<br />
-int angle_| <a class="el" href="class_rotated.html">Rotated()</a><br />
-<a class="el" href="class_rotated.html">Rotated(Shape * shape, int angle)</a><br />
-string draw() const<br />
-string draw(int x, int y) const|</p>
+<p>-Shape * shape_<br />
+-int angle_| +Rotated()<br />
++Rotated(<a class="el" href="class_shape.html">Shape</a> * shape, int angle)<br />
++string draw() const<br />
++string draw(int x, int y) const|</p>
 <h2>Scaled| </h2>
-<p><a class="el" href="class_shape.html">Shape</a> * shape_<br />
-double sx_<br />
-double sy_| <a class="el" href="class_scaled.html">Scaled()</a><br />
-<a class="el" href="class_scaled.html">Scaled(Shape* shape, double sx, double sy)</a> <br />
-string draw() const<br />
-string draw(int x, int y) const| </p>
+<p>-Shape * shape_<br />
+-double sx_<br />
+-double sy_| +Scaled()<br />
++Scaled(Shape* shape, double sx, double sy)<br />
++string draw() const<br />
++string draw(int x, int y) const| </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 19 2016 19:35:43 for Postscript Interpreter by
+    <li class="footer">Generated on Tue Apr 19 2016 20:38:57 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

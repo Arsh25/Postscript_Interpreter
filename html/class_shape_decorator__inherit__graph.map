@@ -1,8 +1,0 @@
-<map id="ShapeDecorator" name="ShapeDecorator">
-<area shape="rect" id="node3" href="$class_layered.html" title="Layered" alt="" coords="61,155,131,181"/>
-<area shape="rect" id="node6" href="$class_rotate.html" title="Rotate" alt="" coords="156,155,217,181"/>
-<area shape="rect" id="node7" href="$class_scaled.html" title="Scaled" alt="" coords="242,155,305,181"/>
-<area shape="rect" id="node2" href="$class_shape.html" title="Shape" alt="" coords="157,5,217,32"/>
-<area shape="rect" id="node4" href="$class_horizontal.html" title="Horizontal" alt="" coords="5,229,88,256"/>
-<area shape="rect" id="node5" href="$class_vertical.html" title="Vertical" alt="" coords="112,229,179,256"/>
-</map>

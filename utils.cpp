@@ -45,7 +45,29 @@ string psMove(int x, int y){
  * @return string containing ps code
  */
 string psArc(int x, int y, double r, int startAngle, int endAngle){
-	return to_string(x) + " " + to_string(y) + " " + to_string(r) + " " + to_string(startAngle) + " " + to_string(endAngle) + " arc";
+	return to_string(x) + " " + to_string(y) + " " + to_string(r) + " " + to_string(startAngle) + " " + to_string(endAngle) + " arc\n";
+}
+
+/**
+ * @brief generates ps code for header
+ * @details returns a string containing the ps code for a header for draw functions in this library
+ * 
+ * @param x x position of the center of the shape
+ * @param y y position of the center of the shape
+ * 
+ * @return string containing ps code
+ */
+string psHeader(int x, int y){
+	return "gsave\nnewpath\n" + to_string(x) + " " + to_string(y) + " translate\n";
+}
+
+/**
+ * @brief generates ps code for footer
+ * @details returns a string containing the ps code for a footer for draw functions in this library
+ * @return string containing ps code
+ */
+string psFooter(){
+	return "closepath\nstroke\ngrestore\n";
 }
 
 /**

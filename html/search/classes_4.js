@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['falsetype',['FalseType',['../struct_catch_1_1_detail_1_1_false_type.html',1,'Catch::Detail']]]
+  ['rectangle',['Rectangle',['../class_rectangle.html',1,'']]],
+  ['rotated',['Rotated',['../class_rotated.html',1,'']]]
 ];

@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['nameanddesc',['NameAndDesc',['../struct_catch_1_1_name_and_desc.html#a189ceb9942fb5f6635140d6a09fc843a',1,'Catch::NameAndDesc']]],
-  ['noncopyable',['NonCopyable',['../class_catch_1_1_non_copyable.html#a4b492dd5753f9952350fb64dc6cb9fe2',1,'Catch::NonCopyable']]],
-  ['none',['none',['../class_catch_1_1_option.html#a389324d2aa20ceb0eb0f48a5f77c20c8',1,'Catch::Option']]],
-  ['not',['Not',['../class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_not.html#a9b99e3ce49c1a16931708b67c312f204',1,'Catch::Matchers::Impl::Generic::Not::Not(Matcher&lt; ExpressionT &gt; const &amp;matcher)'],['../class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_not.html#a46eccbbaeec259d3536aa2a29f95208f',1,'Catch::Matchers::Impl::Generic::Not::Not(Not const &amp;other)'],['../namespace_catch_1_1_matchers.html#ae3c192dc15c973c38f07376d4debdc34',1,'Catch::Matchers::Not()']]],
-  ['notimplementedexception',['NotImplementedException',['../class_catch_1_1_not_implemented_exception.html#ab4f0a5c39d8ffb72c664e2c07e180634',1,'Catch::NotImplementedException::NotImplementedException(SourceLineInfo const &amp;lineInfo)'],['../class_catch_1_1_not_implemented_exception.html#a508a7a833455da2d3c10ea1a9d45e982',1,'Catch::NotImplementedException::NotImplementedException(NotImplementedException const &amp;)']]],
-  ['numofsides',['numOfSides',['../class_polygon.html#a3c57ca9893bf151501123b8b1787acf6',1,'Polygon::numOfSides()'],['../class_shape.html#ac152ef6b8150122e1e279e3ac2d9b627',1,'Shape::numOfSides()']]]
+  ['radius',['radius',['../class_circle.html#addf06b37dda7589ade30e7ea21fe17be',1,'Circle::radius()'],['../class_polygon.html#af1af4ce31b24eb31b4300e932f2578c2',1,'Polygon::radius()'],['../class_shape.html#a8193b252afa84bbf0b173160d2b3302d',1,'Shape::radius()']]],
+  ['rectangle',['Rectangle',['../class_rectangle.html#a8a933e0ebd9e80ce91e61ffe87fd577e',1,'Rectangle::Rectangle()'],['../class_rectangle.html#a1dc8d8db9c867aa80616837bd980fd78',1,'Rectangle::Rectangle(int x, int y, double w, double h)'],['../class_rectangle.html#a361b04e1812db6a4774273d18198f65d',1,'Rectangle::Rectangle(double w, double h)']]],
+  ['rotated',['Rotated',['../class_rotated.html#a0e7bbab1043b5f83912a3963170160aa',1,'Rotated::Rotated()'],['../class_rotated.html#aee5f88769baea78d5d2fb8f72ac818cf',1,'Rotated::Rotated(Shape *shape, int angle)']]]
 ];

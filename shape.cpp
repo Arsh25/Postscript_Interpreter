@@ -109,16 +109,42 @@ void Shape::y(int y){
 	y_ = y;
 }
 
+/**
+ * @brief draw shape at position
+ * @details generates ps code for drawing shape at specified location
+ * 
+ * @param x x position of center of shape
+ * @param y y position of center of shape
+ * 
+ * @return string containing ps code
+ */
 string Shape::operator()(int x, int y){
 	return draw(x,y);
 }
 
+/**
+ * @brief returns number of sides
+ * @details returns number of sides of a shape, only defined for Polygon
+ * @return if Polygon, returns number of sides. Otherwise returns 0.
+ */
 int Shape::numOfSides(){
 	return 0;
 }
+
+/**
+ * @brief returns side length
+ * @details returns length of a side of a shape, only defined for Polygon
+ * @return if Polygon, returns length of a side. Otherwise returns 0.
+ */
 double Shape::sideLength(){
 	return 0;
 }
+
+/**
+ * @brief returns radius
+ * @details returns the radius of a shape, only defined for Polygon and Circle
+ * @return if Polygon or Circle, returns the radius. Otherwise returns 0.
+ */
 double Shape::radius(){
 	return 0;
 }

@@ -1,6 +1,5 @@
 var files =
 [
-    [ "catch.hpp", "catch_8hpp.html", "catch_8hpp" ],
     [ "circle.cpp", "circle_8cpp.html", null ],
     [ "circle.h", "circle_8h.html", [
       [ "Circle", "class_circle.html", "class_circle" ]

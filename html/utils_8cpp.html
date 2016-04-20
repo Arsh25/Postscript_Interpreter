@@ -47,7 +47,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -111,7 +110,9 @@ $(document).ready(function(){initNavTree('utils_8cpp.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="utils_8h_source.html">utils.h</a>&quot;</code><br />
-</div><table class="memberdecls">
+</div>
+<p><a href="utils_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a58a4b05282aaf20b75b243a636be3c7d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#a58a4b05282aaf20b75b243a636be3c7d">psLine</a> (int x, int y)</td></tr>
@@ -123,6 +124,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac4bec670532648bb474368e4a5bdffc8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#ac4bec670532648bb474368e4a5bdffc8">psArc</a> (int x, int y, double r, int startAngle, int endAngle)</td></tr>
 <tr class="memdesc:ac4bec670532648bb474368e4a5bdffc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for drawing an arc  <a href="#ac4bec670532648bb474368e4a5bdffc8">More...</a><br /></td></tr>
 <tr class="separator:ac4bec670532648bb474368e4a5bdffc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45cd2155985fff08de4d1aff8eb92486"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#a45cd2155985fff08de4d1aff8eb92486">psHeader</a> (int x, int y)</td></tr>
+<tr class="memdesc:a45cd2155985fff08de4d1aff8eb92486"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for header  <a href="#a45cd2155985fff08de4d1aff8eb92486">More...</a><br /></td></tr>
+<tr class="separator:a45cd2155985fff08de4d1aff8eb92486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ab23a0bdb17c7814ade6943a77b808"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#a93ab23a0bdb17c7814ade6943a77b808">psFooter</a> ()</td></tr>
+<tr class="memdesc:a93ab23a0bdb17c7814ade6943a77b808"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for footer  <a href="#a93ab23a0bdb17c7814ade6943a77b808">More...</a><br /></td></tr>
+<tr class="separator:a93ab23a0bdb17c7814ade6943a77b808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd1f4d21b2ff666093d2ef34f3424292"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#afd1f4d21b2ff666093d2ef34f3424292">calcX</a> (int k, int n, double l)</td></tr>
 <tr class="memdesc:afd1f4d21b2ff666093d2ef34f3424292"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate x  <a href="#afd1f4d21b2ff666093d2ef34f3424292">More...</a><br /></td></tr>
 <tr class="separator:afd1f4d21b2ff666093d2ef34f3424292"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,6 +201,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double, x coordinate of vertex </dd></dl>
 
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00082">82</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0f806f5e75c61438a77de18f413ac8bd"></a>
@@ -237,6 +246,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double, y coordinate of vertex </dd></dl>
+
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00095">95</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -282,6 +293,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double, x coordinate </dd></dl>
 
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00185">185</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a27ebdcf8177fc0025e773aa43f40e03f"></a>
@@ -325,6 +338,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double, y coordinate </dd></dl>
+
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00198">198</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -370,6 +385,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double, x coordinate </dd></dl>
 
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00159">159</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7d8596da4188f78c1f7fb5aea1d2742c"></a>
@@ -414,6 +431,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double, y coordinate </dd></dl>
 
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00172">172</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4b511aca835044cf9f9a0a3498aa1415"></a>
@@ -450,6 +469,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>height of polygon </dd></dl>
+
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00129">129</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -488,6 +509,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double, radius </dd></dl>
 
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00146">146</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a41e2fd73d0ee35ae0aba3752b8ba9539"></a>
@@ -524,6 +547,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>width of polygon </dd></dl>
+
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00108">108</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -583,6 +608,67 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string containing ps code </dd></dl>
 
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00047">47</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93ab23a0bdb17c7814ade6943a77b808"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string psFooter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>generates ps code for footer </p>
+<p>returns a string containing the ps code for a footer for draw functions in this library </p><dl class="section return"><dt>Returns</dt><dd>string containing ps code </dd></dl>
+
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00069">69</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45cd2155985fff08de4d1aff8eb92486"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string psHeader </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>generates ps code for header </p>
+<p>returns a string containing the ps code for a header for draw functions in this library</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x position of the center of the shape </td></tr>
+    <tr><td class="paramname">y</td><td>y position of the center of the shape</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string containing ps code </dd></dl>
+
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00060">60</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a58a4b05282aaf20b75b243a636be3c7d"></a>
@@ -619,6 +705,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string with ps code </dd></dl>
+
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00019">19</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -657,6 +745,8 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string with ps code </dd></dl>
 
+<p>Definition at line <a class="el" href="utils_8cpp_source.html#l00032">32</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -665,7 +755,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="utils_8cpp.html">utils.cpp</a></li>
-    <li class="footer">Generated on Tue Apr 19 2016 19:35:43 for Postscript Interpreter by
+    <li class="footer">Generated on Tue Apr 19 2016 20:38:57 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
