@@ -242,33 +242,37 @@ TEST_CASE ("Testing width and height calculations","[Utils]")
 	std::vector<double> lenCollection;
 	std::vector<int> sidesCollection;
 
-	lenCollection = {72,144, 150.45, 160, 621, 630.79};
-	sidesCollection = {2,3,4,5,6,10,12,13};
-	for(auto v : lenCollection)
+	for (int i=0;i<NUM;i++)
 	{
-		expectWidth = testGetwidth(sidesCollection[0],v);
-		returnedWidth = getWidth(sidesCollection[0],v);
+		lenCollection.push_back(len(rndDev));
+		sidesCollection.push_back(sides(rndDev));
+	}
+
+	for(int i=0;i<NUM;i++)
+	{
+		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
 		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[1],v);
-		returnedWidth = getWidth(sidesCollection[1],v);
+		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
 		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[2],v);
-		returnedWidth = getWidth(sidesCollection[2],v);
+		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
 		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[3],v);
-		returnedWidth = getWidth(sidesCollection[3],v);
+		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
 		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[4],v);
-		returnedWidth = getWidth(sidesCollection[4],v);
+		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
 		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[5],v);
-		returnedWidth = getWidth(sidesCollection[5],v);
+		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
 		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[6],v);
-		returnedWidth = getWidth(sidesCollection[6],v);
+		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
 		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[7],v);
-		returnedWidth = getWidth(sidesCollection[7],v);
+		expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+		returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
 		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
 	}
 
