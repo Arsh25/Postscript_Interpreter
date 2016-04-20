@@ -1,0 +1,167 @@
+\hypertarget{class_rectangle}{}\section{Rectangle Class Reference}
+\label{class_rectangle}\index{Rectangle@{Rectangle}}
+
+
+{\ttfamily \#include $<$rectangle.\+h$>$}
+
+Inheritance diagram for Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_rectangle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}{Rectangle} ()
+\item 
+\hyperlink{class_rectangle_a1dc8d8db9c867aa80616837bd980fd78}{Rectangle} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}, double w, double h)
+\item 
+\hyperlink{class_rectangle_a361b04e1812db6a4774273d18198f65d}{Rectangle} (double w, double h)
+\item 
+string \hyperlink{class_rectangle_add9328727ce45f2782971385343a4ea1}{draw} () const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\item 
+string \hyperlink{class_rectangle_ac1cd2c2307b24d001171361f95ea214f}{draw} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}) const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_rectangle_a4a7673968f25a38762439c252b6d877d}{width\+\_\+}
+\item 
+double \hyperlink{class_rectangle_a3d08f9a12635131e76c4d73a586150d3}{height\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file rectangle.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}{}\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\subsubsection[{Rectangle()}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}
+
+
+Definition at line 20 of file rectangle.\+h.
+
+\hypertarget{class_rectangle_a1dc8d8db9c867aa80616837bd980fd78}{}\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\subsubsection[{Rectangle(int x, int y, double w, double h)}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{double}]{w, }
+\item[{double}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_rectangle_a1dc8d8db9c867aa80616837bd980fd78}
+
+
+Definition at line 21 of file rectangle.\+h.
+
+\hypertarget{class_rectangle_a361b04e1812db6a4774273d18198f65d}{}\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\subsubsection[{Rectangle(double w, double h)}]{\setlength{\rightskip}{0pt plus 5cm}Rectangle\+::\+Rectangle (
+\begin{DoxyParamCaption}
+\item[{double}]{w, }
+\item[{double}]{h}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_rectangle_a361b04e1812db6a4774273d18198f65d}
+
+
+Definition at line 22 of file rectangle.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rectangle_add9328727ce45f2782971385343a4ea1}{}\index{Rectangle@{Rectangle}!draw@{draw}}
+\index{draw@{draw}!Rectangle@{Rectangle}}
+\subsubsection[{draw() const }]{\setlength{\rightskip}{0pt plus 5cm}string Rectangle\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_rectangle_add9328727ce45f2782971385343a4ea1}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at default location \begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at default location 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_a8405e352e8bbbdd173fd89065d63a80b}{Shape}.
+
+
+
+Reimplemented in \hyperlink{class_spacer_a9f649a8e182a99584cfd8de8a90423f7}{Spacer}.
+
+
+
+Definition at line 11 of file rectangle.\+cpp.
+
+\hypertarget{class_rectangle_ac1cd2c2307b24d001171361f95ea214f}{}\index{Rectangle@{Rectangle}!draw@{draw}}
+\index{draw@{draw}!Rectangle@{Rectangle}}
+\subsubsection[{draw(int x, int y) const }]{\setlength{\rightskip}{0pt plus 5cm}string Rectangle\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_rectangle_ac1cd2c2307b24d001171361f95ea214f}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at specified coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position for center of shape\textquotesingle{}s desired location \\
+\hline
+{\em y} & y position for center of shape\textquotesingle{}s desired location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at specified location 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_af26d06a96ece90a563795ec571451eb1}{Shape}.
+
+
+
+Reimplemented in \hyperlink{class_spacer_a7c79d0ca6ccc80a08bdaa839c8e05b2f}{Spacer}.
+
+
+
+Definition at line 15 of file rectangle.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_rectangle_a3d08f9a12635131e76c4d73a586150d3}{}\index{Rectangle@{Rectangle}!height\+\_\+@{height\+\_\+}}
+\index{height\+\_\+@{height\+\_\+}!Rectangle@{Rectangle}}
+\subsubsection[{height\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double Rectangle\+::height\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_rectangle_a3d08f9a12635131e76c4d73a586150d3}
+height of rectangle 
+
+Definition at line 35 of file rectangle.\+h.
+
+\hypertarget{class_rectangle_a4a7673968f25a38762439c252b6d877d}{}\index{Rectangle@{Rectangle}!width\+\_\+@{width\+\_\+}}
+\index{width\+\_\+@{width\+\_\+}!Rectangle@{Rectangle}}
+\subsubsection[{width\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double Rectangle\+::width\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_rectangle_a4a7673968f25a38762439c252b6d877d}
+width of rectangle 
+
+Definition at line 31 of file rectangle.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rectangle_8h}{rectangle.\+h}\item 
+\hyperlink{rectangle_8cpp}{rectangle.\+cpp}\end{DoxyCompactItemize}

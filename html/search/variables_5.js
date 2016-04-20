@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['width_5f',['width_',['../class_rectangle.html#a4a7673968f25a38762439c252b6d877d',1,'Rectangle']]]
+  ['shapes_5f',['shapes_',['../class_layered.html#a80ab4f9aaec1246a9d16400bbf8d3dce',1,'Layered']]],
+  ['sidelength_5f',['sideLength_',['../class_polygon.html#a22a65792492ceb172e3f9ac63a619864',1,'Polygon']]]
 ];

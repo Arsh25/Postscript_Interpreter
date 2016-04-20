@@ -1,0 +1,172 @@
+\hypertarget{class_circle}{}\section{Circle Class Reference}
+\label{class_circle}\index{Circle@{Circle}}
+
+
+{\ttfamily \#include $<$circle.\+h$>$}
+
+Inheritance diagram for Circle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_circle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_circle_ad1ecfcfc7bf34529c6a6d6c448bf70fe}{Circle} ()
+\item 
+\hyperlink{class_circle_ace551ce2e85abb8660f74ee34f5761a1}{Circle} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}, double \hyperlink{class_circle_addf06b37dda7589ade30e7ea21fe17be}{radius})
+\item 
+\hyperlink{class_circle_a05c707753451188c26b43508b610ff8e}{Circle} (double \hyperlink{class_circle_addf06b37dda7589ade30e7ea21fe17be}{radius})
+\item 
+string \hyperlink{class_circle_a3fcc66abd3f30a3c19e3bb63452fc2ed}{draw} () const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\item 
+string \hyperlink{class_circle_a18f2b8aaa80fb870c3aea1798f32678b}{draw} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}) const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\item 
+double \hyperlink{class_circle_addf06b37dda7589ade30e7ea21fe17be}{radius} ()
+\begin{DoxyCompactList}\small\item\em returns radius \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_circle_a7daf9293b23457177dbc0fadb960e07e}{radius\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file circle.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_circle_ad1ecfcfc7bf34529c6a6d6c448bf70fe}{}\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\subsubsection[{Circle()}]{\setlength{\rightskip}{0pt plus 5cm}Circle\+::\+Circle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_circle_ad1ecfcfc7bf34529c6a6d6c448bf70fe}
+
+
+Definition at line 17 of file circle.\+h.
+
+\hypertarget{class_circle_ace551ce2e85abb8660f74ee34f5761a1}{}\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\subsubsection[{Circle(int x, int y, double radius)}]{\setlength{\rightskip}{0pt plus 5cm}Circle\+::\+Circle (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{double}]{radius}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_circle_ace551ce2e85abb8660f74ee34f5761a1}
+
+
+Definition at line 18 of file circle.\+h.
+
+\hypertarget{class_circle_a05c707753451188c26b43508b610ff8e}{}\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\subsubsection[{Circle(double radius)}]{\setlength{\rightskip}{0pt plus 5cm}Circle\+::\+Circle (
+\begin{DoxyParamCaption}
+\item[{double}]{radius}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_circle_a05c707753451188c26b43508b610ff8e}
+
+
+Definition at line 19 of file circle.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_circle_a3fcc66abd3f30a3c19e3bb63452fc2ed}{}\index{Circle@{Circle}!draw@{draw}}
+\index{draw@{draw}!Circle@{Circle}}
+\subsubsection[{draw() const }]{\setlength{\rightskip}{0pt plus 5cm}string Circle\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_circle_a3fcc66abd3f30a3c19e3bb63452fc2ed}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at default location \begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at default location 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_a8405e352e8bbbdd173fd89065d63a80b}{Shape}.
+
+
+
+Definition at line 15 of file circle.\+cpp.
+
+\hypertarget{class_circle_a18f2b8aaa80fb870c3aea1798f32678b}{}\index{Circle@{Circle}!draw@{draw}}
+\index{draw@{draw}!Circle@{Circle}}
+\subsubsection[{draw(int x, int y) const }]{\setlength{\rightskip}{0pt plus 5cm}string Circle\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_circle_a18f2b8aaa80fb870c3aea1798f32678b}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at specified coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position for center of shape\textquotesingle{}s desired location \\
+\hline
+{\em y} & y position for center of shape\textquotesingle{}s desired location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at specified location 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_af26d06a96ece90a563795ec571451eb1}{Shape}.
+
+
+
+Definition at line 19 of file circle.\+cpp.
+
+\hypertarget{class_circle_addf06b37dda7589ade30e7ea21fe17be}{}\index{Circle@{Circle}!radius@{radius}}
+\index{radius@{radius}!Circle@{Circle}}
+\subsubsection[{radius()}]{\setlength{\rightskip}{0pt plus 5cm}double Circle\+::radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_circle_addf06b37dda7589ade30e7ea21fe17be}
+
+
+returns radius 
+
+returns the radius of a shape, only defined for \hyperlink{class_polygon}{Polygon} and \hyperlink{class_circle}{Circle} \begin{DoxyReturn}{Returns}
+if \hyperlink{class_polygon}{Polygon} or \hyperlink{class_circle}{Circle}, returns the radius. Otherwise returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_a8193b252afa84bbf0b173160d2b3302d}{Shape}.
+
+
+
+Definition at line 11 of file circle.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_circle_a7daf9293b23457177dbc0fadb960e07e}{}\index{Circle@{Circle}!radius\+\_\+@{radius\+\_\+}}
+\index{radius\+\_\+@{radius\+\_\+}!Circle@{Circle}}
+\subsubsection[{radius\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double Circle\+::radius\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_circle_a7daf9293b23457177dbc0fadb960e07e}
+radius of circle 
+
+Definition at line 30 of file circle.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{circle_8h}{circle.\+h}\item 
+\hyperlink{circle_8cpp}{circle.\+cpp}\end{DoxyCompactItemize}

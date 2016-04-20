@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['shapes_5f',['shapes_',['../class_layered.html#a80ab4f9aaec1246a9d16400bbf8d3dce',1,'Layered']]],
-  ['sidelength_5f',['sideLength_',['../class_polygon.html#a22a65792492ceb172e3f9ac63a619864',1,'Polygon']]]
+  ['radius_5f',['radius_',['../class_circle.html#a7daf9293b23457177dbc0fadb960e07e',1,'Circle::radius_()'],['../class_polygon.html#ae9ee97d51db108f9e2cc073aabaa68df',1,'Polygon::radius_()']]]
 ];

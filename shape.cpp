@@ -111,6 +111,15 @@ void Shape::y(int y){
 
 /**
  * @brief draw shape at position
+ * @details generates ps code for drawing a shape at the shape's set location
+ * @return string containing ps code
+ */
+string Shape::operator()(){
+	return draw(x_,y_);
+}
+
+/**
+ * @brief draw shape at position
  * @details generates ps code for drawing shape at specified location
  * 
  * @param x x position of center of shape

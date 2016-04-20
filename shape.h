@@ -46,6 +46,7 @@ public:
 	int y();
 	void y(int y);
 
+	string operator()();
 	string operator()(int x, int y);
 
 	virtual int numOfSides();

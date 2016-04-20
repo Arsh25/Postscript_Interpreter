@@ -12,6 +12,10 @@ double Circle::radius(){
 	return radius_;
 }
 
+string Circle::draw() const{
+	return draw(x_,y_);
+}
+
 string Circle::draw(int x, int y) const{
 	stringstream ss;
 

@@ -1,0 +1,240 @@
+\hypertarget{class_polygon}{}\section{Polygon Class Reference}
+\label{class_polygon}\index{Polygon@{Polygon}}
+
+
+{\ttfamily \#include $<$polygon.\+h$>$}
+
+Inheritance diagram for Polygon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_polygon}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_polygon_ac183e712f8be1e13f1c9d5b4d4512ead}{Polygon} ()
+\item 
+\hyperlink{class_polygon_a295d10cfffd80d67f603642d82f62279}{Polygon} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}, int sides, double length)
+\item 
+\hyperlink{class_polygon_a8cb36a982609ea22b8722b76cfa9d6fa}{Polygon} (int sides, double length)
+\item 
+string \hyperlink{class_polygon_a732b40203a5cc2baadd90446c3ec8213}{draw} () const 
+\begin{DoxyCompactList}\small\item\em generates ps code for drawing a polygon \end{DoxyCompactList}\item 
+string \hyperlink{class_polygon_af0f4e693010935528bb3e99bca2cc433}{draw} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}) const 
+\begin{DoxyCompactList}\small\item\em generates ps code for drawing a polygon \end{DoxyCompactList}\item 
+int \hyperlink{class_polygon_a3c57ca9893bf151501123b8b1787acf6}{num\+Of\+Sides} ()
+\begin{DoxyCompactList}\small\item\em returns number of sides \end{DoxyCompactList}\item 
+double \hyperlink{class_polygon_ab03b3c38a9f26b2c0d46294dd77f4318}{side\+Length} ()
+\begin{DoxyCompactList}\small\item\em returns side length \end{DoxyCompactList}\item 
+double \hyperlink{class_polygon_af1af4ce31b24eb31b4300e932f2578c2}{radius} ()
+\begin{DoxyCompactList}\small\item\em returns radius \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_polygon_a2c2596c34f01b275323971f8f29e4cd5}{num\+Of\+Sides\+\_\+}
+\item 
+double \hyperlink{class_polygon_a22a65792492ceb172e3f9ac63a619864}{side\+Length\+\_\+}
+\item 
+double \hyperlink{class_polygon_ae9ee97d51db108f9e2cc073aabaa68df}{radius\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file polygon.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_polygon_ac183e712f8be1e13f1c9d5b4d4512ead}{}\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\subsubsection[{Polygon()}]{\setlength{\rightskip}{0pt plus 5cm}Polygon\+::\+Polygon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_polygon_ac183e712f8be1e13f1c9d5b4d4512ead}
+
+
+Definition at line 17 of file polygon.\+h.
+
+\hypertarget{class_polygon_a295d10cfffd80d67f603642d82f62279}{}\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\subsubsection[{Polygon(int x, int y, int sides, double length)}]{\setlength{\rightskip}{0pt plus 5cm}Polygon\+::\+Polygon (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{sides, }
+\item[{double}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_polygon_a295d10cfffd80d67f603642d82f62279}
+
+
+Definition at line 24 of file polygon.\+h.
+
+\hypertarget{class_polygon_a8cb36a982609ea22b8722b76cfa9d6fa}{}\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\subsubsection[{Polygon(int sides, double length)}]{\setlength{\rightskip}{0pt plus 5cm}Polygon\+::\+Polygon (
+\begin{DoxyParamCaption}
+\item[{int}]{sides, }
+\item[{double}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_polygon_a8cb36a982609ea22b8722b76cfa9d6fa}
+
+
+Definition at line 31 of file polygon.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_polygon_a732b40203a5cc2baadd90446c3ec8213}{}\index{Polygon@{Polygon}!draw@{draw}}
+\index{draw@{draw}!Polygon@{Polygon}}
+\subsubsection[{draw() const }]{\setlength{\rightskip}{0pt plus 5cm}string Polygon\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_polygon_a732b40203a5cc2baadd90446c3ec8213}
+
+
+generates ps code for drawing a polygon 
+
+returns a string containing the ps code for drawing any equilateral polygon \begin{DoxyReturn}{Returns}
+string containing ps code 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_a8405e352e8bbbdd173fd89065d63a80b}{Shape}.
+
+
+
+Definition at line 16 of file polygon.\+cpp.
+
+\hypertarget{class_polygon_af0f4e693010935528bb3e99bca2cc433}{}\index{Polygon@{Polygon}!draw@{draw}}
+\index{draw@{draw}!Polygon@{Polygon}}
+\subsubsection[{draw(int x, int y) const }]{\setlength{\rightskip}{0pt plus 5cm}string Polygon\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_polygon_af0f4e693010935528bb3e99bca2cc433}
+
+
+generates ps code for drawing a polygon 
+
+returns a string containing the ps code for drawing any equilateral polygon
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position of center \\
+\hline
+{\em y} & y position of center\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing ps code 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_af26d06a96ece90a563795ec571451eb1}{Shape}.
+
+
+
+Definition at line 30 of file polygon.\+cpp.
+
+\hypertarget{class_polygon_a3c57ca9893bf151501123b8b1787acf6}{}\index{Polygon@{Polygon}!num\+Of\+Sides@{num\+Of\+Sides}}
+\index{num\+Of\+Sides@{num\+Of\+Sides}!Polygon@{Polygon}}
+\subsubsection[{num\+Of\+Sides()}]{\setlength{\rightskip}{0pt plus 5cm}int Polygon\+::num\+Of\+Sides (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_polygon_a3c57ca9893bf151501123b8b1787acf6}
+
+
+returns number of sides 
+
+returns number of sides of a shape, only defined for \hyperlink{class_polygon}{Polygon} \begin{DoxyReturn}{Returns}
+if \hyperlink{class_polygon}{Polygon}, returns number of sides. Otherwise returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_ac152ef6b8150122e1e279e3ac2d9b627}{Shape}.
+
+
+
+Definition at line 50 of file polygon.\+cpp.
+
+\hypertarget{class_polygon_af1af4ce31b24eb31b4300e932f2578c2}{}\index{Polygon@{Polygon}!radius@{radius}}
+\index{radius@{radius}!Polygon@{Polygon}}
+\subsubsection[{radius()}]{\setlength{\rightskip}{0pt plus 5cm}double Polygon\+::radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_polygon_af1af4ce31b24eb31b4300e932f2578c2}
+
+
+returns radius 
+
+returns the radius of a shape, only defined for \hyperlink{class_polygon}{Polygon} and \hyperlink{class_circle}{Circle} \begin{DoxyReturn}{Returns}
+if \hyperlink{class_polygon}{Polygon} or \hyperlink{class_circle}{Circle}, returns the radius. Otherwise returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_a8193b252afa84bbf0b173160d2b3302d}{Shape}.
+
+
+
+Definition at line 56 of file polygon.\+cpp.
+
+\hypertarget{class_polygon_ab03b3c38a9f26b2c0d46294dd77f4318}{}\index{Polygon@{Polygon}!side\+Length@{side\+Length}}
+\index{side\+Length@{side\+Length}!Polygon@{Polygon}}
+\subsubsection[{side\+Length()}]{\setlength{\rightskip}{0pt plus 5cm}double Polygon\+::side\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_polygon_ab03b3c38a9f26b2c0d46294dd77f4318}
+
+
+returns side length 
+
+returns length of a side of a shape, only defined for \hyperlink{class_polygon}{Polygon} \begin{DoxyReturn}{Returns}
+if \hyperlink{class_polygon}{Polygon}, returns length of a side. Otherwise returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_a116897479aa63aeea80648b7ac9e114a}{Shape}.
+
+
+
+Definition at line 53 of file polygon.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_polygon_a2c2596c34f01b275323971f8f29e4cd5}{}\index{Polygon@{Polygon}!num\+Of\+Sides\+\_\+@{num\+Of\+Sides\+\_\+}}
+\index{num\+Of\+Sides\+\_\+@{num\+Of\+Sides\+\_\+}!Polygon@{Polygon}}
+\subsubsection[{num\+Of\+Sides\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}int Polygon\+::num\+Of\+Sides\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_polygon_a2c2596c34f01b275323971f8f29e4cd5}
+number of sides of the polygon 
+
+Definition at line 46 of file polygon.\+h.
+
+\hypertarget{class_polygon_ae9ee97d51db108f9e2cc073aabaa68df}{}\index{Polygon@{Polygon}!radius\+\_\+@{radius\+\_\+}}
+\index{radius\+\_\+@{radius\+\_\+}!Polygon@{Polygon}}
+\subsubsection[{radius\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double Polygon\+::radius\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_polygon_ae9ee97d51db108f9e2cc073aabaa68df}
+radius of polygon 
+
+Definition at line 54 of file polygon.\+h.
+
+\hypertarget{class_polygon_a22a65792492ceb172e3f9ac63a619864}{}\index{Polygon@{Polygon}!side\+Length\+\_\+@{side\+Length\+\_\+}}
+\index{side\+Length\+\_\+@{side\+Length\+\_\+}!Polygon@{Polygon}}
+\subsubsection[{side\+Length\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double Polygon\+::side\+Length\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_polygon_a22a65792492ceb172e3f9ac63a619864}
+length of polygon\textquotesingle{}s sides 
+
+Definition at line 50 of file polygon.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{polygon_8h}{polygon.\+h}\item 
+\hyperlink{polygon_8cpp}{polygon.\+cpp}\end{DoxyCompactItemize}

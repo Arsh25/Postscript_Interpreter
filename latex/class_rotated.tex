@@ -1,0 +1,120 @@
+\hypertarget{class_rotated}{}\section{Rotated Class Reference}
+\label{class_rotated}\index{Rotated@{Rotated}}
+
+
+{\ttfamily \#include $<$rotate.\+h$>$}
+
+Inheritance diagram for Rotated\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rotated}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rotated_a0e7bbab1043b5f83912a3963170160aa}{Rotated} ()
+\item 
+\hyperlink{class_rotated_aee5f88769baea78d5d2fb8f72ac818cf}{Rotated} (\hyperlink{class_shape}{Shape} $\ast$shape, int angle)
+\item 
+string \hyperlink{class_rotated_ae36addd682056fbd7acef703dc81fafe}{draw} () const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\item 
+string \hyperlink{class_rotated_a1a83cd3f5a9fe6cd99d3eba826f46dd6}{draw} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}) const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file rotate.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_rotated_a0e7bbab1043b5f83912a3963170160aa}{}\index{Rotated@{Rotated}!Rotated@{Rotated}}
+\index{Rotated@{Rotated}!Rotated@{Rotated}}
+\subsubsection[{Rotated()}]{\setlength{\rightskip}{0pt plus 5cm}Rotated\+::\+Rotated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_rotated_a0e7bbab1043b5f83912a3963170160aa}
+
+
+Definition at line 17 of file rotate.\+h.
+
+\hypertarget{class_rotated_aee5f88769baea78d5d2fb8f72ac818cf}{}\index{Rotated@{Rotated}!Rotated@{Rotated}}
+\index{Rotated@{Rotated}!Rotated@{Rotated}}
+\subsubsection[{Rotated(\+Shape $\ast$shape, int angle)}]{\setlength{\rightskip}{0pt plus 5cm}Rotated\+::\+Rotated (
+\begin{DoxyParamCaption}
+\item[{{\bf Shape} $\ast$}]{shape, }
+\item[{int}]{angle}
+\end{DoxyParamCaption}
+)}\label{class_rotated_aee5f88769baea78d5d2fb8f72ac818cf}
+
+
+Definition at line 11 of file rotate.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rotated_ae36addd682056fbd7acef703dc81fafe}{}\index{Rotated@{Rotated}!draw@{draw}}
+\index{draw@{draw}!Rotated@{Rotated}}
+\subsubsection[{draw() const }]{\setlength{\rightskip}{0pt plus 5cm}string Rotated\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_rotated_ae36addd682056fbd7acef703dc81fafe}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at default location \begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at default location 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_a8405e352e8bbbdd173fd89065d63a80b}{Shape}.
+
+
+
+Definition at line 42 of file rotate.\+cpp.
+
+\hypertarget{class_rotated_a1a83cd3f5a9fe6cd99d3eba826f46dd6}{}\index{Rotated@{Rotated}!draw@{draw}}
+\index{draw@{draw}!Rotated@{Rotated}}
+\subsubsection[{draw(int x, int y) const }]{\setlength{\rightskip}{0pt plus 5cm}string Rotated\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_rotated_a1a83cd3f5a9fe6cd99d3eba826f46dd6}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at specified coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position for center of shape\textquotesingle{}s desired location \\
+\hline
+{\em y} & y position for center of shape\textquotesingle{}s desired location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at specified location 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_shape_af26d06a96ece90a563795ec571451eb1}{Shape}.
+
+
+
+Definition at line 46 of file rotate.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rotate_8h}{rotate.\+h}\item 
+\hyperlink{rotate_8cpp}{rotate.\+cpp}\end{DoxyCompactItemize}

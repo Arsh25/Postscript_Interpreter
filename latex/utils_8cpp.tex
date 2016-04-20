@@ -1,0 +1,486 @@
+\hypertarget{utils_8cpp}{}\section{utils.\+cpp File Reference}
+\label{utils_8cpp}\index{utils.\+cpp@{utils.\+cpp}}
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{utils_8cpp_ab7e056f17391869c1e55a184305182d6}{ps\+Begin} ()
+\begin{DoxyCompactList}\small\item\em generates ps code for ps file header \end{DoxyCompactList}\item 
+string \hyperlink{utils_8cpp_af6a2fe89013c90eaaf2d284c0d9eac7e}{ps\+Page\+Break} ()
+\begin{DoxyCompactList}\small\item\em generates ps code for printing a page \end{DoxyCompactList}\item 
+string \hyperlink{utils_8cpp_a58a4b05282aaf20b75b243a636be3c7d}{ps\+Line} (int x, int y)
+\begin{DoxyCompactList}\small\item\em generates ps code for drawing a line \end{DoxyCompactList}\item 
+string \hyperlink{utils_8cpp_ab26b377715fa9f6c2508a10dbe7dc052}{ps\+Move} (int x, int y)
+\begin{DoxyCompactList}\small\item\em generates ps code for moving the cursor \end{DoxyCompactList}\item 
+string \hyperlink{utils_8cpp_ac4bec670532648bb474368e4a5bdffc8}{ps\+Arc} (int x, int y, double r, int start\+Angle, int end\+Angle)
+\begin{DoxyCompactList}\small\item\em generates ps code for drawing an arc \end{DoxyCompactList}\item 
+string \hyperlink{utils_8cpp_a45cd2155985fff08de4d1aff8eb92486}{ps\+Header} (int x, int y)
+\begin{DoxyCompactList}\small\item\em generates ps code for header \end{DoxyCompactList}\item 
+string \hyperlink{utils_8cpp_a93ab23a0bdb17c7814ade6943a77b808}{ps\+Footer} ()
+\begin{DoxyCompactList}\small\item\em generates ps code for footer \end{DoxyCompactList}\item 
+double \hyperlink{utils_8cpp_afd1f4d21b2ff666093d2ef34f3424292}{calc\+X} (int k, int n, double l)
+\begin{DoxyCompactList}\small\item\em calculate x \end{DoxyCompactList}\item 
+double \hyperlink{utils_8cpp_a0f806f5e75c61438a77de18f413ac8bd}{calc\+Y} (int k, int n, double l)
+\begin{DoxyCompactList}\small\item\em calculate y \end{DoxyCompactList}\item 
+double \hyperlink{utils_8cpp_a41e2fd73d0ee35ae0aba3752b8ba9539}{get\+Width} (int n, double l)
+\begin{DoxyCompactList}\small\item\em cacluate width of polygon \end{DoxyCompactList}\item 
+double \hyperlink{utils_8cpp_a4b511aca835044cf9f9a0a3498aa1415}{get\+Height} (int n, double l)
+\begin{DoxyCompactList}\small\item\em cacluate height of polygon \end{DoxyCompactList}\item 
+double \hyperlink{utils_8cpp_addabdb8e2622bfc492142a9eb62e3413}{get\+Radius} (int n, double l)
+\begin{DoxyCompactList}\small\item\em calculate radius \end{DoxyCompactList}\item 
+double \hyperlink{utils_8cpp_abdf9e456afb3d9b2c0618c4e811784a7}{get\+Convex\+X} (int k, int n, double r)
+\begin{DoxyCompactList}\small\item\em get x \end{DoxyCompactList}\item 
+double \hyperlink{utils_8cpp_a7d8596da4188f78c1f7fb5aea1d2742c}{get\+Convex\+Y} (int k, int n, double r)
+\begin{DoxyCompactList}\small\item\em get y \end{DoxyCompactList}\item 
+double \hyperlink{utils_8cpp_a10dd7c1d6ffdb80d059c877e03da6a4d}{get\+Concave\+X} (int k, int n, double r)
+\begin{DoxyCompactList}\small\item\em get x \end{DoxyCompactList}\item 
+double \hyperlink{utils_8cpp_a27ebdcf8177fc0025e773aa43f40e03f}{get\+Concave\+Y} (int k, int n, double r)
+\begin{DoxyCompactList}\small\item\em get y \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{utils_8cpp_afd1f4d21b2ff666093d2ef34f3424292}{}\index{utils.\+cpp@{utils.\+cpp}!calc\+X@{calc\+X}}
+\index{calc\+X@{calc\+X}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{calc\+X(int k, int n, double l)}]{\setlength{\rightskip}{0pt plus 5cm}double calc\+X (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{int}]{n, }
+\item[{double}]{l}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_afd1f4d21b2ff666093d2ef34f3424292}
+
+
+calculate x 
+
+calculate the x coordinate of a given vertex of an equilateral polygon
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & vertex number \\
+\hline
+{\em n} & number of sides \\
+\hline
+{\em l} & length of sides \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double, x coordinate of vertex 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_a0f806f5e75c61438a77de18f413ac8bd}{}\index{utils.\+cpp@{utils.\+cpp}!calc\+Y@{calc\+Y}}
+\index{calc\+Y@{calc\+Y}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{calc\+Y(int k, int n, double l)}]{\setlength{\rightskip}{0pt plus 5cm}double calc\+Y (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{int}]{n, }
+\item[{double}]{l}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_a0f806f5e75c61438a77de18f413ac8bd}
+
+
+calculate y 
+
+calcualte the y coordinate of a given vertex of an equilateral polygon
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & vertex number \\
+\hline
+{\em n} & number of sides \\
+\hline
+{\em l} & length of sides \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double, y coordinate of vertex 
+\end{DoxyReturn}
+
+
+Definition at line 115 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_a10dd7c1d6ffdb80d059c877e03da6a4d}{}\index{utils.\+cpp@{utils.\+cpp}!get\+Concave\+X@{get\+Concave\+X}}
+\index{get\+Concave\+X@{get\+Concave\+X}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{get\+Concave\+X(int k, int n, double r)}]{\setlength{\rightskip}{0pt plus 5cm}double get\+Concave\+X (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{int}]{n, }
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_a10dd7c1d6ffdb80d059c877e03da6a4d}
+
+
+get x 
+
+calculate x coordinate of a concave vertex of a star
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & vertex number, 0 -\/ (n-\/1) \\
+\hline
+{\em n} & number of verticies \\
+\hline
+{\em r} & radius of inner circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double, x coordinate 
+\end{DoxyReturn}
+
+
+Definition at line 205 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_a27ebdcf8177fc0025e773aa43f40e03f}{}\index{utils.\+cpp@{utils.\+cpp}!get\+Concave\+Y@{get\+Concave\+Y}}
+\index{get\+Concave\+Y@{get\+Concave\+Y}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{get\+Concave\+Y(int k, int n, double r)}]{\setlength{\rightskip}{0pt plus 5cm}double get\+Concave\+Y (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{int}]{n, }
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_a27ebdcf8177fc0025e773aa43f40e03f}
+
+
+get y 
+
+calculate y coordinate of a concave vertex of a star
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & vertex number, 0 -\/ (n-\/1) \\
+\hline
+{\em n} & number of verticies \\
+\hline
+{\em r} & radius of inner circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double, y coordinate 
+\end{DoxyReturn}
+
+
+Definition at line 218 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_abdf9e456afb3d9b2c0618c4e811784a7}{}\index{utils.\+cpp@{utils.\+cpp}!get\+Convex\+X@{get\+Convex\+X}}
+\index{get\+Convex\+X@{get\+Convex\+X}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{get\+Convex\+X(int k, int n, double r)}]{\setlength{\rightskip}{0pt plus 5cm}double get\+Convex\+X (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{int}]{n, }
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_abdf9e456afb3d9b2c0618c4e811784a7}
+
+
+get x 
+
+calculate x coordinate of a convex vertex of a star
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & vertex number, 0 -\/ (n-\/1) \\
+\hline
+{\em n} & number of verticies \\
+\hline
+{\em r} & radius out outer circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double, x coordinate 
+\end{DoxyReturn}
+
+
+Definition at line 179 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_a7d8596da4188f78c1f7fb5aea1d2742c}{}\index{utils.\+cpp@{utils.\+cpp}!get\+Convex\+Y@{get\+Convex\+Y}}
+\index{get\+Convex\+Y@{get\+Convex\+Y}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{get\+Convex\+Y(int k, int n, double r)}]{\setlength{\rightskip}{0pt plus 5cm}double get\+Convex\+Y (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{int}]{n, }
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_a7d8596da4188f78c1f7fb5aea1d2742c}
+
+
+get y 
+
+calculate y coordinate of a convex vertex of a star
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & vertex number, 0 -\/ (n-\/1) \\
+\hline
+{\em n} & number of verticies \\
+\hline
+{\em r} & radius out outer circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double, y coordinate 
+\end{DoxyReturn}
+
+
+Definition at line 192 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_a4b511aca835044cf9f9a0a3498aa1415}{}\index{utils.\+cpp@{utils.\+cpp}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{get\+Height(int n, double l)}]{\setlength{\rightskip}{0pt plus 5cm}double get\+Height (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{double}]{l}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_a4b511aca835044cf9f9a0a3498aa1415}
+
+
+cacluate height of polygon 
+
+calculate the height of any equlateral polygon
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of sides \\
+\hline
+{\em l} & length of sides\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+height of polygon 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_addabdb8e2622bfc492142a9eb62e3413}{}\index{utils.\+cpp@{utils.\+cpp}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{get\+Radius(int n, double l)}]{\setlength{\rightskip}{0pt plus 5cm}double get\+Radius (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{double}]{l}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_addabdb8e2622bfc492142a9eb62e3413}
+
+
+calculate radius 
+
+calculate radius of an equlateral polygon
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of sides \\
+\hline
+{\em l} & length of sides\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double, radius 
+\end{DoxyReturn}
+
+
+Definition at line 166 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_a41e2fd73d0ee35ae0aba3752b8ba9539}{}\index{utils.\+cpp@{utils.\+cpp}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{get\+Width(int n, double l)}]{\setlength{\rightskip}{0pt plus 5cm}double get\+Width (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{double}]{l}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_a41e2fd73d0ee35ae0aba3752b8ba9539}
+
+
+cacluate width of polygon 
+
+calculate the width of any equlateral polygon
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of sides \\
+\hline
+{\em l} & length of sides\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+width of polygon 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_ac4bec670532648bb474368e4a5bdffc8}{}\index{utils.\+cpp@{utils.\+cpp}!ps\+Arc@{ps\+Arc}}
+\index{ps\+Arc@{ps\+Arc}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{ps\+Arc(int x, int y, double r, int start\+Angle, int end\+Angle)}]{\setlength{\rightskip}{0pt plus 5cm}string ps\+Arc (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{double}]{r, }
+\item[{int}]{start\+Angle, }
+\item[{int}]{end\+Angle}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_ac4bec670532648bb474368e4a5bdffc8}
+
+
+generates ps code for drawing an arc 
+
+returns a string containing the ps code for drawing an arc, in the form \textquotesingle{}x y r angle1 angle2 arc\textquotesingle{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & c position of the center \\
+\hline
+{\em y} & y position of the center \\
+\hline
+{\em r} & radius of the arc \\
+\hline
+{\em start\+Angle} & start angle for the arc, from 0 to 360 degrees \\
+\hline
+{\em end\+Angle} & end angle for the arc, from 0 to 360 degrees \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing ps code 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_ab7e056f17391869c1e55a184305182d6}{}\index{utils.\+cpp@{utils.\+cpp}!ps\+Begin@{ps\+Begin}}
+\index{ps\+Begin@{ps\+Begin}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{ps\+Begin()}]{\setlength{\rightskip}{0pt plus 5cm}string ps\+Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_ab7e056f17391869c1e55a184305182d6}
+
+
+generates ps code for ps file header 
+
+returns a string for ps file headers \begin{DoxyReturn}{Returns}
+string \char`\"{}\%!\textbackslash{}n\char`\"{} 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_a93ab23a0bdb17c7814ade6943a77b808}{}\index{utils.\+cpp@{utils.\+cpp}!ps\+Footer@{ps\+Footer}}
+\index{ps\+Footer@{ps\+Footer}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{ps\+Footer()}]{\setlength{\rightskip}{0pt plus 5cm}string ps\+Footer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_a93ab23a0bdb17c7814ade6943a77b808}
+
+
+generates ps code for footer 
+
+returns a string containing the ps code for a footer for draw functions in this library \begin{DoxyReturn}{Returns}
+string containing ps code 
+\end{DoxyReturn}
+
+
+Definition at line 89 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_a45cd2155985fff08de4d1aff8eb92486}{}\index{utils.\+cpp@{utils.\+cpp}!ps\+Header@{ps\+Header}}
+\index{ps\+Header@{ps\+Header}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{ps\+Header(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}string ps\+Header (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_a45cd2155985fff08de4d1aff8eb92486}
+
+
+generates ps code for header 
+
+returns a string containing the ps code for a header for draw functions in this library
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position of the center of the shape \\
+\hline
+{\em y} & y position of the center of the shape\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing ps code 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_a58a4b05282aaf20b75b243a636be3c7d}{}\index{utils.\+cpp@{utils.\+cpp}!ps\+Line@{ps\+Line}}
+\index{ps\+Line@{ps\+Line}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{ps\+Line(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}string ps\+Line (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_a58a4b05282aaf20b75b243a636be3c7d}
+
+
+generates ps code for drawing a line 
+
+returns a string containing the ps code for drawing a line, in the form \char`\"{}x y lineto\textbackslash{}n\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of endpoint \\
+\hline
+{\em y} & y coordinate of endpoint \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string with ps code 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_ab26b377715fa9f6c2508a10dbe7dc052}{}\index{utils.\+cpp@{utils.\+cpp}!ps\+Move@{ps\+Move}}
+\index{ps\+Move@{ps\+Move}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{ps\+Move(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}string ps\+Move (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_ab26b377715fa9f6c2508a10dbe7dc052}
+
+
+generates ps code for moving the cursor 
+
+returns a string containing the ps code for moving the ps cursor, in the form \char`\"{}x y moveto\textbackslash{}n\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of target point \\
+\hline
+{\em y} & y coordinate of target point\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string with ps code 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file utils.\+cpp.
+
+\hypertarget{utils_8cpp_af6a2fe89013c90eaaf2d284c0d9eac7e}{}\index{utils.\+cpp@{utils.\+cpp}!ps\+Page\+Break@{ps\+Page\+Break}}
+\index{ps\+Page\+Break@{ps\+Page\+Break}!utils.\+cpp@{utils.\+cpp}}
+\subsubsection[{ps\+Page\+Break()}]{\setlength{\rightskip}{0pt plus 5cm}string ps\+Page\+Break (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{utils_8cpp_af6a2fe89013c90eaaf2d284c0d9eac7e}
+
+
+generates ps code for printing a page 
+
+returns a string containing the ps code for printing a page \begin{DoxyReturn}{Returns}
+string \char`\"{}showpage\char`\"{} 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file utils.\+cpp.
+

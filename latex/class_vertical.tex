@@ -1,0 +1,149 @@
+\hypertarget{class_vertical}{}\section{Vertical Class Reference}
+\label{class_vertical}\index{Vertical@{Vertical}}
+
+
+{\ttfamily \#include $<$layered.\+h$>$}
+
+Inheritance diagram for Vertical\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_vertical}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vertical_abe7fe115a8ff6300a0e60fab51f4da7e}{Vertical} ()
+\item 
+\hyperlink{class_vertical_a534fca34871e38a252b40acf94e05dbf}{Vertical} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}, initializer\+\_\+list$<$ \hyperlink{class_shape}{Shape} $\ast$ $>$ shapes)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_vertical}{Vertical} constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_vertical_a3356dc6b2454dea361e08224b1bb187c}{Vertical} (initializer\+\_\+list$<$ \hyperlink{class_shape}{Shape} $\ast$ $>$ shapes)
+\item 
+string \hyperlink{class_vertical_a778fd2aa48afcf255b75413e29613ebb}{draw} () const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\item 
+string \hyperlink{class_vertical_a9be329f986230ccaa35ec7f63553d658}{draw} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}) const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 46 of file layered.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vertical_abe7fe115a8ff6300a0e60fab51f4da7e}{}\index{Vertical@{Vertical}!Vertical@{Vertical}}
+\index{Vertical@{Vertical}!Vertical@{Vertical}}
+\subsubsection[{Vertical()}]{\setlength{\rightskip}{0pt plus 5cm}Vertical\+::\+Vertical (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vertical_abe7fe115a8ff6300a0e60fab51f4da7e}
+
+
+Definition at line 49 of file layered.\+h.
+
+\hypertarget{class_vertical_a534fca34871e38a252b40acf94e05dbf}{}\index{Vertical@{Vertical}!Vertical@{Vertical}}
+\index{Vertical@{Vertical}!Vertical@{Vertical}}
+\subsubsection[{Vertical(int x, int y, initializer\+\_\+list$<$ Shape $\ast$ $>$ shapes)}]{\setlength{\rightskip}{0pt plus 5cm}Vertical\+::\+Vertical (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{initializer\+\_\+list$<$ {\bf Shape} $\ast$ $>$}]{shapes}
+\end{DoxyParamCaption}
+)}\label{class_vertical_a534fca34871e38a252b40acf94e05dbf}
+
+
+\hyperlink{class_vertical}{Vertical} constructor. 
+
+constructs a \hyperlink{class_vertical}{Vertical} shape from a list of Shapes
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position of center \\
+\hline
+{\em y} & y position of center \\
+\hline
+{\em shapes} & list of pointers to Shapes \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 94 of file layered.\+cpp.
+
+\hypertarget{class_vertical_a3356dc6b2454dea361e08224b1bb187c}{}\index{Vertical@{Vertical}!Vertical@{Vertical}}
+\index{Vertical@{Vertical}!Vertical@{Vertical}}
+\subsubsection[{Vertical(initializer\+\_\+list$<$ Shape $\ast$ $>$ shapes)}]{\setlength{\rightskip}{0pt plus 5cm}Vertical\+::\+Vertical (
+\begin{DoxyParamCaption}
+\item[{initializer\+\_\+list$<$ {\bf Shape} $\ast$ $>$}]{shapes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_vertical_a3356dc6b2454dea361e08224b1bb187c}
+
+
+Definition at line 51 of file layered.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vertical_a778fd2aa48afcf255b75413e29613ebb}{}\index{Vertical@{Vertical}!draw@{draw}}
+\index{draw@{draw}!Vertical@{Vertical}}
+\subsubsection[{draw() const }]{\setlength{\rightskip}{0pt plus 5cm}string Vertical\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_vertical_a778fd2aa48afcf255b75413e29613ebb}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at default location \begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at default location 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_layered_a968cd141e61eb039b997352a318dcae0}{Layered}.
+
+
+
+Definition at line 104 of file layered.\+cpp.
+
+\hypertarget{class_vertical_a9be329f986230ccaa35ec7f63553d658}{}\index{Vertical@{Vertical}!draw@{draw}}
+\index{draw@{draw}!Vertical@{Vertical}}
+\subsubsection[{draw(int x, int y) const }]{\setlength{\rightskip}{0pt plus 5cm}string Vertical\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_vertical_a9be329f986230ccaa35ec7f63553d658}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at specified coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position for center of shape\textquotesingle{}s desired location \\
+\hline
+{\em y} & y position for center of shape\textquotesingle{}s desired location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at specified location 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_layered_a6eb564ff0646b26fdd4175856b1a0815}{Layered}.
+
+
+
+Definition at line 108 of file layered.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{layered_8h}{layered.\+h}\item 
+\hyperlink{layered_8cpp}{layered.\+cpp}\end{DoxyCompactItemize}
