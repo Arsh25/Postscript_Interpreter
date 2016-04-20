@@ -17,8 +17,5 @@ main: main.cpp $(FILES)
 test: test.cpp $(FILES)
 	$(COMPILER)  $^ $(FLAGS) -o $@
 
-travis: test.cpp $(FILES)
-	$(COMPILER) $^ -std=c++0x -Wall -pedantic -Wno-deprecated-declarations -o $@
-
 clean:
 	rm -rf test main travis
