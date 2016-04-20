@@ -8,6 +8,9 @@
 
 #include "star.h"
 
+string Star::draw() const{
+	return draw(x_,y_);
+}
 
 string Star::draw(int x, int y) const{
 	stringstream ss;

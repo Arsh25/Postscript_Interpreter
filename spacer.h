@@ -18,6 +18,7 @@ public:
 	Spacer(int x, int y, double w, double h): Rectangle(x,y,w,h) {};
 	Spacer(double w, double h) : Rectangle(0,0,w,h) {};
 
+	string draw() const;
 	string draw(int x, int y) const;
 
 }; //end of class Spacer

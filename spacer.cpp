@@ -8,6 +8,10 @@
 
 #include "spacer.h"
 
+string Spacer::draw() const{
+	return draw(x_,y_);
+}
+
 string Spacer::draw(int x, int y) const{
 	return "";
 }

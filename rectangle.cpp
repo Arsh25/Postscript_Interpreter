@@ -8,6 +8,10 @@
 
  #include "rectangle.h"
 
+string Rectangle::draw() const{
+	return draw(x_,y_);
+}
+
 string Rectangle::draw(int x, int y) const
 {
 	stringstream ss;

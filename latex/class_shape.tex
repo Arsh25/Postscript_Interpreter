@@ -1,0 +1,487 @@
+\hypertarget{class_shape}{}\section{Shape Class Reference}
+\label{class_shape}\index{Shape@{Shape}}
+
+
+{\ttfamily \#include $<$shape.\+h$>$}
+
+Inheritance diagram for Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.424242cm]{class_shape}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shape_aaa8d87171e65e0d8ba3c5459978992a7}{Shape} ()
+\item 
+\hyperlink{class_shape_a06ed78198a1e3f0940d5e72006c3a074}{Shape} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}, double \hyperlink{class_shape_ab00e62f9f7cd0be450ac29437b80ce13}{width}, double \hyperlink{class_shape_a11686d7b1511fc6707f4dd7b74c65111}{height})
+\item 
+\hyperlink{class_shape_af3e449cf02a5f99a7c0d11873756b81f}{Shape} (double \hyperlink{class_shape_ab00e62f9f7cd0be450ac29437b80ce13}{width}, double \hyperlink{class_shape_a11686d7b1511fc6707f4dd7b74c65111}{height})
+\item 
+virtual \hyperlink{class_shape_ac3b9fc48965274893f25b18aa14ba665}{$\sim$\+Shape} ()
+\item 
+virtual string \hyperlink{class_shape_a8405e352e8bbbdd173fd89065d63a80b}{draw} () const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\item 
+virtual string \hyperlink{class_shape_af26d06a96ece90a563795ec571451eb1}{draw} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y}) const 
+\begin{DoxyCompactList}\small\item\em generate ps code for shape \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_shape_a9d6b2e7274a0e1708d5ec93613b53ef2}{place} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y})
+\begin{DoxyCompactList}\small\item\em change shape position \end{DoxyCompactList}\item 
+string \hyperlink{class_shape_a8b66fe7fe3e0e3ad883eb5d487d8d442}{bounds} ()
+\begin{DoxyCompactList}\small\item\em shape boundary \end{DoxyCompactList}\item 
+double \hyperlink{class_shape_ab00e62f9f7cd0be450ac29437b80ce13}{width} ()
+\begin{DoxyCompactList}\small\item\em get boundary width \end{DoxyCompactList}\item 
+double \hyperlink{class_shape_a11686d7b1511fc6707f4dd7b74c65111}{height} ()
+\begin{DoxyCompactList}\small\item\em get boundary box height \end{DoxyCompactList}\item 
+int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x} ()
+\begin{DoxyCompactList}\small\item\em get x \end{DoxyCompactList}\item 
+void \hyperlink{class_shape_adc67c1bfb923ed3d7e0cfe4a0cd34f29}{x} (int x)
+\begin{DoxyCompactList}\small\item\em set x \end{DoxyCompactList}\item 
+int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y} ()
+\begin{DoxyCompactList}\small\item\em get y \end{DoxyCompactList}\item 
+void \hyperlink{class_shape_ae3245e558aad6f812b108632aed6745f}{y} (int y)
+\begin{DoxyCompactList}\small\item\em sets y \end{DoxyCompactList}\item 
+string \hyperlink{class_shape_ac3ac785096912e7b1b3c0ac603714482}{operator()} ()
+\begin{DoxyCompactList}\small\item\em draw shape at position \end{DoxyCompactList}\item 
+string \hyperlink{class_shape_ab188d62cc440aeaab8407b32caaa8823}{operator()} (int \hyperlink{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{x}, int \hyperlink{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{y})
+\begin{DoxyCompactList}\small\item\em draw shape at position \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_shape_ac152ef6b8150122e1e279e3ac2d9b627}{num\+Of\+Sides} ()
+\begin{DoxyCompactList}\small\item\em returns number of sides \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_shape_a116897479aa63aeea80648b7ac9e114a}{side\+Length} ()
+\begin{DoxyCompactList}\small\item\em returns side length \end{DoxyCompactList}\item 
+virtual double \hyperlink{class_shape_a8193b252afa84bbf0b173160d2b3302d}{radius} ()
+\begin{DoxyCompactList}\small\item\em returns radius \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_shape_ac9f855989a11f0baf8c6a0a494270a2c}{x\+\_\+}
+\item 
+int \hyperlink{class_shape_ae85309f9b9f6ecb7713ebe1d6891126b}{y\+\_\+}
+\item 
+double \hyperlink{class_shape_a8d608b3645ea020c08eaabfd112bd5d4}{bounds\+Width\+\_\+}
+\item 
+double \hyperlink{class_shape_a99e0e92930da8380eedae20255347b50}{bounds\+Height\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file shape.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_shape_aaa8d87171e65e0d8ba3c5459978992a7}{}\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\subsubsection[{Shape()}]{\setlength{\rightskip}{0pt plus 5cm}Shape\+::\+Shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_shape_aaa8d87171e65e0d8ba3c5459978992a7}
+
+
+Definition at line 32 of file shape.\+h.
+
+\hypertarget{class_shape_a06ed78198a1e3f0940d5e72006c3a074}{}\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\subsubsection[{Shape(int x, int y, double width, double height)}]{\setlength{\rightskip}{0pt plus 5cm}Shape\+::\+Shape (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{double}]{width, }
+\item[{double}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_shape_a06ed78198a1e3f0940d5e72006c3a074}
+
+
+Definition at line 33 of file shape.\+h.
+
+\hypertarget{class_shape_af3e449cf02a5f99a7c0d11873756b81f}{}\index{Shape@{Shape}!Shape@{Shape}}
+\index{Shape@{Shape}!Shape@{Shape}}
+\subsubsection[{Shape(double width, double height)}]{\setlength{\rightskip}{0pt plus 5cm}Shape\+::\+Shape (
+\begin{DoxyParamCaption}
+\item[{double}]{width, }
+\item[{double}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_shape_af3e449cf02a5f99a7c0d11873756b81f}
+
+
+Definition at line 34 of file shape.\+h.
+
+\hypertarget{class_shape_ac3b9fc48965274893f25b18aa14ba665}{}\index{Shape@{Shape}!````~Shape@{$\sim$\+Shape}}
+\index{````~Shape@{$\sim$\+Shape}!Shape@{Shape}}
+\subsubsection[{$\sim$\+Shape()}]{\setlength{\rightskip}{0pt plus 5cm}virtual Shape\+::$\sim$\+Shape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_shape_ac3b9fc48965274893f25b18aa14ba665}
+
+
+Definition at line 36 of file shape.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_shape_a8b66fe7fe3e0e3ad883eb5d487d8d442}{}\index{Shape@{Shape}!bounds@{bounds}}
+\index{bounds@{bounds}!Shape@{Shape}}
+\subsubsection[{bounds()}]{\setlength{\rightskip}{0pt plus 5cm}string Shape\+::bounds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_shape_a8b66fe7fe3e0e3ad883eb5d487d8d442}
+
+
+shape boundary 
+
+generates string with the values of boundary box witdth and height \begin{DoxyReturn}{Returns}
+string with boundary 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file shape.\+cpp.
+
+\hypertarget{class_shape_a8405e352e8bbbdd173fd89065d63a80b}{}\index{Shape@{Shape}!draw@{draw}}
+\index{draw@{draw}!Shape@{Shape}}
+\subsubsection[{draw() const }]{\setlength{\rightskip}{0pt plus 5cm}string Shape\+::draw (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_shape_a8405e352e8bbbdd173fd89065d63a80b}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at default location \begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at default location 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_vertical_a778fd2aa48afcf255b75413e29613ebb}{Vertical}, \hyperlink{class_horizontal_a79e26b6d0db2a2b7e4f25a3f0f67e7a2}{Horizontal}, \hyperlink{class_polygon_a732b40203a5cc2baadd90446c3ec8213}{Polygon}, \hyperlink{class_scaled_ad86e14b9c9e880d31b7581134f03e5dc}{Scaled}, \hyperlink{class_layered_a968cd141e61eb039b997352a318dcae0}{Layered}, \hyperlink{class_rectangle_add9328727ce45f2782971385343a4ea1}{Rectangle}, \hyperlink{class_circle_a3fcc66abd3f30a3c19e3bb63452fc2ed}{Circle}, \hyperlink{class_spacer_a9f649a8e182a99584cfd8de8a90423f7}{Spacer}, \hyperlink{class_star_ae0187621a33e5b704f92c77089250316}{Star}, and \hyperlink{class_rotated_ae36addd682056fbd7acef703dc81fafe}{Rotated}.
+
+
+
+Definition at line 16 of file shape.\+cpp.
+
+\hypertarget{class_shape_af26d06a96ece90a563795ec571451eb1}{}\index{Shape@{Shape}!draw@{draw}}
+\index{draw@{draw}!Shape@{Shape}}
+\subsubsection[{draw(int x, int y) const }]{\setlength{\rightskip}{0pt plus 5cm}string Shape\+::draw (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_shape_af26d06a96ece90a563795ec571451eb1}
+
+
+generate ps code for shape 
+
+generate ps code for drawing shape at specified coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position for center of shape\textquotesingle{}s desired location \\
+\hline
+{\em y} & y position for center of shape\textquotesingle{}s desired location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing ps code for drawing shape at specified location 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_vertical_a9be329f986230ccaa35ec7f63553d658}{Vertical}, \hyperlink{class_horizontal_aea100857d1a9a269b66060b8bd32ced1}{Horizontal}, \hyperlink{class_polygon_af0f4e693010935528bb3e99bca2cc433}{Polygon}, \hyperlink{class_scaled_a643010334ff7c4d5cffb98e735a94f8e}{Scaled}, \hyperlink{class_layered_a6eb564ff0646b26fdd4175856b1a0815}{Layered}, \hyperlink{class_rectangle_ac1cd2c2307b24d001171361f95ea214f}{Rectangle}, \hyperlink{class_circle_a18f2b8aaa80fb870c3aea1798f32678b}{Circle}, \hyperlink{class_spacer_a7c79d0ca6ccc80a08bdaa839c8e05b2f}{Spacer}, \hyperlink{class_star_abb1a219aa29c63205f1e23a056aae521}{Star}, and \hyperlink{class_rotated_a1a83cd3f5a9fe6cd99d3eba826f46dd6}{Rotated}.
+
+
+
+Definition at line 29 of file shape.\+cpp.
+
+\hypertarget{class_shape_a11686d7b1511fc6707f4dd7b74c65111}{}\index{Shape@{Shape}!height@{height}}
+\index{height@{height}!Shape@{Shape}}
+\subsubsection[{height()}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\+::height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_shape_a11686d7b1511fc6707f4dd7b74c65111}
+
+
+get boundary box height 
+
+get the double containing the height of the shape\textquotesingle{}s boundary box \begin{DoxyReturn}{Returns}
+double boundary height 
+\end{DoxyReturn}
+
+
+Definition at line 70 of file shape.\+cpp.
+
+\hypertarget{class_shape_ac152ef6b8150122e1e279e3ac2d9b627}{}\index{Shape@{Shape}!num\+Of\+Sides@{num\+Of\+Sides}}
+\index{num\+Of\+Sides@{num\+Of\+Sides}!Shape@{Shape}}
+\subsubsection[{num\+Of\+Sides()}]{\setlength{\rightskip}{0pt plus 5cm}int Shape\+::num\+Of\+Sides (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_shape_ac152ef6b8150122e1e279e3ac2d9b627}
+
+
+returns number of sides 
+
+returns number of sides of a shape, only defined for \hyperlink{class_polygon}{Polygon} \begin{DoxyReturn}{Returns}
+if \hyperlink{class_polygon}{Polygon}, returns number of sides. Otherwise returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_polygon_a3c57ca9893bf151501123b8b1787acf6}{Polygon}.
+
+
+
+Definition at line 139 of file shape.\+cpp.
+
+\hypertarget{class_shape_ac3ac785096912e7b1b3c0ac603714482}{}\index{Shape@{Shape}!operator()@{operator()}}
+\index{operator()@{operator()}!Shape@{Shape}}
+\subsubsection[{operator()()}]{\setlength{\rightskip}{0pt plus 5cm}string Shape\+::operator() (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_shape_ac3ac785096912e7b1b3c0ac603714482}
+
+
+draw shape at position 
+
+generates ps code for drawing a shape at the shape\textquotesingle{}s set location \begin{DoxyReturn}{Returns}
+string containing ps code 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file shape.\+cpp.
+
+\hypertarget{class_shape_ab188d62cc440aeaab8407b32caaa8823}{}\index{Shape@{Shape}!operator()@{operator()}}
+\index{operator()@{operator()}!Shape@{Shape}}
+\subsubsection[{operator()(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}string Shape\+::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_shape_ab188d62cc440aeaab8407b32caaa8823}
+
+
+draw shape at position 
+
+generates ps code for drawing shape at specified location
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position of center of shape \\
+\hline
+{\em y} & y position of center of shape\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string containing ps code 
+\end{DoxyReturn}
+
+
+Definition at line 130 of file shape.\+cpp.
+
+\hypertarget{class_shape_a9d6b2e7274a0e1708d5ec93613b53ef2}{}\index{Shape@{Shape}!place@{place}}
+\index{place@{place}!Shape@{Shape}}
+\subsubsection[{place(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\+::place (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_shape_a9d6b2e7274a0e1708d5ec93613b53ef2}
+
+
+change shape position 
+
+change shape position to passed coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of new position \\
+\hline
+{\em y} & y coordinate of new position \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file shape.\+cpp.
+
+\hypertarget{class_shape_a8193b252afa84bbf0b173160d2b3302d}{}\index{Shape@{Shape}!radius@{radius}}
+\index{radius@{radius}!Shape@{Shape}}
+\subsubsection[{radius()}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\+::radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_shape_a8193b252afa84bbf0b173160d2b3302d}
+
+
+returns radius 
+
+returns the radius of a shape, only defined for \hyperlink{class_polygon}{Polygon} and \hyperlink{class_circle}{Circle} \begin{DoxyReturn}{Returns}
+if \hyperlink{class_polygon}{Polygon} or \hyperlink{class_circle}{Circle}, returns the radius. Otherwise returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_polygon_af1af4ce31b24eb31b4300e932f2578c2}{Polygon}, and \hyperlink{class_circle_addf06b37dda7589ade30e7ea21fe17be}{Circle}.
+
+
+
+Definition at line 157 of file shape.\+cpp.
+
+\hypertarget{class_shape_a116897479aa63aeea80648b7ac9e114a}{}\index{Shape@{Shape}!side\+Length@{side\+Length}}
+\index{side\+Length@{side\+Length}!Shape@{Shape}}
+\subsubsection[{side\+Length()}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\+::side\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_shape_a116897479aa63aeea80648b7ac9e114a}
+
+
+returns side length 
+
+returns length of a side of a shape, only defined for \hyperlink{class_polygon}{Polygon} \begin{DoxyReturn}{Returns}
+if \hyperlink{class_polygon}{Polygon}, returns length of a side. Otherwise returns 0. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_polygon_ab03b3c38a9f26b2c0d46294dd77f4318}{Polygon}.
+
+
+
+Definition at line 148 of file shape.\+cpp.
+
+\hypertarget{class_shape_ab00e62f9f7cd0be450ac29437b80ce13}{}\index{Shape@{Shape}!width@{width}}
+\index{width@{width}!Shape@{Shape}}
+\subsubsection[{width()}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\+::width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_shape_ab00e62f9f7cd0be450ac29437b80ce13}
+
+
+get boundary width 
+
+get the double containing the width of the shape\textquotesingle{}s boundary box \begin{DoxyReturn}{Returns}
+double boundary width 
+\end{DoxyReturn}
+
+
+Definition at line 61 of file shape.\+cpp.
+
+\hypertarget{class_shape_a41e403e73d2949f1a6adfba6032c41ec}{}\index{Shape@{Shape}!x@{x}}
+\index{x@{x}!Shape@{Shape}}
+\subsubsection[{x()}]{\setlength{\rightskip}{0pt plus 5cm}int Shape\+::x (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_shape_a41e403e73d2949f1a6adfba6032c41ec}
+
+
+get x 
+
+gets x value of center of shape \begin{DoxyReturn}{Returns}
+returns x 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file shape.\+cpp.
+
+\hypertarget{class_shape_adc67c1bfb923ed3d7e0cfe4a0cd34f29}{}\index{Shape@{Shape}!x@{x}}
+\index{x@{x}!Shape@{Shape}}
+\subsubsection[{x(int x)}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\+::x (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\label{class_shape_adc67c1bfb923ed3d7e0cfe4a0cd34f29}
+
+
+set x 
+
+sets x value of center of shape
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & new x value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file shape.\+cpp.
+
+\hypertarget{class_shape_ac757f715cc5b5681f2c691663ac06f0a}{}\index{Shape@{Shape}!y@{y}}
+\index{y@{y}!Shape@{Shape}}
+\subsubsection[{y()}]{\setlength{\rightskip}{0pt plus 5cm}int Shape\+::y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_shape_ac757f715cc5b5681f2c691663ac06f0a}
+
+
+get y 
+
+gets y value of center of shape \begin{DoxyReturn}{Returns}
+returns y 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file shape.\+cpp.
+
+\hypertarget{class_shape_ae3245e558aad6f812b108632aed6745f}{}\index{Shape@{Shape}!y@{y}}
+\index{y@{y}!Shape@{Shape}}
+\subsubsection[{y(int y)}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\+::y (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_shape_ae3245e558aad6f812b108632aed6745f}
+
+
+sets y 
+
+sets y value of center of shape
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & new y value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 108 of file shape.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_shape_a99e0e92930da8380eedae20255347b50}{}\index{Shape@{Shape}!bounds\+Height\+\_\+@{bounds\+Height\+\_\+}}
+\index{bounds\+Height\+\_\+@{bounds\+Height\+\_\+}!Shape@{Shape}}
+\subsubsection[{bounds\+Height\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\+::bounds\+Height\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_shape_a99e0e92930da8380eedae20255347b50}
+height of boundary box 
+
+Definition at line 76 of file shape.\+h.
+
+\hypertarget{class_shape_a8d608b3645ea020c08eaabfd112bd5d4}{}\index{Shape@{Shape}!bounds\+Width\+\_\+@{bounds\+Width\+\_\+}}
+\index{bounds\+Width\+\_\+@{bounds\+Width\+\_\+}!Shape@{Shape}}
+\subsubsection[{bounds\+Width\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\+::bounds\+Width\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_shape_a8d608b3645ea020c08eaabfd112bd5d4}
+width of boundary box 
+
+Definition at line 71 of file shape.\+h.
+
+\hypertarget{class_shape_ac9f855989a11f0baf8c6a0a494270a2c}{}\index{Shape@{Shape}!x\+\_\+@{x\+\_\+}}
+\index{x\+\_\+@{x\+\_\+}!Shape@{Shape}}
+\subsubsection[{x\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}int Shape\+::x\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_shape_ac9f855989a11f0baf8c6a0a494270a2c}
+x coordinate of shape position 
+
+Definition at line 61 of file shape.\+h.
+
+\hypertarget{class_shape_ae85309f9b9f6ecb7713ebe1d6891126b}{}\index{Shape@{Shape}!y\+\_\+@{y\+\_\+}}
+\index{y\+\_\+@{y\+\_\+}!Shape@{Shape}}
+\subsubsection[{y\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}int Shape\+::y\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\label{class_shape_ae85309f9b9f6ecb7713ebe1d6891126b}
+y coordinate of shape position 
+
+Definition at line 66 of file shape.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{shape_8h}{shape.\+h}\item 
+\hyperlink{shape_8cpp}{shape.\+cpp}\end{DoxyCompactItemize}

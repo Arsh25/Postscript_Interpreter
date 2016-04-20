@@ -10,8 +10,10 @@ var utils_8h =
     [ "getRadius", "utils_8h.html#a8dbf535e69c904f8fa212d0dc1320b48", null ],
     [ "getWidth", "utils_8h.html#a39afe7df227da3c47746232c30caad57", null ],
     [ "psArc", "utils_8h.html#a2280cf7a9cf579a11eb9651c8b580419", null ],
+    [ "psBegin", "utils_8h.html#ab7e056f17391869c1e55a184305182d6", null ],
     [ "psFooter", "utils_8h.html#a93ab23a0bdb17c7814ade6943a77b808", null ],
     [ "psHeader", "utils_8h.html#a45cd2155985fff08de4d1aff8eb92486", null ],
     [ "psLine", "utils_8h.html#a21a1a9edcaa664d470c8bbde568678e8", null ],
-    [ "psMove", "utils_8h.html#a399349e3bd6732aa6d07e8fd92c19d27", null ]
+    [ "psMove", "utils_8h.html#a399349e3bd6732aa6d07e8fd92c19d27", null ],
+    [ "psPageBreak", "utils_8h.html#af6a2fe89013c90eaaf2d284c0d9eac7e", null ]
 ];

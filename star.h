@@ -18,6 +18,7 @@ public:
 	Star(int x, int y, int n, double oRadius, double iRadius) : Shape(x, y, 2*oRadius, 2*oRadius), numOfPoints_(n), outerRadius_(oRadius), innerRadius_(iRadius) {};
 	Star(int n, double oRadius, double iRadius) : Star(0,0,n,oRadius,iRadius) {};
 
+	string draw() const;
 	string draw(int x, int y) const;
 
 	double outerRadius();

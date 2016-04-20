@@ -26,6 +26,10 @@ Layered::Layered(int x, int y, initializer_list<Shape*> shapes) : Shape(x,y), sh
 	boundsHeight_ = height;
 }
 
+string Layered::draw() const{
+	return draw(x_,y_);
+}
+
 string Layered::draw(int x, int y) const{
 	stringstream ss;
 
@@ -56,6 +60,10 @@ Horizontal::Horizontal(int x, int y, initializer_list<Shape*> shapes) : Layered(
 	}
 	boundsWidth_ = width;
 	boundsHeight_ = height;
+}
+
+string Horizontal::draw() const{
+	return draw(x_,y_);
 }
 
 string Horizontal::draw(int x, int y) const{
@@ -91,6 +99,10 @@ Vertical::Vertical(int x, int y, initializer_list<Shape*> shapes) : Layered(x,y,
 	}
 	boundsWidth_ = width;
 	boundsHeight_ = height;
+}
+
+string Vertical::draw() const{
+	return draw(x_,y_);
 }
 
 string Vertical::draw(int x, int y) const{

@@ -21,6 +21,7 @@ public:
 	Layered(int x, int y, initializer_list<Shape*> shapes);
 	Layered(initializer_list<Shape*> shapes) : Layered(0,0,shapes) {};
 
+	string draw() const;
 	string draw(int x, int y) const;
 
 protected:
@@ -38,6 +39,7 @@ public:
 	Horizontal(int x, int y, initializer_list<Shape*> shapes);
 	Horizontal(initializer_list<Shape*> shapes) : Horizontal(0,0,shapes) {};
 
+	string draw() const;
 	string draw(int x, int y) const;
 }; 
 
@@ -48,6 +50,7 @@ public:
 	Vertical(int x, int y, initializer_list<Shape*> shapes);
 	Vertical(initializer_list<Shape*> shapes) : Vertical(0,0,shapes) {};
 
+	string draw() const;
 	string draw(int x, int y) const;
 };
 
