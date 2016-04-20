@@ -20,10 +20,7 @@ public:
 
 	string draw(int x, int y) const;
 
-private:
-
-
-};
+}; //end of class Spacer
 
 
 

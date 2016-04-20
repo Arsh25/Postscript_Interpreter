@@ -22,6 +22,9 @@ public:
 	string draw(int x, int y) const;
 
 protected:
+	/**
+	 * radius of circle
+	 */
 	double radius_;
 
 }; //end of class Circle

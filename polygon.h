@@ -39,8 +39,17 @@ public:
 	double radius();
 
 protected:
+	/**
+	 * number of sides of the polygon
+	 */
 	int numOfSides_;
+	/**
+	 * length of polygon's sides
+	 */
 	double sideLength_;
+	/**
+	 * radius of polygon
+	 */
 	double radius_;
 
 }; //end of class Polygon
@@ -54,9 +63,6 @@ public:
 	Triangle(int x, int y, double side) : Polygon(x,y,3,side) {};
 	Triangle(double side) : Triangle(0,0,side) {};
 
-private:
-
-
 }; //end of class Triangle
 
 
@@ -67,10 +73,7 @@ public:
 	Square(): Polygon(0,0,4,0) {};
 	Square(int x, int y, double side): Polygon(x,y,4,side) {};
 	Square(double side) : Square(0,0,side) {};
-
-private:
-
-
+	
 }; //end of class Square
 
 

@@ -24,6 +24,9 @@ public:
 	string draw(int x, int y) const;
 
 protected:
+	/**
+	 * vector of pointers to Shape objects
+	 */
 	initializer_list<Shape*> shapes_;
 };
 
@@ -36,10 +39,7 @@ public:
 	Horizontal(initializer_list<Shape*> shapes) : Horizontal(0,0,shapes) {};
 
 	string draw(int x, int y) const;
-
-private:
-
-};
+}; 
 
 class Vertical : public Layered
 {
@@ -49,9 +49,6 @@ public:
 	Vertical(initializer_list<Shape*> shapes) : Vertical(0,0,shapes) {};
 
 	string draw(int x, int y) const;
-
-private:
-
 };
 
 

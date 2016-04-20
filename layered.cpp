@@ -42,7 +42,7 @@ string Layered::draw(int x, int y) const{
 
 /**
  * @brief Horizontal costructor
- * @details constructs a Horizontal shape from a list of shapes
+ * @details constructs a Horizontal shape from a list of Shapes
  * 
  * @param x x position of center
  * @param y y position of center
@@ -75,8 +75,14 @@ string Horizontal::draw(int x, int y) const{
 	return ss.str();
 }
 
-
-
+/**
+ * @brief Vertical constructor
+ * @details constructs a Vertical shape from a list of Shapes
+ * 
+ * @param x x position of center
+ * @param y y position of center
+ * @param shapes list of pointers to Shapes
+ */
 Vertical::Vertical(int x, int y, initializer_list<Shape*> shapes) : Layered(x,y,shapes){
 	double width=0,height=0;
 	for(auto shape: shapes_){

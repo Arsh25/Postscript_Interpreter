@@ -24,7 +24,13 @@ public:
 	string draw(int x, int y) const;
 
 protected:
+	/**
+	 * width of rectangle
+	 */
 	double width_;
+	/**
+	 * height of rectangle
+	 */
 	double height_;
 
 }; //end of class Rectangle
