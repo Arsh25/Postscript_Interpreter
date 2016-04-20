@@ -1,10 +1,13 @@
 #PostScript Interpreter Design Document
 
 CS 372 Software Construction
+
 Project 2 – PostScript Interpreter
 
 Jason Warta
+
 Arsh Chauhan
+
 Lonny Strunk
 
 Updated: April 19, 2016
@@ -22,117 +25,67 @@ We are utilizing a documentation generation tool from source code called [Doxyge
 
 ##Class Hierarchy
 ![Figure 1: Shape Abstract Class Hierarchy](https://github.com/Arsh25/Postscript_Interpreter/blob/master/html/class_shape.png)
+
 Figure 1: Shape Abstract Class Hierarchy
 
 Shape |
 ---
-int x_
-int y_
-double boundsWidth_	
-double boundsHeight_ |
-Shape()
-Shape(int x, int y, double width, double height)
-Shape(double width,double height)
-virtual ~Shape()
-Shape (const Shape & other){}
-virtual string draw() const
-virtual string draw(int x,int y) const
-virtual void place(int x, int y)
-string bounds()
-double width()
-double height()
-int x()
-void x(int x)
-int y()
-void y(int y)
-string operator()(int x, int y)
-virtual int numOfSides()
-virtual double sideLength()
-virtual double radius()
-ostream & operator<<(ostream &os, const Shape & shape) |
+int x_<br>int y_<br>double boundsWidth_<br>double boundsHeight_ |
+Shape()<br>Shape(int x, int y, double width, double height)<br>Shape(double width,double height)<br>virtual ~Shape()<br>Shape (const Shape & other)<br>virtual string draw() const<br>virtual string draw(int x,int y) const<br>virtual void place(int x, int y)<br>string bounds()<br>double width()<br>double height()<br>int x()<br>void x(int x)<br>int y()<br>void y(int y)<br>string operator()(int x, int y)<br>virtual int numOfSides()<br>virtual double sideLength()<br>virtual double radius()<br>ostream & operator<<(ostream &os, const Shape & shape) |
 
-Circle
-double radius_
-Circle()
-Circle(int x, int y, double radius)
-Circle(double radius)
-string draw(int x, int y) const
+Circle |
+---
+double radius_ |
+Circle()<br>Circle(int x, int y, double radius)<br>Circle(double radius)<br>string draw(int x, int y) const|
 
-Layered
-initializer_list<Shape*> shapes_
-Layered()
-Layered(int x, int y, initializer_list<Shape*> shapes)
-Layered(initializer_list<Shape*> shapes)
-string draw(int x, int y) const
+Layered|
+---
+initializer_list<Shape*> shapes_|
+Layered()<br>Layered(int x, int y, initializer_list<Shape*> shapes)<br>Layered(initializer_list<Shape*> shapes)<br>string draw(int x, int y) const|
 
-Horizontal
-
-Horizontal()
-Horizontal(int x, int y, initializer_list<Shape*> shapes)
-Horizontal(initializer_list<Shape*> shapes)
-string draw(int x, int y) const
+Horizontal|
+---
+|
+Horizontal()<br>Horizontal(int x, int y, initializer_list<Shape*> shapes)<br>Horizontal(initializer_list<Shape*> shapes)<br>string draw(int x, int y) const|
 
 
-Vertical
+Vertical|
+---
+|
+Vertical()<br>Vertical(int x, int y, initializer_list<Shape*> shapes)<br>Vertical(initializer_list<Shape*> shapes)<br>string draw(int x, int y) const|
 
-Vertical()
-Vertical(int x, int y, initializer_list<Shape*> shapes)
-Vertical(initializer_list<Shape*> shapes)
-string draw(int x, int y) const
+Polygon|
+---
+int numOfSides_<br>double sideLength_<br>double radius_|
+Polygon()<br>Polygon(int x, int y, int sides, double length)<br>Polygon(int sides, double length)<br>string draw(int x,int y) const<br>int numOfSides()<br>double sideLength()<br>double radius()|
 
-Polygon
-int numOfSides_
-double sideLength_
-double radius_
-Polygon()
-Polygon(int x, int y, int sides, double length)
-Polygon(int sides, double length)
-string draw(int x,int y) const
-int numOfSides()
-double sideLength()
-double radius()
+Square|
+---
+|
+Square()<br>Square(int x, int y, double side)<br>Square(double side)|
 
-Square
+Triangle|
+---
+|
+Triangle()<br>Triangle(int x, int y, double side)<br>Triangle(double side)|
 
-Square()
-Square(int x, int y, double side)
-Square(double side) 
+Rectangle|
+---
+double width_<br>double height_|
+Rectangle()<br>Rectangle(int x, int y, double w, double h)<br>Rectangle(double w, double h)<br>string draw(int x, int y) const|
 
-Triangle
+Spacer|
+---
+|
+Spacer()<br>Spacer(int x, int y, double w, double h) <br>Spacer(double w, double h) <br>string draw(int x, int y) const|
 
-Triangle() : Polygon(0,0,3,0)
-Triangle(int x, int y, double side)
-Triangle(double side)
+Rotated|
+---
+Shape * shape_<br>int angle_|
+Rotated()<br>Rotated(Shape * shape, int angle)<br>string draw() const<br>string draw(int x, int y) const|
 
-Rectangle
-double width_
-double height_
-Rectangle()
-Rectangle(int x, int y, double w, double h)
-Rectangle(double w, double h)
-string draw(int x, int y) const
-
-Spacer
-
-Spacer()
-Spacer(int x, int y, double w, double h) 
-Spacer(double w, double h) 
-string draw(int x, int y) const;
-
-Rotated
-Shape * shape_
-int angle_
-Rotated()
-Rotated(Shape * shape, int angle)
-string draw() const
-string draw(int x, int y) const
-
-Scaled
-Shape * shape_
-double sx_
-double sy_
-Scaled()
-Scaled(Shape* shape, double sx, double sy) 
-string draw() const;
-string draw(int x, int y) const;
+Scaled|
+---
+Shape * shape_<br>double sx_<br>double sy_|
+Scaled()<br>Scaled(Shape* shape, double sx, double sy) <br>string draw() const<br>string draw(int x, int y) const|
 

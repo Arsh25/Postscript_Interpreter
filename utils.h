@@ -11,6 +11,7 @@
 
 #include <string>
 using std::string;
+using std::to_string;
 #include <sstream>
 using std::stringstream;
 #include <utility>
@@ -18,21 +19,7 @@ using std::pair;
 #include <cmath>
 
 
-const double PI = 3.14159;
-
-/**
- * @brief turns a variable into a string
- * @details uses stringstream with an insertion operator to convert the variable to a string
- * 
- * @param var value by reference
- * @return string version of variable
- */
-template<typename T>
-string stringify(const T& var){
-	stringstream ss;
-	ss << var;
-	return ss.str();
-}
+//const double PI = 3.14159;
 
 string psLine(int,int,int,int);
 string psArc(int,int,double,int,int);
