@@ -29,5 +29,9 @@ double getWidth(int,double);
 double getHeight(int,double);
 double getRadius(int,double);
 
+double getConvexX(int k, int n, double r);
+double getConvexY(int k, int n, double r);
+double getConcaveX(int k, int n, double r);
+double getConcaveY(int k, int n, double r);
 
 #endif
