@@ -1,10 +1,13 @@
 #PostScript Interpreter Design Document
 
 CS 372 Software Construction
+
 Project 2 – PostScript Interpreter
 
 Jason Warta
+
 Arsh Chauhan
+
 Lonny Strunk
 
 Updated: April 19, 2016
@@ -22,34 +25,14 @@ We are utilizing a documentation generation tool from source code called [Doxyge
 
 ##Class Hierarchy
 ![Figure 1: Shape Abstract Class Hierarchy](https://github.com/Arsh25/Postscript_Interpreter/blob/master/html/class_shape.png)
+
 Figure 1: Shape Abstract Class Hierarchy
 
 Shape |
 ---
-int x_
-int y_
-double boundsWidth_	
-double boundsHeight_ |
-Shape()
-Shape(int x, int y, double width, double height)
-Shape(double width,double height)
-virtual ~Shape()
-Shape (const Shape & other){}
-virtual string draw() const
-virtual string draw(int x,int y) const
-virtual void place(int x, int y)
-string bounds()
-double width()
-double height()
-int x()
-void x(int x)
-int y()
-void y(int y)
-string operator()(int x, int y)
-virtual int numOfSides()
-virtual double sideLength()
-virtual double radius()
-ostream & operator<<(ostream &os, const Shape & shape) |
+int x_<br>int y_<br>double boundsWidth_<br>double boundsHeight_ |
+Shape()<br>Shape(int x, int y, double width, double height)<br>Shape(double width,double height)<br>virtual ~Shape()
+<br>Shape (const Shape & other)<br>virtual string draw() const<br>virtual string draw(int x,int y) const<br>virtual void place(int x, int y)<br>string bounds()<br>double width()<br>double height()<br>int x()<br>void x(int x)<br>int y()<br>void y(int y)<br>string operator()(int x, int y)<br>virtual int numOfSides()<br>virtual double sideLength()<br>virtual double radius()<br>ostream & operator<<(ostream &os, const Shape & shape) |
 
 Circle
 double radius_
