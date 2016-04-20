@@ -32,6 +32,7 @@ public:
 		: Polygon(0,0,sides,length) 
 			{};
 
+    virtual string draw() const;
 	string draw(int x,int y) const;
 
 	int numOfSides();

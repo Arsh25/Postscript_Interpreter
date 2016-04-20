@@ -18,6 +18,10 @@ using std::stringstream;
 // using std::pair;
 #include <cmath>
 
+//functions that output ps code
+string psBegin();
+string psPageBreak();
+
 //functions that generate ps code
 string psLine(int,int);
 string psMove(int,int);

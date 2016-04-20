@@ -16,6 +16,12 @@ using std::swap;
 #include "spacer.h"
 #include "circle.h"
 
+//Complex Shapes
+#include "layered.h"
+#include "rotate.h"
+#include "star.h" //Our custom shape
+#include "scaled.h"
+
 
 
 /*	utils.h test functions 
@@ -323,12 +329,7 @@ TEST_CASE ("Testing width and height calculations","[Utils]")
 	}
 }
 
-<<<<<<< HEAD
-
-TEST_CASE ("Rectangle Construction","[Rectangle]")
-=======
-TEST_CASE ("Simple Shape Default Construction","[Shape]")
->>>>>>> bace2b341e5d630f6d1aa78746288a06a84aa899
+TEST_CASE ("Simple Shape Default Construction","[Construction]")
 {
 	Rectangle defaultRect;
 	string postScript, expectPS;
@@ -363,6 +364,18 @@ TEST_CASE ("Simple Shape Default Construction","[Shape]")
 
 }
 
+//Commented out since drawing complex shapes means getting the initializer list
+/*TEST_CASE ("Complex Shape Default Construction","[Construction]")
+{
+	string returnedPS, expectedPS;
+	Layered defaultLayered;
+	returnedPS = defaultLayered.draw(144,72);
+	expectedPS = 
+
+	Horizontal defaultHorizontal;
+	Vertical defaultVertical;
+
+}*/
 
 TEST_CASE("Polygon Draw","[Polygon] [draw function]")
 {
