@@ -267,62 +267,68 @@ TEST_CASE ("Testing width and height calculations","[Utils]")
 	std::vector<double> lenCollection;
 	std::vector<int> sidesCollection;
 
-	lenCollection = {72,144, 150.45, 160, 621, 630.79};
-	sidesCollection = {2,3,4,5,6,10,12,13};
-	for(auto v : lenCollection)
+	for (int i=0;i<NUM;i++)
 	{
-		expectWidth = testGetwidth(sidesCollection[0],v);
-		returnedWidth = getWidth(sidesCollection[0],v);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[1],v);
-		returnedWidth = getWidth(sidesCollection[1],v);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[2],v);
-		returnedWidth = getWidth(sidesCollection[2],v);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[3],v);
-		returnedWidth = getWidth(sidesCollection[3],v);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[4],v);
-		returnedWidth = getWidth(sidesCollection[4],v);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[5],v);
-		returnedWidth = getWidth(sidesCollection[5],v);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[6],v);
-		returnedWidth = getWidth(sidesCollection[6],v);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
-		expectWidth = testGetwidth(sidesCollection[7],v);
-		returnedWidth = getWidth(sidesCollection[7],v);
-		REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+		lenCollection.push_back(len(rndDev));
+		sidesCollection.push_back(sides(rndDev));
 	}
 
-	for(auto v : lenCollection)
+	for(int i=0;i<NUM;i++)
 	{
-		expectHeight = testGetHeight(sidesCollection[0],v);
-		returnedHeight = getHeight(sidesCollection[0],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[1],v);
-		returnedHeight = getHeight(sidesCollection[1],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[2],v);
-		returnedHeight = getHeight(sidesCollection[2],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[3],v);
-		returnedHeight = getHeight(sidesCollection[3],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[4],v);
-		returnedHeight = getHeight(sidesCollection[4],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[5],v);
-		returnedHeight = getHeight(sidesCollection[5],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[6],v);
-		returnedHeight = getHeight(sidesCollection[6],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
-		expectHeight = testGetHeight(sidesCollection[7],v);
-		returnedHeight = getHeight(sidesCollection[7],v);
-		REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		SECTION ("Testing Width")
+		{
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+			expectWidth = testGetwidth(sidesCollection[i],lenCollection[i]);
+			returnedWidth = getWidth(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectWidth - returnedWidth) <= ERROR);
+		}
+		SECTION("Testing height")
+		{
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+			expectHeight = testGetHeight(sidesCollection[i],lenCollection[i]);
+			returnedHeight = getHeight(sidesCollection[i],lenCollection[i]);
+			REQUIRE( abs(expectHeight - returnedHeight) <= ERROR);
+		}
 	}
 }
 
@@ -359,6 +365,152 @@ TEST_CASE ("Simple Shape Default Construction","[Construction]")
 	expectPS = testCircleDraw(72,72,0);
 	REQUIRE(expectPS == postScript);	
 
+}
+
+TEST_CASE( "Simple Shape Construction", "Construction")
+{
+	SECTION ("Polygons")
+	{
+		const int NUM = 5;
+		random_device rndDev;
+		mt19937 randomNum(rndDev());
+		uniform_real_distribution<> len(0,842);
+		uniform_int_distribution<>x (0,842);
+		uniform_int_distribution<>y (0,595);
+
+		std::vector<double> lenCollection;
+		std::vector<int> xCollection;
+		std::vector<int> yCollection;
+		std::vector<int> sidesCollection = {2,3,4,5,6,7,8,9,10,100,1000};
+
+		string expectedPS, returnedPS;
+
+		for(int i=0; i<NUM; i++)
+		{
+			lenCollection.push_back(len(rndDev));
+			xCollection.push_back(x(rndDev));
+			yCollection.push_back(y(rndDev));
+		}
+		for (int i = 0; i < NUM; ++i)
+		{
+			Polygon poly1(xCollection[i],yCollection[i],4,lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = poly1.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly2(xCollection[i],yCollection[i],4,lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = poly2.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly3(xCollection[i],yCollection[i],4,lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = poly3.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly4(xCollection[i],yCollection[i],sidesCollection[3],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[3],lenCollection[i]);
+			returnedPS = poly4.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly5(xCollection[i],yCollection[i],sidesCollection[4],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[4],lenCollection[i]);
+			returnedPS = poly5.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly6(xCollection[i],yCollection[i],sidesCollection[5],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[5],lenCollection[i]);
+			returnedPS = poly6.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly7(xCollection[i],yCollection[i],sidesCollection[6],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[6],lenCollection[i]);
+			returnedPS = poly7.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly8(xCollection[i],yCollection[i],sidesCollection[7],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[7],lenCollection[i]);
+			returnedPS = poly8.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly9(xCollection[i],yCollection[i],sidesCollection[8],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[8],lenCollection[i]);
+			returnedPS = poly9.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly10(xCollection[i],yCollection[i],sidesCollection[9],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[9],lenCollection[i]);
+			returnedPS = poly10.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly11(xCollection[i],yCollection[i],sidesCollection[10],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[10],lenCollection[i]);
+			returnedPS = poly11.draw();
+			REQUIRE(expectedPS == returnedPS);
+
+		}
+
+	}
+	SECTION ("Squares")
+	{
+		const int NUM = 5;
+		random_device rndDev;
+		mt19937 randomNum(rndDev());
+		uniform_real_distribution<> len(0,842);
+		uniform_int_distribution<>x (0,842);
+		uniform_int_distribution<>y (0,595);
+
+		std::vector<double> lenCollection;
+		std::vector<int> xCollection;
+		std::vector<int> yCollection;
+
+		string expectedPS, returnedPS;
+
+		for(int i=0; i<NUM; i++)
+		{
+			lenCollection.push_back(len(rndDev));
+			xCollection.push_back(x(rndDev));
+			yCollection.push_back(y(rndDev));
+		}
+		for (int i = 0; i < NUM; ++i)
+		{
+			Square square1(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square1.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square sqaue2(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = sqaue2.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square3(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square3.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square4(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square4.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square5(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square5.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square6(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square6.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square8(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square8.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square9(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square9.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square10(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square10.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square11(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square11.draw();
+			REQUIRE(expectedPS == returnedPS);
+
+		}
+	}
 }
 
 //Commented out since drawing complex shapes means getting the initializer list
