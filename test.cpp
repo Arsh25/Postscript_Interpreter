@@ -261,13 +261,8 @@ TEST_CASE ("Rectangle Construction","[Rectangle]")
 	Rectangle defaultRect;
 	string postScript, expectPS;
 	postScript = defaultRect.draw(72,72);
-
-	//Helper variables, keeps test interface 
-	// similar to internal interface
-	int width, height, x, y;
-	width = 72;
-	height = 144;
-	x=y=72; //Draw 1 inch from left edge
+	expectPS = testPolyDraw(72,72,4,0);
+	REQUIRE(expectPS == postScript);
 }
 
 TEST_CASE("Polygon Draw","[Polygon] [draw function]")
