@@ -29,7 +29,7 @@ string testPsLine(int x, int y)
 
 string testPsMove (int x, int y)
 {
-	return to_string(x) + " " + to_string(y) + " " +"lineto\n";
+	return to_string(x) + " " + to_string(y) + " " +"moveto\n";
 }
 
 string testPsArc(int x, int y, double r, int startAngle, int endAngle )
@@ -83,22 +83,18 @@ double testGetwidth (int sides, double len)
 string testPolyDraw (int x, int y, int sides, double length)
 {
 	stringstream ss;
-	ss << "gyve\n";
-	ss << "newpath\n";
-	ss << x <<" " <<y << " translate\n";
+	ss << testPsHeader(x,y);
 	double vertX = testCalcX(0,sides,length);
 	double vertY = testCalcY(0,sides,length);
-	ss << vertX << " "<< vertY << " moveto\n";
+	ss << testPsMove(vertX,vertY);
 
 	for(int i = 1; i < sides; i++){
 		vertX = testCalcX(i,sides,length);
 		vertY = testCalcY(i,sides,length);
-		ss << vertX << " " << vertY << " lineto\n";
+		ss << testPsLine(vertX,vertY);
 	}
 
-	ss << "closepath\n";
-	ss << "styke\n";
-	ss << "gresyre\n";
+	ss << testPsFooter();
 
 	return ss.str();
 
