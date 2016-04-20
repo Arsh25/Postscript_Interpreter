@@ -22,9 +22,9 @@ using std::swap;
 */
 
 
-string testPsLine(int x, int y,int x1, int y1)
+string testPsLine(int x, int y)
 {
-	return to_string(x)+ " "+ to_string(y)+ " "+ "moveto " + to_string(x1) + " " + to_string(y1)+ " lineto" ; 
+	return to_string(x)+ " "+ to_string(y)+ " "+ "lineto\n" ; 
 }
 
 string testPsArc(int x, int y, double r, int startAngle, int endAngle )
@@ -42,6 +42,27 @@ double testCalcY(int k, int n, double l)
 {
 	return (-l/2)*(cos(((2*k+1)*M_PI)/n)/(sin(M_PI/n)));		
 }
+
+double testGetwidth (int sides, double len)
+{
+	if (sides % 2 !=0)
+	{
+		return len*((sin(M_PI*(sides-1))/2*sides)/(sin(M_PI/sides)));
+	}
+	else
+	{
+		if (sides % 4 != 0)
+		{
+			return len*(1/(sin(M_PI/sides)));
+		}
+	
+		else
+		{
+			return len*((cos(M_PI/sides))/(sin(M_PI/sides)));
+		}
+	}
+}
+
 
 
 string testPolyDraw (int x, int y, int sides, double length)
@@ -106,8 +127,8 @@ TEST_CASE ("Testing utils drawing helpers","[Utils]")
 	for (int i = 0; i<NUM; i++)
 	{
 		string expectedPS, returnedPS;
-		expectedPS = testPsLine(x1Collection[i],y1Collection[i], x2Collection[i], y2Collection[i]);
-		returnedPS = psLine(x1Collection[i],y1Collection[i], x2Collection[i], y2Collection[i]);
+		expectedPS = testPsLine(x1Collection[i],y1Collection[i]);
+		returnedPS = psLine(x1Collection[i],y1Collection[i]);
 		REQUIRE(returnedPS == expectedPS);
 		expectedPS=returnedPS=string();
 		expectedPS = testPsArc(x1Collection[i], y1Collection[i], radiiColection[i]  , startAngleCollection[i],endAngleCollection[i]);
