@@ -393,16 +393,16 @@ TEST_CASE( "Simple Shape Construction", "Construction")
 		}
 		for (int i = 0; i < NUM; ++i)
 		{
-			Polygon poly1(xCollection[i],yCollection[i],sidesCollection[0],lenCollection[i]);
-			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[0],lenCollection[i]);
+			Polygon poly1(xCollection[i],yCollection[i],4,lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
 			returnedPS = poly1.draw();
 			REQUIRE(expectedPS == returnedPS);
-			Polygon poly2(xCollection[i],yCollection[i],sidesCollection[1],lenCollection[i]);
-			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[1],lenCollection[i]);
+			Polygon poly2(xCollection[i],yCollection[i],4,lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
 			returnedPS = poly2.draw();
 			REQUIRE(expectedPS == returnedPS);
-			Polygon poly3(xCollection[i],yCollection[i],sidesCollection[2],lenCollection[i]);
-			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[2],lenCollection[i]);
+			Polygon poly3(xCollection[i],yCollection[i],4,lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
 			returnedPS = poly3.draw();
 			REQUIRE(expectedPS == returnedPS);
 			Polygon poly4(xCollection[i],yCollection[i],sidesCollection[3],lenCollection[i]);
@@ -440,6 +440,76 @@ TEST_CASE( "Simple Shape Construction", "Construction")
 
 		}
 
+	}
+	SECTION ("Squares")
+	{
+		const int NUM = 5;
+		random_device rndDev;
+		mt19937 randomNum(rndDev());
+		uniform_real_distribution<> len(0,842);
+		uniform_int_distribution<>x (0,842);
+		uniform_int_distribution<>y (0,595);
+
+		std::vector<double> lenCollection;
+		std::vector<int> xCollection;
+		std::vector<int> yCollection;
+
+		string expectedPS, returnedPS;
+
+		for(int i=0; i<NUM; i++)
+		{
+			lenCollection.push_back(len(rndDev));
+			xCollection.push_back(x(rndDev));
+			yCollection.push_back(y(rndDev));
+		}
+		for (int i = 0; i < NUM; ++i)
+		{
+			Square square1(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square1.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square sqaue2(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = sqaue2.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square3(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square3.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square4(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square4.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square5(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square5.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square6(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square6.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square8(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square8.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square9(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square9.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square10(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square10.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Square square11(xCollection[i],yCollection[i],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],4,lenCollection[i]);
+			returnedPS = square11.draw();
+			REQUIRE(expectedPS == returnedPS);
+
+		}
 	}
 }
 
