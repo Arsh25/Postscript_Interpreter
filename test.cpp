@@ -367,6 +367,82 @@ TEST_CASE ("Simple Shape Default Construction","[Construction]")
 
 }
 
+TEST_CASE( "Simple Shape Construction", "Construction")
+{
+	SECTION ("Polygons")
+	{
+		const int NUM = 5;
+		random_device rndDev;
+		mt19937 randomNum(rndDev());
+		uniform_real_distribution<> len(0,842);
+		uniform_int_distribution<>x (0,842);
+		uniform_int_distribution<>y (0,595);
+
+		std::vector<double> lenCollection;
+		std::vector<int> xCollection;
+		std::vector<int> yCollection;
+		std::vector<int> sidesCollection = {2,3,4,5,6,7,8,9,10,100,1000};
+
+		string expectedPS, returnedPS;
+
+		for(int i=0; i<NUM; i++)
+		{
+			lenCollection.push_back(len(rndDev));
+			xCollection.push_back(x(rndDev));
+			yCollection.push_back(y(rndDev));
+		}
+		for (int i = 0; i < NUM; ++i)
+		{
+			Polygon poly1(xCollection[i],yCollection[i],sidesCollection[0],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[0],lenCollection[i]);
+			returnedPS = poly1.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly2(xCollection[i],yCollection[i],sidesCollection[1],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[1],lenCollection[i]);
+			returnedPS = poly2.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly3(xCollection[i],yCollection[i],sidesCollection[2],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[2],lenCollection[i]);
+			returnedPS = poly3.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly4(xCollection[i],yCollection[i],sidesCollection[3],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[3],lenCollection[i]);
+			returnedPS = poly4.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly5(xCollection[i],yCollection[i],sidesCollection[4],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[4],lenCollection[i]);
+			returnedPS = poly5.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly6(xCollection[i],yCollection[i],sidesCollection[5],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[5],lenCollection[i]);
+			returnedPS = poly6.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly7(xCollection[i],yCollection[i],sidesCollection[6],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[6],lenCollection[i]);
+			returnedPS = poly7.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly8(xCollection[i],yCollection[i],sidesCollection[7],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[7],lenCollection[i]);
+			returnedPS = poly8.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly9(xCollection[i],yCollection[i],sidesCollection[8],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[8],lenCollection[i]);
+			returnedPS = poly9.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly10(xCollection[i],yCollection[i],sidesCollection[9],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[9],lenCollection[i]);
+			returnedPS = poly10.draw();
+			REQUIRE(expectedPS == returnedPS);
+			Polygon poly11(xCollection[i],yCollection[i],sidesCollection[10],lenCollection[i]);
+			expectedPS = testPolyDraw(xCollection[i],yCollection[i],sidesCollection[10],lenCollection[i]);
+			returnedPS = poly11.draw();
+			REQUIRE(expectedPS == returnedPS);
+
+		}
+
+	}
+}
+
 //Commented out since drawing complex shapes means getting the initializer list
 /*TEST_CASE ("Complex Shape Default Construction","[Construction]")
 {
