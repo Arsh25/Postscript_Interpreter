@@ -5,3 +5,4 @@ test
 run
 build
 *.ps
+latex/*

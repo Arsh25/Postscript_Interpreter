@@ -5,6 +5,7 @@ var test_8cpp =
     [ "TEST_CASE", "test_8cpp.html#adc04d9b255824240b506edadf2e1085a", null ],
     [ "TEST_CASE", "test_8cpp.html#a721d97175747b858b178a04d2850d8ad", null ],
     [ "TEST_CASE", "test_8cpp.html#a89ad77ba55c2942dff7df74acb9e62dc", null ],
+    [ "TEST_CASE", "test_8cpp.html#a6d570d8cc059ae3dea9f7dc5829477a9", null ],
     [ "TEST_CASE", "test_8cpp.html#a0db85045df9d5fa1a652c27f0fb40097", null ],
     [ "TEST_CASE", "test_8cpp.html#abcfdfc36ff5292f8feb49f21c6ab5d63", null ],
     [ "TEST_CASE", "test_8cpp.html#ad2be3170398cbf5c9ae07cbb4621b78c", null ],
