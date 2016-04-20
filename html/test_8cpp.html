@@ -114,6 +114,7 @@ $(document).ready(function(){initNavTree('test_8cpp.html','');});
 <div class="textblock"><code>#include &quot;<a class="el" href="catch_8hpp_source.html">catch.hpp</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &quot;<a class="el" href="rectangle_8h_source.html">rectangle.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="polygon_8h_source.html">polygon.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -124,16 +125,22 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a37c1a254560b9af8f5f5ea2e7473783b"><td class="memItemLeft" align="right" valign="top">pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a37c1a254560b9af8f5f5ea2e7473783b">testGetPoint</a> (int k, int sides, double length)</td></tr>
-<tr class="separator:a37c1a254560b9af8f5f5ea2e7473783b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0798500b8334cc2c49953e1ebbbcf4b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ac0798500b8334cc2c49953e1ebbbcf4b">testPolyDraw</a> (int x, int y, int sides, int length)</td></tr>
-<tr class="separator:ac0798500b8334cc2c49953e1ebbbcf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b955489173fa85a27a3e845a12c980"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a74b955489173fa85a27a3e845a12c980">TEST_CASE</a> (&quot;Utils Functions&quot;,&quot;Utils&quot;)</td></tr>
-<tr class="separator:a74b955489173fa85a27a3e845a12c980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11dbf7e8b9a70506cee960cb8eb7ac1"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ae11dbf7e8b9a70506cee960cb8eb7ac1">testPsArc</a> (int x, int y, double r, int startAngle, int endAngle)</td></tr>
+<tr class="separator:ae11dbf7e8b9a70506cee960cb8eb7ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ad69bdaec05e3c7e33a6c0e2457a52"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a21ad69bdaec05e3c7e33a6c0e2457a52">testCalcX</a> (int k, int n, double l)</td></tr>
+<tr class="separator:a21ad69bdaec05e3c7e33a6c0e2457a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f271afc15ce17c857a60f9256262e0f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a0f271afc15ce17c857a60f9256262e0f">testCalcY</a> (int k, int n, double l)</td></tr>
+<tr class="separator:a0f271afc15ce17c857a60f9256262e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9326b802b363d823b82a62ef6f44dcb"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#ae9326b802b363d823b82a62ef6f44dcb">testPolyDraw</a> (int x, int y, int sides, double length)</td></tr>
+<tr class="separator:ae9326b802b363d823b82a62ef6f44dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc04d9b255824240b506edadf2e1085a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#adc04d9b255824240b506edadf2e1085a">TEST_CASE</a> (&quot;Testing Centers&quot;,&quot;[Utils]&quot;)</td></tr>
+<tr class="separator:adc04d9b255824240b506edadf2e1085a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8118022f00ec40770a5fe4f658be1e9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a8118022f00ec40770a5fe4f658be1e9e">TEST_CASE</a> (&quot;Rectangle Construction&quot;,&quot;[<a class="el" href="class_rectangle.html">Rectangle</a>]&quot;)</td></tr>
 <tr class="separator:a8118022f00ec40770a5fe4f658be1e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af90984b9c05d555841906ef3825e5f2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#af90984b9c05d555841906ef3825e5f2b">TEST_CASE</a> (&quot;Polygon Draw&quot;,&quot;[<a class="el" href="class_polygon.html">Polygon</a>]&quot;)</td></tr>
-<tr class="separator:af90984b9c05d555841906ef3825e5f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db85045df9d5fa1a652c27f0fb40097"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#a0db85045df9d5fa1a652c27f0fb40097">TEST_CASE</a> (&quot;Polygon Draw&quot;,&quot;[<a class="el" href="class_polygon.html">Polygon</a>] [draw function]&quot;)</td></tr>
+<tr class="separator:a0db85045df9d5fa1a652c27f0fb40097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfdfc36ff5292f8feb49f21c6ab5d63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html#abcfdfc36ff5292f8feb49f21c6ab5d63">TEST_CASE</a> (&quot;Shape operator &lt;&lt;&quot;,&quot;[<a class="el" href="class_shape.html">Shape</a>] [operator &lt;&lt;]&quot;)</td></tr>
+<tr class="separator:abcfdfc36ff5292f8feb49f21c6ab5d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a656eb5868e824d59f489f910db438420"></a>
@@ -149,21 +156,21 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a74b955489173fa85a27a3e845a12c980"></a>
+<a class="anchor" id="adc04d9b255824240b506edadf2e1085a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">&quot;Utils Functions&quot;&#160;</td>
+          <td class="paramtype">&quot;Testing Centers&quot;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Utils&quot;&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">&quot;&quot;&#160;</td>
+          <td class="paramname">[Utils]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -201,7 +208,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af90984b9c05d555841906ef3825e5f2b"></a>
+<a class="anchor" id="a0db85045df9d5fa1a652c27f0fb40097"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -214,8 +221,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;&quot;&#160;</td>
-          <td class="paramname">[Polygon]&#160;</td>
+          <td class="paramtype">&quot; &quot;&#160;</td>
+          <td class="paramname">[Polygon][draw function]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -227,12 +234,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a37c1a254560b9af8f5f5ea2e7473783b"></a>
+<a class="anchor" id="abcfdfc36ff5292f8feb49f21c6ab5d63"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">pair&lt;double,double&gt; testGetPoint </td>
+          <td class="memname">TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Shape operator &lt;&lt;&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot; &quot;&#160;</td>
+          <td class="paramname">[Shape][operator&lt;&lt;]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a21ad69bdaec05e3c7e33a6c0e2457a52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double testCalcX </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>k</em>, </td>
@@ -241,13 +274,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sides</em>, </td>
+          <td class="paramname"><em>n</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -259,7 +292,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac0798500b8334cc2c49953e1ebbbcf4b"></a>
+<a class="anchor" id="a0f271afc15ce17c857a60f9256262e0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double testCalcY </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9326b802b363d823b82a62ef6f44dcb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -284,8 +349,52 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae11dbf7e8b9a70506cee960cb8eb7ac1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string testPsArc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endAngle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -303,7 +412,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="test_8cpp.html">test.cpp</a></li>
-    <li class="footer">Generated on Sun Apr 17 2016 00:46:04 for Postscript Interpreter by
+    <li class="footer">Generated on Tue Apr 19 2016 19:35:43 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

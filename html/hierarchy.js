@@ -117,7 +117,8 @@ var hierarchy =
         [ "Spacer", "class_spacer.html", null ]
       ] ],
       [ "Rotated", "class_rotated.html", null ],
-      [ "Scaled", "class_scaled.html", null ]
+      [ "Scaled", "class_scaled.html", null ],
+      [ "Star", "class_star.html", null ]
     ] ],
     [ "Catch::SourceLineInfo", "struct_catch_1_1_source_line_info.html", null ],
     [ "Catch::StreamEndStop", "struct_catch_1_1_stream_end_stop.html", null ],

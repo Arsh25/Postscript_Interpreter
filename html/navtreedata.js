@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "Postscript Interpreter", "index.html", [
+    [ "designDocument", "md_design_document.html", null ],
     [ "Postscript_Interpreter", "md__r_e_a_d_m_e.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -32,7 +33,6 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -43,8 +43,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "class_catch_1_1_assertion_result.html#ac368a7490af7669decd58efea7d7dc54",
-"class_vertical.html#a3356dc6b2454dea361e08224b1bb187c",
-"struct_catch_1_1_matchers_1_1_impl_1_1_matcher.html#a9d31e5018fea24efa08c3cbf5aa4475d"
+"class_triangle.html#a55a9c6195c3f384f3b21b90a80ddc5c3",
+"struct_catch_1_1_matchers_1_1_impl_1_1_matcher.html#a1d3b73f684611a6a71396caf74427287"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

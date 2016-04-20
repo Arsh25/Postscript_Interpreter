@@ -21,7 +21,8 @@ using std::pair;
 
 //const double PI = 3.14159;
 
-string psLine(int,int,int,int);
+string psLine(int,int);
+string psMove(int,int);
 string psArc(int,int,double,int,int);
 double calcX(int,int,double);
 double calcY(int,int,double);

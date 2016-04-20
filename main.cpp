@@ -78,8 +78,12 @@ int main(){
 	cout << rTriTwo(100,500) << endl;
 	cout << rTriThr(100,500) << endl;
 
-	Star star(6,20,5);
+	Star star(5,10,30);
 	cout << star(100,600) << endl;
+
+	Rotated rStar(&star,90);
+	cout << rStar(150,600) << endl;
+
 
 	cout << "showpage" << endl;
 

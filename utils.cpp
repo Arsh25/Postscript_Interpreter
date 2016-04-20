@@ -10,16 +10,27 @@
 
 /**
  * @brief generates ps code for drawing a line
- * @details returns a string containing the ps code for drawing a line, in the form 'x0 y0 move x1 y1 rlineto'
+ * @details returns a string containing the ps code for drawing a line, in the form "x y lineto\n"
  * 
- * @param x0 Point 1 x value
- * @param y0 Point 1 y value
- * @param x1 Point 2 x value
- * @param y1 Point 2 y value
+ * @param x x coordinate of endpoint
+ * @param y y coordinate of endpoint
  * @return string with ps code
  */
-string psLine(int x0, int y0, int x1, int y1){
-	return to_string(x0) + " " + to_string(y0) + " moveto " + to_string(x1) + " " + to_string(y1) + " lineto";
+string psLine(int x, int y){
+	return to_string(x) + " " + to_string(y) + " lineto\n";
+}
+
+/**
+ * @brief generates ps code for moving the cursor
+ * @details returns a string containing the ps code for moving the ps cursor, in the form "x y moveto\n"
+ * 
+ * @param x x coordinate of target point
+ * @param y y coordinate of target point
+ * 
+ * @return string with ps code
+ */
+string psMove(int x, int y){
+	return to_string(x) + " " + to_string(y) + " moveto\n";
 }
 
 /**
@@ -150,7 +161,7 @@ double getConvexY(int k, int n, double r){
  * @return double, x coordinate
  */
 double getConcaveX(int k, int n, double r){
-	return r * cos( (2 * M_PI * k + PI) / n);
+	return r * cos( (2 * M_PI * k + M_PI) / n);
 }
 
 /**
@@ -163,5 +174,5 @@ double getConcaveX(int k, int n, double r){
  * @return double, y coordinate
  */
 double getConcaveY(int k, int n, double r){
-	return r * sin( (2 * M_PI * k + PI) / n);
+	return r * sin( (2 * M_PI * k + M_PI) / n);
 }

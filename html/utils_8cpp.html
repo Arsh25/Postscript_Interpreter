@@ -114,9 +114,12 @@ $(document).ready(function(){initNavTree('utils_8cpp.html','');});
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a36454f5ea3743d5678425f8a55f17a7f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#a36454f5ea3743d5678425f8a55f17a7f">psLine</a> (int x0, int y0, int x1, int y1)</td></tr>
-<tr class="memdesc:a36454f5ea3743d5678425f8a55f17a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for drawing a line  <a href="#a36454f5ea3743d5678425f8a55f17a7f">More...</a><br /></td></tr>
-<tr class="separator:a36454f5ea3743d5678425f8a55f17a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a4b05282aaf20b75b243a636be3c7d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#a58a4b05282aaf20b75b243a636be3c7d">psLine</a> (int x, int y)</td></tr>
+<tr class="memdesc:a58a4b05282aaf20b75b243a636be3c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for drawing a line  <a href="#a58a4b05282aaf20b75b243a636be3c7d">More...</a><br /></td></tr>
+<tr class="separator:a58a4b05282aaf20b75b243a636be3c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab26b377715fa9f6c2508a10dbe7dc052"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#ab26b377715fa9f6c2508a10dbe7dc052">psMove</a> (int x, int y)</td></tr>
+<tr class="memdesc:ab26b377715fa9f6c2508a10dbe7dc052"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for moving the cursor  <a href="#ab26b377715fa9f6c2508a10dbe7dc052">More...</a><br /></td></tr>
+<tr class="separator:ab26b377715fa9f6c2508a10dbe7dc052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4bec670532648bb474368e4a5bdffc8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#ac4bec670532648bb474368e4a5bdffc8">psArc</a> (int x, int y, double r, int startAngle, int endAngle)</td></tr>
 <tr class="memdesc:ac4bec670532648bb474368e4a5bdffc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">generates ps code for drawing an arc  <a href="#ac4bec670532648bb474368e4a5bdffc8">More...</a><br /></td></tr>
 <tr class="separator:ac4bec670532648bb474368e4a5bdffc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +138,18 @@ Functions</h2></td></tr>
 <tr class="memitem:addabdb8e2622bfc492142a9eb62e3413"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#addabdb8e2622bfc492142a9eb62e3413">getRadius</a> (int n, double l)</td></tr>
 <tr class="memdesc:addabdb8e2622bfc492142a9eb62e3413"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate radius  <a href="#addabdb8e2622bfc492142a9eb62e3413">More...</a><br /></td></tr>
 <tr class="separator:addabdb8e2622bfc492142a9eb62e3413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf9e456afb3d9b2c0618c4e811784a7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#abdf9e456afb3d9b2c0618c4e811784a7">getConvexX</a> (int k, int n, double r)</td></tr>
+<tr class="memdesc:abdf9e456afb3d9b2c0618c4e811784a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">get x  <a href="#abdf9e456afb3d9b2c0618c4e811784a7">More...</a><br /></td></tr>
+<tr class="separator:abdf9e456afb3d9b2c0618c4e811784a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8596da4188f78c1f7fb5aea1d2742c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#a7d8596da4188f78c1f7fb5aea1d2742c">getConvexY</a> (int k, int n, double r)</td></tr>
+<tr class="memdesc:a7d8596da4188f78c1f7fb5aea1d2742c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get y  <a href="#a7d8596da4188f78c1f7fb5aea1d2742c">More...</a><br /></td></tr>
+<tr class="separator:a7d8596da4188f78c1f7fb5aea1d2742c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10dd7c1d6ffdb80d059c877e03da6a4d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#a10dd7c1d6ffdb80d059c877e03da6a4d">getConcaveX</a> (int k, int n, double r)</td></tr>
+<tr class="memdesc:a10dd7c1d6ffdb80d059c877e03da6a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get x  <a href="#a10dd7c1d6ffdb80d059c877e03da6a4d">More...</a><br /></td></tr>
+<tr class="separator:a10dd7c1d6ffdb80d059c877e03da6a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ebdcf8177fc0025e773aa43f40e03f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utils_8cpp.html#a27ebdcf8177fc0025e773aa43f40e03f">getConcaveY</a> (int k, int n, double r)</td></tr>
+<tr class="memdesc:a27ebdcf8177fc0025e773aa43f40e03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get y  <a href="#a27ebdcf8177fc0025e773aa43f40e03f">More...</a><br /></td></tr>
+<tr class="separator:a27ebdcf8177fc0025e773aa43f40e03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="afd1f4d21b2ff666093d2ef34f3424292"></a>
@@ -222,6 +237,182 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double, y coordinate of vertex </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a10dd7c1d6ffdb80d059c877e03da6a4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getConcaveX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get x </p>
+<p>calculate x coordinate of a concave vertex of a star</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>vertex number, 0 - (n-1) </td></tr>
+    <tr><td class="paramname">n</td><td>number of verticies </td></tr>
+    <tr><td class="paramname">r</td><td>radius of inner circle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double, x coordinate </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a27ebdcf8177fc0025e773aa43f40e03f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getConcaveY </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get y </p>
+<p>calculate y coordinate of a concave vertex of a star</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>vertex number, 0 - (n-1) </td></tr>
+    <tr><td class="paramname">n</td><td>number of verticies </td></tr>
+    <tr><td class="paramname">r</td><td>radius of inner circle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double, y coordinate </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abdf9e456afb3d9b2c0618c4e811784a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getConvexX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get x </p>
+<p>calculate x coordinate of a convex vertex of a star</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>vertex number, 0 - (n-1) </td></tr>
+    <tr><td class="paramname">n</td><td>number of verticies </td></tr>
+    <tr><td class="paramname">r</td><td>radius out outer circle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double, x coordinate </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7d8596da4188f78c1f7fb5aea1d2742c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getConvexY </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get y </p>
+<p>calculate y coordinate of a convex vertex of a star</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>vertex number, 0 - (n-1) </td></tr>
+    <tr><td class="paramname">n</td><td>number of verticies </td></tr>
+    <tr><td class="paramname">r</td><td>radius out outer circle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double, y coordinate </dd></dl>
 
 </div>
 </div>
@@ -394,7 +585,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a36454f5ea3743d5678425f8a55f17a7f"></a>
+<a class="anchor" id="a58a4b05282aaf20b75b243a636be3c7d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -402,25 +593,13 @@ Functions</h2></td></tr>
           <td class="memname">string psLine </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x0</em>, </td>
+          <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y1</em>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -431,13 +610,48 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>generates ps code for drawing a line </p>
-<p>returns a string containing the ps code for drawing a line, in the form 'x0 y0 move x1 y1 rlineto'</p>
+<p>returns a string containing the ps code for drawing a line, in the form "x y lineto\n"</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x0</td><td>Point 1 x value </td></tr>
-    <tr><td class="paramname">y0</td><td>Point 1 y value </td></tr>
-    <tr><td class="paramname">x1</td><td>Point 2 x value </td></tr>
-    <tr><td class="paramname">y1</td><td>Point 2 y value </td></tr>
+    <tr><td class="paramname">x</td><td>x coordinate of endpoint </td></tr>
+    <tr><td class="paramname">y</td><td>y coordinate of endpoint </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string with ps code </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab26b377715fa9f6c2508a10dbe7dc052"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string psMove </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>generates ps code for moving the cursor </p>
+<p>returns a string containing the ps code for moving the ps cursor, in the form "x y moveto\n"</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x coordinate of target point </td></tr>
+    <tr><td class="paramname">y</td><td>y coordinate of target point</td></tr>
   </table>
   </dd>
 </dl>
@@ -451,7 +665,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="utils_8cpp.html">utils.cpp</a></li>
-    <li class="footer">Generated on Sun Apr 17 2016 00:46:04 for Postscript Interpreter by
+    <li class="footer">Generated on Tue Apr 19 2016 19:35:43 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

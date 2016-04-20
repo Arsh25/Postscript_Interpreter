@@ -12,6 +12,6 @@ var searchData=
   ['not',['Not',['../class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_not.html',1,'Catch::Matchers::Impl::Generic']]],
   ['notimplementedexception',['NotImplementedException',['../class_catch_1_1_not_implemented_exception.html',1,'Catch']]],
   ['notimplementedexception',['NotImplementedException',['../class_catch_1_1_not_implemented_exception.html#ab4f0a5c39d8ffb72c664e2c07e180634',1,'Catch::NotImplementedException::NotImplementedException(SourceLineInfo const &amp;lineInfo)'],['../class_catch_1_1_not_implemented_exception.html#a508a7a833455da2d3c10ea1a9d45e982',1,'Catch::NotImplementedException::NotImplementedException(NotImplementedException const &amp;)']]],
-  ['numofsides',['numOfSides',['../class_polygon.html#a3c57ca9893bf151501123b8b1787acf6',1,'Polygon::numOfSides()'],['../class_polygon.html#a879bb6a21daa4234864df67781c8ab24',1,'Polygon::numOfSides(int n)'],['../class_shape.html#ac152ef6b8150122e1e279e3ac2d9b627',1,'Shape::numOfSides()']]],
+  ['numofsides',['numOfSides',['../class_polygon.html#a3c57ca9893bf151501123b8b1787acf6',1,'Polygon::numOfSides()'],['../class_shape.html#ac152ef6b8150122e1e279e3ac2d9b627',1,'Shape::numOfSides()']]],
   ['numofsides_5f',['numOfSides_',['../class_polygon.html#a2c2596c34f01b275323971f8f29e4cd5',1,'Polygon']]]
 ];

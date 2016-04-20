@@ -11,6 +11,7 @@ var annotated =
     [ "Shape", "class_shape.html", "class_shape" ],
     [ "Spacer", "class_spacer.html", "class_spacer" ],
     [ "Square", "class_square.html", "class_square" ],
+    [ "Star", "class_star.html", "class_star" ],
     [ "Triangle", "class_triangle.html", "class_triangle" ],
     [ "Vertical", "class_vertical.html", "class_vertical" ]
 ];

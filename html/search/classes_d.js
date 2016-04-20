@@ -13,6 +13,7 @@ var searchData=
   ['sourcelineinfo',['SourceLineInfo',['../struct_catch_1_1_source_line_info.html',1,'Catch']]],
   ['spacer',['Spacer',['../class_spacer.html',1,'']]],
   ['square',['Square',['../class_square.html',1,'']]],
+  ['star',['Star',['../class_star.html',1,'']]],
   ['startswith',['StartsWith',['../struct_catch_1_1_matchers_1_1_impl_1_1_std_string_1_1_starts_with.html',1,'Catch::Matchers::Impl::StdString']]],
   ['streamendstop',['StreamEndStop',['../struct_catch_1_1_stream_end_stop.html',1,'Catch']]],
   ['stringmaker',['StringMaker',['../struct_catch_1_1_string_maker.html',1,'Catch']]],

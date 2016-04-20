@@ -24,5 +24,6 @@ var searchData=
   ['operator_7c',['operator|',['../namespace_catch.html#ab32a083e442cc09f736327d2e2865999',1,'Catch']]],
   ['operator_7c_7c',['operator||',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher.html#a2e163b264811ba76638469b537467f9e',1,'Catch::Matchers::Impl::Matcher::operator||()'],['../class_catch_1_1_matchers_1_1_impl_1_1_generic_1_1_any_of.html#a07f4ea2ae366a6521a5d7bff4522e8bf',1,'Catch::Matchers::Impl::Generic::AnyOf::operator||()'],['../class_catch_1_1_result_builder.html#ad489243e89e9f0ec3cb1f95392a537de',1,'Catch::ResultBuilder::operator||()'],['../class_catch_1_1_expression_lhs.html#a6932b72da79d6c6b03d867772ceac61b',1,'Catch::ExpressionLhs::operator||()']]],
   ['option',['Option',['../class_catch_1_1_option.html#a8efb01b593d798decc80cbbdf311f2a3',1,'Catch::Option::Option()'],['../class_catch_1_1_option.html#a5aeb9c22d48a6882bdf5fb4730b06c86',1,'Catch::Option::Option(T const &amp;_value)'],['../class_catch_1_1_option.html#af02f2e4559f06384baec0def8c68c5fd',1,'Catch::Option::Option(Option const &amp;_other)']]],
+  ['outerradius',['outerRadius',['../class_star.html#a4bdd108f370f19dc64e9b77df356e1b4',1,'Star']]],
   ['type',['type',['../class_catch_1_1_ptr.html#a27234c04feec43ffe0fd08e045557448',1,'Catch::Ptr::type()'],['../class_catch_1_1_option.html#a637d4366ae7f0ded52ce59c8cb06da7b',1,'Catch::Option::type()']]]
 ];

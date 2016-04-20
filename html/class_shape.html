@@ -128,6 +128,7 @@ Inheritance diagram for Shape:</div>
 <area href="class_rectangle.html" alt="Rectangle" shape="rect" coords="355,56,424,80"/>
 <area href="class_rotated.html" alt="Rotated" shape="rect" coords="434,56,503,80"/>
 <area href="class_scaled.html" alt="Scaled" shape="rect" coords="513,56,582,80"/>
+<area href="class_star.html" alt="Star" shape="rect" coords="592,56,661,80"/>
 <area href="class_horizontal.html" alt="Horizontal" shape="rect" coords="39,112,108,136"/>
 <area href="class_vertical.html" alt="Vertical" shape="rect" coords="118,112,187,136"/>
 <area href="class_square.html" alt="Square" shape="rect" coords="197,112,266,136"/>
@@ -163,13 +164,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab00e62f9f7cd0be450ac29437b80ce13"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#ab00e62f9f7cd0be450ac29437b80ce13">width</a> ()</td></tr>
 <tr class="memdesc:ab00e62f9f7cd0be450ac29437b80ce13"><td class="mdescLeft">&#160;</td><td class="mdescRight">get boundary width  <a href="#ab00e62f9f7cd0be450ac29437b80ce13">More...</a><br /></td></tr>
 <tr class="separator:ab00e62f9f7cd0be450ac29437b80ce13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9376e2e5310783489225cf5be29139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#a3c9376e2e5310783489225cf5be29139">width</a> (double w)</td></tr>
-<tr class="separator:a3c9376e2e5310783489225cf5be29139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11686d7b1511fc6707f4dd7b74c65111"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#a11686d7b1511fc6707f4dd7b74c65111">height</a> ()</td></tr>
 <tr class="memdesc:a11686d7b1511fc6707f4dd7b74c65111"><td class="mdescLeft">&#160;</td><td class="mdescRight">get boundary box height  <a href="#a11686d7b1511fc6707f4dd7b74c65111">More...</a><br /></td></tr>
 <tr class="separator:a11686d7b1511fc6707f4dd7b74c65111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401106fadf6a2ad4f2a4f6378461fb42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#a401106fadf6a2ad4f2a4f6378461fb42">height</a> (double h)</td></tr>
-<tr class="separator:a401106fadf6a2ad4f2a4f6378461fb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41e403e73d2949f1a6adfba6032c41ec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape.html#a41e403e73d2949f1a6adfba6032c41ec">x</a> ()</td></tr>
 <tr class="memdesc:a41e403e73d2949f1a6adfba6032c41ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">get x  <a href="#a41e403e73d2949f1a6adfba6032c41ec">More...</a><br /></td></tr>
 <tr class="separator:a41e403e73d2949f1a6adfba6032c41ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -443,7 +440,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string containing ps code for drawing shape at specified location </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_vertical.html#a9be329f986230ccaa35ec7f63553d658">Vertical</a>, <a class="el" href="class_horizontal.html#aea100857d1a9a269b66060b8bd32ced1">Horizontal</a>, <a class="el" href="class_polygon.html#af0f4e693010935528bb3e99bca2cc433">Polygon</a>, <a class="el" href="class_scaled.html#a643010334ff7c4d5cffb98e735a94f8e">Scaled</a>, <a class="el" href="class_layered.html#a6eb564ff0646b26fdd4175856b1a0815">Layered</a>, <a class="el" href="class_rectangle.html#ac1cd2c2307b24d001171361f95ea214f">Rectangle</a>, <a class="el" href="class_circle.html#a18f2b8aaa80fb870c3aea1798f32678b">Circle</a>, <a class="el" href="class_rotated.html#a1a83cd3f5a9fe6cd99d3eba826f46dd6">Rotated</a>, and <a class="el" href="class_spacer.html#a7c79d0ca6ccc80a08bdaa839c8e05b2f">Spacer</a>.</p>
+<p>Reimplemented in <a class="el" href="class_vertical.html#a9be329f986230ccaa35ec7f63553d658">Vertical</a>, <a class="el" href="class_horizontal.html#aea100857d1a9a269b66060b8bd32ced1">Horizontal</a>, <a class="el" href="class_polygon.html#af0f4e693010935528bb3e99bca2cc433">Polygon</a>, <a class="el" href="class_scaled.html#a643010334ff7c4d5cffb98e735a94f8e">Scaled</a>, <a class="el" href="class_layered.html#a6eb564ff0646b26fdd4175856b1a0815">Layered</a>, <a class="el" href="class_rectangle.html#ac1cd2c2307b24d001171361f95ea214f">Rectangle</a>, <a class="el" href="class_circle.html#a18f2b8aaa80fb870c3aea1798f32678b">Circle</a>, <a class="el" href="class_rotated.html#a1a83cd3f5a9fe6cd99d3eba826f46dd6">Rotated</a>, <a class="el" href="class_spacer.html#a7c79d0ca6ccc80a08bdaa839c8e05b2f">Spacer</a>, and <a class="el" href="class_star.html#abb1a219aa29c63205f1e23a056aae521">Star</a>.</p>
 
 </div>
 </div>
@@ -462,22 +459,6 @@ Protected Attributes</h2></td></tr>
 
 <p>get boundary box height </p>
 <p>get the double containing the height of the shape's boundary box </p><dl class="section return"><dt>Returns</dt><dd>double boundary height </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a401106fadf6a2ad4f2a4f6378461fb42"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Shape::height </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -641,22 +622,6 @@ Protected Attributes</h2></td></tr>
 
 <p>get boundary width </p>
 <p>get the double containing the width of the shape's boundary box </p><dl class="section return"><dt>Returns</dt><dd>double boundary width </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3c9376e2e5310783489225cf5be29139"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Shape::width </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>w</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -841,7 +806,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_shape.html">Shape</a></li>
-    <li class="footer">Generated on Sun Apr 17 2016 00:46:04 for Postscript Interpreter by
+    <li class="footer">Generated on Tue Apr 19 2016 19:35:43 for Postscript Interpreter by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

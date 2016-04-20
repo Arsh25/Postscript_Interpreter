@@ -17,21 +17,20 @@ string Star::draw(int x, int y) const{
 
 	double oVertX = getConvexX(0,numOfPoints_,outerRadius_);
 	double oVertY = getConvexY(0,numOfPoints_,outerRadius_);
-	ss << oVertX << " " << oVertY << " moveto\n";
+	ss << psMove(oVertX,oVertY);
 
 	double iVertX = getConcaveX(0,numOfPoints_,innerRadius_);
 	double iVertY = getConcaveY(0,numOfPoints_,innerRadius_);
-	ss << iVertX << " " << iVertY << " lineto\n";
-
+	ss << psLine(iVertX,iVertY);
 
 	for(int i = 1; i < numOfPoints_; i++){
 		double oVertX = getConvexX(i,numOfPoints_,outerRadius_);
 		double oVertY = getConvexY(i,numOfPoints_,outerRadius_);
-		ss << oVertX << " " << oVertY << " lineto\n";
+		ss << psLine(oVertX,oVertY);
 
 		double iVertX = getConcaveX(i,numOfPoints_,innerRadius_);
 		double iVertY = getConcaveY(i,numOfPoints_,innerRadius_);
-		ss << iVertX << " " << iVertY << " lineto\n";
+		ss << psLine(iVertX,iVertY);
 	}
 
 	ss << "closepath\n";

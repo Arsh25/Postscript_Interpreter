@@ -36,6 +36,10 @@ var files =
     [ "spacer.h", "spacer_8h.html", [
       [ "Spacer", "class_spacer.html", "class_spacer" ]
     ] ],
+    [ "star.cpp", "star_8cpp.html", null ],
+    [ "star.h", "star_8h.html", [
+      [ "Star", "class_star.html", "class_star" ]
+    ] ],
     [ "test.cpp", "test_8cpp.html", "test_8cpp" ],
     [ "utils.cpp", "utils_8cpp.html", "utils_8cpp" ],
     [ "utils.h", "utils_8h.html", "utils_8h" ]

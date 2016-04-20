@@ -1,9 +1,12 @@
 var test_8cpp =
 [
     [ "CATCH_CONFIG_MAIN", "test_8cpp.html#a656eb5868e824d59f489f910db438420", null ],
-    [ "TEST_CASE", "test_8cpp.html#a74b955489173fa85a27a3e845a12c980", null ],
+    [ "TEST_CASE", "test_8cpp.html#adc04d9b255824240b506edadf2e1085a", null ],
     [ "TEST_CASE", "test_8cpp.html#a8118022f00ec40770a5fe4f658be1e9e", null ],
-    [ "TEST_CASE", "test_8cpp.html#af90984b9c05d555841906ef3825e5f2b", null ],
-    [ "testGetPoint", "test_8cpp.html#a37c1a254560b9af8f5f5ea2e7473783b", null ],
-    [ "testPolyDraw", "test_8cpp.html#ac0798500b8334cc2c49953e1ebbbcf4b", null ]
+    [ "TEST_CASE", "test_8cpp.html#a0db85045df9d5fa1a652c27f0fb40097", null ],
+    [ "TEST_CASE", "test_8cpp.html#abcfdfc36ff5292f8feb49f21c6ab5d63", null ],
+    [ "testCalcX", "test_8cpp.html#a21ad69bdaec05e3c7e33a6c0e2457a52", null ],
+    [ "testCalcY", "test_8cpp.html#a0f271afc15ce17c857a60f9256262e0f", null ],
+    [ "testPolyDraw", "test_8cpp.html#ae9326b802b363d823b82a62ef6f44dcb", null ],
+    [ "testPsArc", "test_8cpp.html#ae11dbf7e8b9a70506cee960cb8eb7ac1", null ]
 ];

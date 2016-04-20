@@ -9,5 +9,17 @@
 #include "circle.h"
 
 string Circle::draw(int x, int y) const{
-	return "newpath\n" + psArc(x,y,radius_,0,360) + "\nstroke";
+	stringstream ss;
+
+	ss << "gsave\n";
+	ss << "newpath\n";
+	ss << x << " " << y << " translate\n";
+
+	ss << psArc(0,0,radius_,0,360) << "\n";
+
+	ss << "closepath\n";
+	ss << "stroke\n";
+	ss << "grestore\n";
+
+	return ss.str();
 }

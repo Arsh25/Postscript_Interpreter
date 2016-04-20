@@ -36,5 +36,6 @@ var searchData=
   ['option',['Option',['../class_catch_1_1_option.html#a8efb01b593d798decc80cbbdf311f2a3',1,'Catch::Option::Option()'],['../class_catch_1_1_option.html#a5aeb9c22d48a6882bdf5fb4730b06c86',1,'Catch::Option::Option(T const &amp;_value)'],['../class_catch_1_1_option.html#af02f2e4559f06384baec0def8c68c5fd',1,'Catch::Option::Option(Option const &amp;_other)']]],
   ['option',['Option',['../class_catch_1_1_option.html',1,'Catch']]],
   ['oss',['oss',['../struct_catch_1_1_copyable_stream.html#ae123fb4d673e7d7a13a3c5f6bc5d426c',1,'Catch::CopyableStream']]],
+  ['outerradius',['outerRadius',['../class_star.html#a4bdd108f370f19dc64e9b77df356e1b4',1,'Star']]],
   ['type',['type',['../class_catch_1_1_ptr.html#a27234c04feec43ffe0fd08e045557448',1,'Catch::Ptr::type()'],['../class_catch_1_1_option.html#a637d4366ae7f0ded52ce59c8cb06da7b',1,'Catch::Option::type()']]]
 ];
